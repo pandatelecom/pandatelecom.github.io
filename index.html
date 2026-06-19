@@ -98,6 +98,13 @@ body{
 .logo h1{font-size:17px;font-weight:700}.logo p{font-size:10px;color:#888;letter-spacing:.5px}
 .hdr-cta{background:#fff;color:var(--accent);border:none;padding:10px 22px;border-radius:20px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:transform .15s}
 .hdr-cta:hover{transform:scale(1.03)}
+.lang-group{display:flex;align-items:center;gap:2px;margin-left:8px}
+.lang-btn{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);padding:6px 10px;border-radius:14px;font-size:11px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;line-height:1}
+.lang-btn:hover{background:rgba(255,255,255,.2)}
+.lang-btn.active{background:rgba(255,255,255,.25);border-color:#fff}
+.lang-dot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:3px;vertical-align:middle}
+.lang-dot.on{background:#22c55e}
+.lang-dot.off{background:#555}
 
 /* ── Hero ── */
 .hero{background:var(--accent);position:relative;overflow:hidden;padding:72px 24px 80px;text-align:center}
@@ -237,9 +244,13 @@ body{
 <!-- ═══════════ HEADER ═══════════ -->
 <header class="header"><div class="hdr">
   <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <img class="logo-img" src="assets/panda-logo.jpg" alt="熊貓電訊"><div><h1>熊貓電訊</h1><p>PANDA TELECOM</p></div>
+    <img class="logo-img" src="assets/panda-logo.jpg" alt="熊貓電訊"><div><h1 data-i18n="h_h1">熊貓電訊</h1><p data-i18n="h_sub">PANDA TELECOM</p></div>
   </div>
-  <a href="#contact" class="hdr-cta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="vertical-align:-2px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 立即查詢</a>
+  <a href="#contact" class="hdr-cta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="vertical-align:-2px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg data-i18n="h_cta"> 立即查詢</a>
+  <div class="lang-group">
+    <button class="lang-btn active" id="langZh" onclick="switchLang('zh')"><span class="lang-dot on" id="dotZh"></span>中文</button>
+    <button class="lang-btn" id="langEn" onclick="switchLang('en')"><span class="lang-dot off" id="dotEn"></span>EN</button>
+  </div>
 </div></header>
 
 <!-- ═══════════ HERO CAROUSEL ═══════════ -->
@@ -251,12 +262,12 @@ body{
       <img src="assets/slide01.jpg" alt="專業手機維修" loading="lazy">
       <div class="carousel-overlay"></div>
       <div class="carousel-content">
-        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="8" cy="8" r="3"/><path d="M10.5 10.5L16 16"/><circle cx="18" cy="5" r="3"/></svg> 九龍紅磡民泰街25號54號地舖 · 即場維修 · 15分鐘取機</div>
-        <h2>爆Mon？換電？搵熊貓！</h2>
-        <p>iPhone · Samsung · Google Pixel · LG · iPad · Apple Watch 全線維修。原廠零件優先，價錢透明公道。</p>
+        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="8" cy="8" r="3"/><path d="M10.5 10.5L16 16"/><circle cx="18" cy="5" r="3"/></svg data-i18n="s1_badge"> 九龍紅磡民泰街25號54號地舖 · 即場維修 · 15分鐘取機</div>
+        <h2 data-i18n="s1_title">爆Mon？換電？搵熊貓！</h2>
+        <p data-i18n="s1_desc">iPhone · Samsung · Google Pixel · LG · iPad · Apple Watch 全線維修。原廠零件優先，價錢透明公道。</p>
         <div class="hero-btns" style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#pricing" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit">查看價目表 ↓</a>
-          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit">WhatsApp 查詢 →</a>
+          <a href="#pricing" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit" data-i18n="s1_btn1">查看價目表 ↓</a>
+          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit" data-i18n="s1_btn2">WhatsApp 查詢 →</a>
         </div>
       </div>
     </div>
@@ -266,12 +277,12 @@ body{
       <img src="assets/slide02.jpg" alt="智能手機維修" loading="lazy">
       <div class="carousel-overlay"></div>
       <div class="carousel-content">
-        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="8" cy="8" r="3"/><path d="M10.5 10.5L16 16"/><circle cx="18" cy="5" r="3"/></svg> 原廠零件 · 專業技術</div>
-        <h2>爆Mon維修即場搞掂</h2>
-        <p>iPhone / Samsung 爆玻璃面、爆液晶屏，即場更換。原廠 LCD 優先，缺貨用高質代用，15分鐘快速取機。</p>
+        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="8" cy="8" r="3"/><path d="M10.5 10.5L16 16"/><circle cx="18" cy="5" r="3"/></svg data-i18n="s2_badge"> 原廠零件 · 專業技術</div>
+        <h2 data-i18n="s2_title">爆Mon維修即場搞掂</h2>
+        <p data-i18n="s2_desc">iPhone / Samsung 爆玻璃面、爆液晶屏，即場更換。原廠 LCD 優先，缺貨用高質代用，15分鐘快速取機。</p>
         <div class="hero-btns" style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#pricing" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit">睇價目表</a>
-          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit">WhatsApp 報價</a>
+          <a href="#pricing" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit" data-i18n="s2_btn1">睇價目表</a>
+          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit" data-i18n="s2_btn2">WhatsApp 報價</a>
         </div>
       </div>
     </div>
@@ -281,12 +292,12 @@ body{
       <img src="assets/slide03.jpg" alt="電子維修服務" loading="lazy">
       <div class="carousel-overlay"></div>
       <div class="carousel-content">
-        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/></svg> Samsung / Xiaomi 專業解鎖</div>
-        <h2>FRP 解鎖 &amp; 刷機救機</h2>
-        <p>Samsung、Xiaomi FRP 專業解鎖，系統崩潰變磚？刷機救機盡量保留資料。比原廠更平更快捷。</p>
+        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/></svg data-i18n="s3_badge"> Samsung / Xiaomi 專業解鎖</div>
+        <h2 data-i18n="s3_title">FRP 解鎖 &amp; 刷機救機</h2>
+        <p data-i18n="s3_desc">Samsung、Xiaomi FRP 專業解鎖，系統崩潰變磚？刷機救機盡量保留資料。比原廠更平更快捷。</p>
         <div class="hero-btns" style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#pricing" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit">查看服務</a>
-          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit">即時查詢</a>
+          <a href="#pricing" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit" data-i18n="s3_btn1">查看服務</a>
+          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit" data-i18n="s3_btn2">即時查詢</a>
         </div>
       </div>
     </div>
@@ -296,12 +307,12 @@ body{
       <img src="assets/slide04.jpg" alt="主板維修" loading="lazy">
       <div class="carousel-overlay"></div>
       <div class="carousel-content">
-        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 免費檢測，唔整唔收費</div>
-        <h2>主板維修 &amp; 入水急救</h2>
-        <p>底板故障、唔著機、入水受潮，專業檢測儀器診斷。Apple Watch、iPad、各類平板維修都搞得掂。</p>
+        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="s4_badge"> 免費檢測，唔整唔收費</div>
+        <h2 data-i18n="s4_title">主板維修 &amp; 入水急救</h2>
+        <p data-i18n="s4_desc">底板故障、唔著機、入水受潮，專業檢測儀器診斷。Apple Watch、iPad、各類平板維修都搞得掂。</p>
         <div class="hero-btns" style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#services" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit">服務範圍</a>
-          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit">免費報價</a>
+          <a href="#services" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit" data-i18n="s4_btn1">服務範圍</a>
+          <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit" data-i18n="s4_btn2">免費報價</a>
         </div>
       </div>
     </div>
@@ -311,11 +322,11 @@ body{
       <img src="assets/slide05.jpg" alt="手機屏幕更換" loading="lazy">
       <div class="carousel-overlay"></div>
       <div class="carousel-content">
-        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> 1個月保養</div>
+        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg data-i18n="s5_badge"> 1個月保養</div>
         <h2>1個月保養・價錢公道</h2>
-        <p>所有維修建設連1個月保養（人為/入水除外）。免費檢測，報價後決定，唔整唔收費！</p>
+        <p data-i18n="s5_desc">所有維修建設連1個月保養（人為/入水除外）。免費檢測，報價後決定，唔整唔收費！</p>
         <div class="hero-btns" style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#contact" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit">搵我哋</a>
+          <a href="#contact" class="btn-w" style="background:#fff;color:var(--accent);padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit" data-i18n="s5_btn1">搵我哋</a>
           <a href="https://wa.me/85268557181" class="btn-o" style="background:none;color:#fff;padding:14px 30px;border-radius:24px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);display:inline-block;cursor:pointer;font-family:inherit">WhatsApp 6855 7181</a>
         </div>
       </div>
@@ -339,58 +350,58 @@ body{
 
 <!-- ═══════════ SHOP PHOTOS ═══════════ -->
 <section class="sec" id="photos">
-  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><rect x="3" y="3" width="18" height="14" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> 舖頭環境</div>
-  <div class="sec-sub">即場維修，專業設備，信心保證</div>
+  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><rect x="3" y="3" width="18" height="14" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg data-i18n="gal_title"> 舖頭環境</div>
+  <div class="sec-sub">data-i18n="gal_sub">即場維修，專業設備，信心保證</div>
   <div class="gallery">
     <div class="gallery-item">
       <img src="images/shop-front-new.jpg" alt="熊貓電訊 舖面實景" loading="lazy">
-      <div class="overlay">熊貓電訊 Panda Telecom 紅磡黃埔108商場</div>
+      <div class="overlay" data-i18n="gal_o1">熊貓電訊 Panda Telecom 紅磡黃埔108商場</div>
     </div>
     <div class="gallery-item">
       <img src="images/shop-sign-with-flowers2.jpg" alt="熊貓電訊 招牌與花籃" loading="lazy">
-      <div class="overlay">熊貓電訊 Panda Telecom 招牌</div>
+      <div class="overlay" data-i18n="gal_o2">熊貓電訊 Panda Telecom 招牌</div>
     </div>
     <div class="gallery-item">
       <img src="images/flyer.jpg" alt="熊貓電訊 宣傳單張" loading="lazy">
-      <div class="overlay">特快手機維修 · 免費檢查</div>
+      <div class="overlay" data-i18n="gal_o3">特快手機維修 · 免費檢查</div>
     </div>
     <div class="gallery-item">
       <img src="images/repair-sony.jpg" alt="Sony Xperia 爆Mon維修前後對比" loading="lazy">
-      <div class="overlay">Sony Xperia 爆Mon維修</div>
+      <div class="overlay" data-i18n="gal_o4">Sony Xperia 爆Mon維修</div>
     </div>
     <div class="gallery-item">
       <img src="images/repair-htc.jpg" alt="HTC 手機爆Mon對比" loading="lazy">
-      <div class="overlay">HTC 手機螢幕更換</div>
+      <div class="overlay" data-i18n="gal_o5">HTC 手機螢幕更換</div>
     </div>
     <div class="gallery-item">
       <img src="images/repair-samsung-tab.jpg" alt="Samsung 平板爆Mon更換" loading="lazy">
-      <div class="overlay">Samsung 平板保護貼更換</div>
+      <div class="overlay" data-i18n="gal_o6">Samsung 平板保護貼更換</div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════ SERVICES ═══════════ -->
 <section class="sec" id="services">
-  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><circle cx="8" cy="8" r="3"/><path d="M10.5 10.5L16 16"/><circle cx="18" cy="5" r="3"/></svg> 服務範圍</div>
-  <div class="sec-sub">一站式手機平板維修，由爆Mon換電到 FRP 解鎖、主板維修，全部搞掂</div>
+  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><circle cx="8" cy="8" r="3"/><path d="M10.5 10.5L16 16"/><circle cx="18" cy="5" r="3"/></svg data-i18n="svc_title"> 服務範圍</div>
+  <div class="sec-sub" data-i18n="svc_sub">一站式手機平板維修，由爆Mon換電到 FRP 解鎖、主板維修，全部搞掂</div>
   <div class="svc-grid">
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h5"/><path d="M12 18h.01"/><line x1="8" y1="17" x2="10" y2="17"/></svg></div><h4>爆Mon 維修</h4><p>iPhone / Samsung 爆玻璃面、爆液晶屏即場更換</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="18" height="13" rx="2"/><path d="M6 7V5a2 2 0 014 0v2"/><path d="M14 7V5a2 2 0 00-4 0"/><path d="M5 11h2"/><path d="M9 11h6"/></svg></div><h4>換電池</h4><p>電池老化發脹？更換新電池，恢復全日續航</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/><path d="M7 11V7a5 5 0 0110 0v4"/><path d="M12 16v2"/></svg></div><h4>FRP 解鎖</h4><p>Samsung / Xiaomi 專業解鎖，平過原廠</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/><path d="M22 12a10 10 0 01-4 8"/></svg></div><h4>刷機 Flash</h4><p>系統崩潰變磚？救機刷機，盡量保留資料</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M8 8h8v3H8z"/><path d="M8 13h3v3H8z"/><path d="M14 13h2v3h-2z"/><circle cx="6" cy="6" r="0.5" fill="#1a1a1a"/></svg></div><h4>主板維修</h4><p>底板故障、唔著機、入水，專業檢測維修</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="9" y="6" width="6" height="7" rx="1"/><circle cx="12" cy="11" r="2"/><path d="M9 13l-2 5h10l-2-5"/></svg></div><h4>鏡頭/零件</h4><p>鏡頭玻璃、喇叭、充電位、開關掣更換</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18v2"/><path d="M16 22H8"/><rect x="5" y="4" width="14" height="12" rx="1" fill="#1a1a1a" fill-opacity="0.08"/></svg></div><h4>背面玻璃</h4><p>iPhone / Samsung 爆背玻璃更換</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="3"/><path d="M8 2v20"/></svg></div><h4>iPad / 平板</h4><p>iPad / Samsung Tab 爆Mon換電</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/><path d="M7 2h10v3H7z"/><path d="M7 19h10v3H7z"/></svg></div><h4>Apple Watch</h4><p>爆Mon、換電、錶冠維修</p></div>
-    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/><path d="M8 11h6"/><path d="M11 8v6"/></svg></div><h4>免費檢測</h4><p>唔整唔收費，報價後再決定</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h5"/><path d="M12 18h.01"/><line x1="8" y1="17" x2="10" y2="17"/></svg></div><h4 data-i18n="svc1_title">爆Mon 維修</h4><p data-i18n="svc1_desc">iPhone / Samsung 爆玻璃面、爆液晶屏即場更換</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="18" height="13" rx="2"/><path d="M6 7V5a2 2 0 014 0v2"/><path d="M14 7V5a2 2 0 00-4 0"/><path d="M5 11h2"/><path d="M9 11h6"/></svg></div><h4 data-i18n="svc2_title">換電池</h4><p data-i18n="svc2_desc">電池老化發脹？更換新電池，恢復全日續航</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/><path d="M7 11V7a5 5 0 0110 0v4"/><path d="M12 16v2"/></svg></div><h4 data-i18n="svc3_title">FRP 解鎖</h4><p data-i18n="svc3_desc">Samsung / Xiaomi 專業解鎖，平過原廠</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/><path d="M22 12a10 10 0 01-4 8"/></svg></div><h4 data-i18n="svc4_title">刷機 Flash</h4><p data-i18n="svc4_desc">系統崩潰變磚？救機刷機，盡量保留資料</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M8 8h8v3H8z"/><path d="M8 13h3v3H8z"/><path d="M14 13h2v3h-2z"/><circle cx="6" cy="6" r="0.5" fill="#1a1a1a"/></svg></div><h4 data-i18n="svc5_title">主板維修</h4><p data-i18n="svc5_desc">底板故障、唔著機、入水，專業檢測維修</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="9" y="6" width="6" height="7" rx="1"/><circle cx="12" cy="11" r="2"/><path d="M9 13l-2 5h10l-2-5"/></svg></div><h4 data-i18n="svc6_title">鏡頭/零件</h4><p data-i18n="svc6_desc">鏡頭玻璃、喇叭、充電位、開關掣更換</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18v2"/><path d="M16 22H8"/><rect x="5" y="4" width="14" height="12" rx="1" fill="#1a1a1a" fill-opacity="0.08"/></svg></div><h4 data-i18n="svc7_title">背面玻璃</h4><p data-i18n="svc7_desc">iPhone / Samsung 爆背玻璃更換</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="3"/><path d="M8 2v20"/></svg></div><h4 data-i18n="svc8_title">iPad / 平板</h4><p data-i18n="svc8_desc">iPad / Samsung Tab 爆Mon換電</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/><path d="M7 2h10v3H7z"/><path d="M7 19h10v3H7z"/></svg></div><h4 data-i18n="svc9_title">Apple Watch</h4><p data-i18n="svc9_desc">爆Mon、換電、錶冠維修</p></div>
+    <div class="svc-card"><div class="svc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/><path d="M8 11h6"/><path d="M11 8v6"/></svg></div><h4 data-i18n="svc10_title">免費檢測</h4><p data-i18n="svc10_desc">唔整唔收費，報價後再決定</p></div>
   </div>
 </section>
 
 <!-- ═══════════ PRICING ═══════════ -->
 <section class="sec" id="pricing">
-  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> 維修價目表</div>
-  <div class="sec-sub">原廠 LCD 優先 · 缺貨用高質代用 · 落單前可查詢 · 保養1個月（人為/入水除外）· 免費檢測唔整唔收費</div>
+  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg data-i18n="price_title"> 維修價目表</div>
+  <div class="sec-sub" data-i18n="price_sub">原廠 LCD 優先 · 缺貨用高質代用 · 落單前可查詢 · 保養1個月（人為/入水除外）· 免費檢測唔整唔收費</div>
 
   <!-- MAIN TABS -->
   <div class="tabs">
@@ -436,7 +447,7 @@ body{
 
 <!-- ═══════════ CUSTOMER REVIEWS ═══════════ -->
 <section class="sec" id="reviews">
-  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 客戶評價</div>
+  <div class="sec-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg data-i18n="rev_title"> 客戶評價</div>
   <div class="reviews">
     <div class="review-card">
       <div class="review-stars">⭐⭐⭐⭐⭐</div>
@@ -458,11 +469,11 @@ body{
 
 <!-- ═══════════ CONTACT ═══════════ -->
 <section class="contact" id="contact"><div class="contact-inner">
-  <div class="sec-title" style="color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 聯絡我哋</div>
-  <div class="sec-sub" style="color:#999">即場維修 · 15分鐘取機 · 免費報價</div>
+  <div class="sec-title" style="color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" style="vertical-align:-4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg data-i18n="cont_title"> 聯絡我哋</div>
+  <div class="sec-sub" style="color:#999" data-i18n="cont_sub">即場維修 · 15分鐘取機 · 免費報價</div>
   <div class="contact-grid">
-    <div class="c-card"><h4><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 門市地址</h4><p>九龍紅磡民泰街25號54號地舖<br>（黃埔108商場）<br><br>黃埔地鐵站步行3分鐘<br>紅磡船澳街129號</p></div>
-    <div class="c-card"><h4><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 營業時間</h4><p>星期一至日<br>09:00 - 19:00</p></div>
+    <div class="c-card"><h4 data-i18n="cont_addr_title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 門市地址</h4><p data-i18n="cont_addr">九龍紅磡民泰街25號54號地舖<br>（黃埔108商場）<br><br>3-min walk from Whampoa MTR<br>129 Ship Street, Hung Hom</p></div>
+    <div class="c-card"><h4 data-i18n="cont_hours_title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 營業時間</h4><p data-i18n="cont_hours">Monday to Sunday<br>09:00 - 19:00</p></div>
     <div class="c-card"><h4><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 聯絡方式</h4><p>電話：<a href="tel:+85268557181">6855 7181</a><br>WhatsApp：<a href="https://wa.me/85268557181">6855 7181</a><br>FB：<a href="https://facebook.com/PandaTelecomHK">PandaTelecomHK</a><br>電郵：pandatelecomhk@gmail.com</p></div>
   </div>
 
@@ -471,10 +482,10 @@ body{
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.240789023157!2d114.188285!3d22.306604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040177af0f9f5d%3A0x4c7e9b3c4e8a9f0!2z6JGr54Of6Zu75L-hIFBhbmRhIFRlbGVjb20g5byx5Lit6Zu75L-h!5e0!3m2!1szh-TW!2shk!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="熊貓電訊地圖位置"></iframe>
   </div>
 
-  <p style="text-align:center;color:#555;margin-top:28px;font-size:13px">⚠️ 以上未列出嘅型號，請 WhatsApp 查詢 · 所有維修免費檢測，唔整唔收費</p>
+  <p style="text-align:center;color:#555;margin-top:28px;font-size:13px" data-i18n="warn">⚠️ 以上未列出嘅型號請 WhatsApp 查詢 · 免費檢測唔整唔收費</p>
 </div></section>
 
-<footer class="footer"><strong>🐼 熊貓電訊 Panda Telecom</strong> · 九龍紅磡民泰街25號54號地舖 · 電話 6855 7181 · © 2024</footer>
+<footer class="footer" data-i18n="footer"><strong>🐼 Panda Telecom</strong> · Shop 54, 25 Man Tai Street, Hung Hom, Kowloon · Tel 6855 7181 · © 2024</footer>
 
 <!-- ═══════════ FLOATING WHATSAPP ═══════════ -->
 <a href="https://wa.me/85268557181" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp 查詢">
@@ -719,6 +730,92 @@ document.addEventListener('keydown', e => {
 autoplayInterval = setInterval(() => moveSlide(1), 4500);
 
 // ── Init ──
+
+// ═══════════ I18N LANGUAGE SWITCHER ═══════════
+const i18n = {
+  h_h1_zh:'熊貓電訊',h_h1_en:'Panda Telecom',
+  h_sub_zh:'PANDA TELECOM',h_sub_en:'MOBILE PHONE REPAIR',
+  h_cta_zh:'立即查詢',h_cta_en:'Contact Us',
+  s1_badge_zh:'九龍紅磡民泰街25號54號地舖 · 即場維修 · 15分鐘取機',s1_badge_en:'Shop 54, 25 Man Tai · Walk-in · 15-min Pickup',
+  s1_title_zh:'爆Mon？換電？搵熊貓！',s1_title_en:'Broken Screen? Dead Battery? Call Panda!',
+  s1_desc_zh:'iPhone · Samsung · Google Pixel · LG · iPad · Apple Watch 全線維修。原廠零件優先，價錢透明公道。',s1_desc_en:'iPhone·Samsung·Google Pixel·LG·iPad·Apple Watch full repair. OEM parts, fair pricing.',
+  s1_btn1_zh:'查看價目表 ↓',s1_btn1_en:'View Prices ↓',
+  s1_btn2_zh:'WhatsApp 查詢 →',s1_btn2_en:'WhatsApp Enquiry →',
+  s2_badge_zh:'原廠零件 · 專業技術',s2_badge_en:'OEM Parts · Expert Service',
+  s2_title_zh:'爆Mon維修即場搞掂',s2_title_en:'Screen Repair Done On the Spot',
+  s2_desc_zh:'iPhone / Samsung 爆玻璃面、爆液晶屏，即場更換。原廠 LCD 優先，缺貨用高質代用，15分鐘快速取機。',s2_desc_en:'iPhone/Samsung glass & LCD repair while you wait. OEM LCD priority.',
+  s2_btn1_zh:'睇價目表',s2_btn1_en:'View Prices',
+  s2_btn2_zh:'WhatsApp 報價',s2_btn2_en:'Get Quote',
+  s3_badge_zh:'Samsung / Xiaomi 專業解鎖',s3_badge_en:'Samsung / Xiaomi FRP Unlock',
+  s3_title_zh:'FRP 解鎖 & 刷機救機',s3_title_en:'FRP Unlock & Flashing',
+  s3_desc_zh:'Samsung、Xiaomi FRP 專業解鎖，系統崩潰變磚？刷機救機盡量保留資料。比原廠更平更快捷。',s3_desc_en:'FRP unlock for Samsung & Xiaomi. Bricked? We flash with data recovery.',
+  s3_btn1_zh:'查看服務',s3_btn1_en:'Our Services',
+  s3_btn2_zh:'即時查詢',s3_btn2_en:'Enquire Now',
+  s4_badge_zh:'免費檢測，唔整唔收費',s4_badge_en:'Free Inspection · No Obligation',
+  s4_title_zh:'主板維修 & 入水急救',s4_title_en:'Motherboard Repair & Water Damage',
+  s4_desc_zh:'底板故障、唔著機、入水受潮，專業檢測儀器診斷。Apple Watch、iPad、各類平板維修。',s4_desc_en:'Board failure, water damage — pro diagnostics. Watch, iPad & tablet repairs.',
+  s4_btn1_zh:'服務範圍',s4_btn1_en:'Our Services',
+  s4_btn2_zh:'免費報價',s4_btn2_en:'Free Quote',
+  s5_badge_zh:'1個月保養',s5_badge_en:'1-Month Warranty',
+  s5_title_zh:'1個月保養 · 價錢公道',s5_title_en:'1-Month Warranty · Fair Prices',
+  s5_desc_zh:'所有維修建設連1個月保養（人為/入水除外）。免費檢測，報價後決定，唔整唔收費！',s5_desc_en:'All repairs include 1-month warranty. Free inspection, no charge if declined!',
+  s5_btn1_zh:'搵我哋',s5_btn1_en:'Find Us',
+  s5_btn2_zh:'WhatsApp 6855 7181',s5_btn2_en:'WhatsApp 6855 7181',
+  gal_title_zh:'舖頭環境',gal_title_en:'Our Shop',
+  gal_sub_zh:'即場維修，專業設備，信心保證',gal_sub_en:'Walk-in repair, pro equipment, guaranteed quality',
+  gal_o1_zh:'Panda Telecom — Whampoa 108, Hung Hom',gal_o1_en:'Panda Telecom — Whampoa 108, Hung Hom',
+  gal_o2_zh:'熊貓電訊 Panda Telecom 招牌',gal_o2_en:'Panda Telecom Storefront',
+  gal_o3_zh:'特快手機維修 · 免費檢查',gal_o3_en:'Fast Phone Repair · Free Inspection',
+  gal_o4_zh:'Sony Xperia 爆Mon維修',gal_o4_en:'Sony Xperia Screen Repair',
+  gal_o5_zh:'HTC 手機螢幕更換',gal_o5_en:'HTC Screen Replacement',
+  gal_o6_zh:'Samsung 平板保護貼更換',gal_o6_en:'Samsung Tablet Service',
+  svc_title_zh:'服務範圍',svc_title_en:'Our Services',
+  svc_sub_zh:'一站式手機平板維修，由爆Mon換電到 FRP 解鎖、主板維修，全部搞掂',svc_sub_en:'One-stop phone & tablet repair — screen, battery, FRP, motherboard.',
+  svc1_title_zh:'爆Mon 維修',svc1_title_en:'Screen Repair',
+  svc1_desc_zh:'iPhone / Samsung 爆玻璃面、爆液晶屏即場更換',svc1_desc_en:'iPhone/Samsung glass & LCD on the spot',
+  svc2_title_zh:'換電池',svc2_title_en:'Battery Replacement',
+  svc2_desc_zh:'電池老化發脹？更換新電池，恢復全日續航',svc2_desc_en:'Swollen battery? Fresh cell for all-day power',
+  svc3_title_zh:'FRP 解鎖',svc3_title_en:'FRP Unlock',
+  svc3_desc_zh:'Samsung / Xiaomi 專業解鎖，平過原廠',svc3_desc_en:'Samsung & Xiaomi unlock, cheaper than official',
+  svc4_title_zh:'刷機 Flash',svc4_title_en:'Flashing',
+  svc4_desc_zh:'系統崩潰變磚？救機刷機，盡量保留資料',svc4_desc_en:'Bricked phone? Flash with data recovery',
+  svc5_title_zh:'主板維修',svc5_title_en:'Motherboard Repair',
+  svc5_desc_zh:'底板故障、唔著機、入水，專業檢測維修',svc5_desc_en:'Board failure, water damage — pro service',
+  svc6_title_zh:'鏡頭/零件',svc6_title_en:'Camera & Parts',
+  svc6_desc_zh:'鏡頭玻璃、喇叭、充電位、開關掣更換',svc6_desc_en:'Camera glass, speaker, port, button repairs',
+  svc7_title_zh:'背面玻璃',svc7_title_en:'Back Glass',
+  svc7_desc_zh:'iPhone / Samsung 爆背玻璃更換',svc7_desc_en:'iPhone/Samsung back glass replacement',
+  svc8_title_zh:'iPad / 平板',svc8_title_en:'iPad / Tablet',
+  svc8_desc_zh:'iPad / Samsung Tab 爆Mon換電',svc8_desc_en:'iPad & Samsung Tab screen & battery',
+  svc9_title_zh:'Apple Watch',svc9_title_en:'Apple Watch',
+  svc9_desc_zh:'爆Mon、換電、錶冠維修',svc9_desc_en:'Screen, battery & crown repairs',
+  svc10_title_zh:'免費檢測',svc10_title_en:'Free Inspection',
+  svc10_desc_zh:'唔整唔收費，報價後再決定',svc10_desc_en:'No charge if declined — decide after quote',
+  price_title_zh:'維修價目表',price_title_en:'Price List',
+  price_sub_zh:'原廠 LCD 優先 · 缺貨用高質代用 · 落單前可查詢 · 保養1個月（人為/入水除外）· 免費檢測唔整唔收費',price_sub_en:'OEM LCD priority · Quality alternatives · 1-month warranty · Free inspection',
+  rev_title_zh:'客戶評價',rev_title_en:'Customer Reviews',
+  cont_title_zh:'聯絡我哋',cont_title_en:'Contact Us',
+  cont_sub_zh:'即場維修 · 15分鐘取機 · 免費報價',cont_sub_en:'Walk-in Repair · 15-min Pickup · Free Quote',
+  cont_addr_title_zh:'門市地址',cont_addr_title_en:'Address',
+  cont_addr_zh:'九龍紅磡民泰街25號54號地舖<br>（黃埔108商場）<br><br>3-min from Whampoa MTR<br>129 Ship Street',cont_addr_en:'Shop 54, 25 Man Tai Street, Hung Hom<br>(Whampoa 108)<br><br>3-min from Whampoa MTR<br>129 Ship Street',
+  cont_hours_title_zh:'營業時間',cont_hours_title_en:'Opening Hours',
+  cont_hours_zh:'Monday to Sunday<br>09:00 - 19:00',cont_hours_en:'Monday to Sunday<br>09:00 - 19:00',
+  cont_info_title_zh:'聯絡方式',cont_info_title_en:'Contact Info',
+  cont_info_zh:'Phone: 6855 7181<br>WhatsApp: 6855 7181<br>FB: PandaTelecomHK<br>Email: pandatelecomhk@gmail.com',cont_info_en:'Phone: 6855 7181<br>WhatsApp: 6855 7181<br>FB: PandaTelecomHK<br>Email: pandatelecomhk@gmail.com',
+  footer_zh:'🐼 Panda Telecom · Shop 54, 25 Man Tai, Hung Hom · Tel 6855 7181 · © 2024',footer_en:'🐼 Panda Telecom · Shop 54, 25 Man Tai, Hung Hom · Tel 6855 7181 · © 2024',
+  warn_zh:'⚠️ 以上未列出嘅型號請 WhatsApp 查詢 · 免費檢測唔整唔收費',warn_en:'⚠️ Models not listed — WhatsApp for enquiry · Free inspection, no obligation'
+};
+function switchLang(lang){
+  document.getElementById('langZh').className='lang-btn'+(lang==='zh'?' active':'');
+  document.getElementById('langEn').className='lang-btn'+(lang==='en'?' active':'');
+  document.getElementById('dotZh').className='lang-dot '+(lang==='zh'?'on':'off');
+  document.getElementById('dotEn').className='lang-dot '+(lang==='en'?'on':'off');
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var k=el.getAttribute('data-i18n')+'_'+lang;
+    if(i18n[k]!==undefined) el.innerHTML=i18n[k];
+  });
+  document.documentElement.lang=lang==='zh'?'zh-HK':'en';
+}
 console.log('🐼 Panda Telecom 價目表已載入 · 286+ 型號');
 </script>
 </body>
