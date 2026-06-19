@@ -162,7 +162,7 @@ function renderProducts(){
   grid.innerHTML = filtered.map(p => {
     const emoji = getCatEmoji(p.category);
     const msg = encodeURIComponent(`你好，我想查詢產品：${p.name}（HKD $${p.price}）`);
-    const pimg = imgMap[p.id] ? `images/${imgMap[p.id]}` : '';
+    const pimg = imgMap[p.id] ? `https://pandatelecom.github.io/images/${imgMap[p.id]}` : '';
     return `<div class="product-card">
       ${pimg ? `<div class="p-img"><img src="${pimg}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'"></div>` : ''}
       <div class="p-body"${pimg ? '' : ' style="border-radius:12px"'}>`
