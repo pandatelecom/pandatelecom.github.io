@@ -41,9 +41,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans T
 .products{max-width:1200px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
 .product-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .2s,border-color .2s;display:flex;flex-direction:column}
 .product-card:hover{transform:translateY(-2px);border-color:#444}
-.p-img{width:100%;height:200px;background:#222;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border)}
-.p-img img{max-width:100%;max-height:100%;object-fit:contain;padding:16px;transition:transform .3s}
-.product-card:hover .p-img img{transform:scale(1.05)}
 .p-body{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
 .p-cat{font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
 .p-brand{font-size:11px;color:var(--muted);margin-bottom:6px}
@@ -119,16 +116,27 @@ let products = [];
 let currentCat = 'all';
 let imgMap = {};
 
-Promise.all([
-  fetch('sigma_products.json').then(r => r.json()),
-  fetch('images/product_images.json').then(r => r.json())
-]).then(([pData, imgData]) => {
-  products = pData.products;
-  imgMap = imgData;
-  renderProducts();
-}).catch(() => {
-  document.getElementById('products').innerHTML = '<p style="text-align:center;color:var(--muted);padding:40px">⚠️ 產品資料載入失敗，請稍後再試</p>';
-});
+// Load products and optionally images
+fetch('sigma_products.json')
+  .then(r => r.json())
+  .then(data => {
+    products = data.products;
+    // Try loading images too
+    return fetch('images/product_images.json').then(r => r.json()).catch(() => ({}));
+  })
+  .then(imgs => {
+    imgMap = imgs || {};
+    renderProducts();
+  })
+  .catch(() => {
+    // Retry with products only
+    fetch('sigma_products.json').then(r => r.json()).then(data => {
+      products = data.products;
+      renderProducts();
+    }).catch(() => {
+      document.getElementById('products').innerHTML = '<p style="text-align:center;color:var(--muted);padding:40px">⚠️ 產品資料載入失敗，請稍後再試</p>';
+    });
+  });
 
 function setCategory(cat){
   currentCat = cat;
@@ -164,8 +172,8 @@ function renderProducts(){
     const msg = encodeURIComponent(`你好，我想查詢產品：${p.name}（HKD $${p.price}）`);
     const pimg = imgMap[p.id] ? `https://pandatelecom.github.io/images/${imgMap[p.id]}` : '';
     return `<div class="product-card">
-      ${pimg ? `<div class="p-img"><img src="${pimg}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'"></div>` : ''}
-      <div class="p-body"${pimg ? '' : ' style="border-radius:12px"'}>`
+      ${pimg ? `<div class="p-img"><div class="p-img-bg" style="background:linear-gradient(135deg,#2a2a2a,#333);width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:48px;border-bottom:1px solid var(--border)">${emoji}</div><img src="${pimg}" alt="${p.name}" loading="lazy" onerror="this.previousElementSibling.style.display='flex';this.style.display='none'" onload="this.previousElementSibling.style.display='none';this.style.display='block'" style="display:none;width:100%;height:200px;object-fit:contain;padding:16px;background:#222"></div>` : `<div class="p-img" style="display:flex;align-items:center;justify-content:center;font-size:48px">${emoji}</div>`}
+      <div class="p-body">
         <div class="p-cat">${emoji} ${p.category || '其他'}</div>
         <div class="p-brand">${p.brand || ''}</div>
         <div class="p-name">${p.name}</div>
