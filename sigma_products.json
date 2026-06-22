@@ -3123,6 +3123,994 @@
         "車縫包邊",
         "止滑橡膠底"
       ]
+    },
+    {
+      "id": "jbl-go-4",
+      "name": "JBL Go 4 防水藍牙喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 399,
+      "desc": "JBL Go 4 超便攜藍牙喇叭，IP67 防水防塵。JBL Pro Sound 強勁低音，7 小時播放，Playtime Boost 再加 2 小時。多色彩選擇。",
+      "features": [
+        "IP67 防水防塵",
+        "JBL Pro Sound 音效",
+        "7 小時播放時間",
+        "Playtime Boost +2 小時",
+        "Auracast 多喇叭連接",
+        "JBL Portable 應用程式"
+      ]
+    },
+    {
+      "id": "jbl-clip-5",
+      "name": "JBL Clip 5 防水掛勾藍牙喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 549,
+      "desc": "JBL Clip 5 內置掛勾便攜藍牙喇叭，IP67 防水防塵。12 小時播放，Playtime Boost 再加 3 小時。藍牙 5.3。",
+      "features": [
+        "IP67 防水防塵",
+        "12 小時播放時間",
+        "Playtime Boost +3 小時",
+        "內置掛勾設計",
+        "Auracast 多喇叭連接",
+        "藍牙 5.3"
+      ]
+    },
+    {
+      "id": "jbl-flip-7",
+      "name": "JBL Flip 7 便攜藍牙喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 998,
+      "desc": "JBL Flip 7，45x80mm 低音單元 + 16mm 高音單元，25W+10W 輸出。Bluetooth 5.4，60Hz-20kHz 頻響，17.28Wh 電池 2.5 小時充電。",
+      "features": [
+        "45x80mm 低音單元 + 16mm 高音單元",
+        "25W+10W RMS 輸出",
+        "藍牙 5.4",
+        "60Hz-20kHz 頻率響應",
+        "17.28Wh 鋰電池",
+        "Auracast 多喇叭串聯"
+      ]
+    },
+    {
+      "id": "jbl-charge-6",
+      "name": "JBL Charge 6 防水藍牙喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 1299,
+      "desc": "JBL Charge 6，JBL Original Pro Sound 強勁音效。20 小時播放時間，IP67 防水防塵。PartyBoost 功能，內置電源可為手機充電。多色選擇。",
+      "features": [
+        "JBL Original Pro Sound",
+        "20 小時播放時間",
+        "IP67 防水防塵",
+        "PartyBoost 功能",
+        "內置電源可為手機充電",
+        "多色可選"
+      ]
+    },
+    {
+      "id": "jbl-grip",
+      "name": "JBL Grip 手提藍牙喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 799,
+      "desc": "JBL Grip 獨特握持造型，背板內建多重色彩情境燈。IP68 頂級防護，1 米跌落測試。16W 功率 43x80mm 全頻單體，14 小時播放。",
+      "features": [
+        "多重色彩情境燈 App 自訂",
+        "IP68 防塵防水 (水下1米30分鐘)",
+        "1 米跌落測試",
+        "16W 功率 + 43x80mm 全頻單體",
+        "14 小時長效播放",
+        "Auracast 多音箱串聯",
+        "7 段 EQ 調整"
+      ]
+    },
+    {
+      "id": "jbl-partybox-encore-essential",
+      "name": "JBL PartyBox Encore Essential 派對喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 2499,
+      "desc": "JBL PartyBox Encore Essential 深沉低音動態燈光。6 小時播放時間，IPX4 防潑水。可用有線麥克風輸入，無線配對兩個喇叭。",
+      "features": [
+        "深沉低音動態燈光",
+        "6 小時播放時間",
+        "IPX4 防潑水",
+        "有線麥克風輸入",
+        "無線配對立體聲",
+        "藍牙/USB/AUX 連接"
+      ]
+    },
+    {
+      "id": "jbl-partybox-110",
+      "name": "JBL PartyBox 110 派對喇叭",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 3199,
+      "desc": "JBL PartyBox 110 震撼音效動態 LED 燈環。防潑水設計，可插入吉他和麥克風。12 小時播放，低音增強控制器。",
+      "features": [
+        "震撼音效動態 LED 燈環",
+        "防潑水設計",
+        "吉他/麥克風輸入",
+        "12 小時播放時間",
+        "低音增強控制器",
+        "PartyBox 應用程式控制"
+      ]
+    },
+    {
+      "id": "jbl-cinema-sb120",
+      "name": "JBL Cinema SB120 Soundbar",
+      "brand": "JBL",
+      "category": "音響",
+      "price": 1199,
+      "desc": "JBL Cinema SB120 超低調 Soundbar，內置低音炮。杜比數字解碼，HDMI ARC 連接。110W 功率，2 個全頻驅動器 + 2x2.5 吋低音揚聲器。",
+      "features": [
+        "內置低音炮",
+        "杜比數字解碼",
+        "HDMI ARC 連接",
+        "110W 功率",
+        "2 全頻 + 2x2.5 吋低音",
+        "藍牙無線傳輸"
+      ]
+    },
+    {
+      "id": "creative-stage-v2",
+      "name": "Creative Stage V2 2.1 Soundbar",
+      "brand": "Creative",
+      "category": "音響",
+      "price": 688,
+      "desc": "Creative Stage V2 2.1 聲道 Soundbar，藍牙/光纖/AUX/USB 連接。附遙控器，設有掛孔可壁掛。主機 2x20W，低音炮 1x40W。",
+      "features": [
+        "2.1 聲道",
+        "藍牙/光纖/AUX/USB",
+        "附遙控器",
+        "可壁掛安裝",
+        "主機 2x20W + 低音炮 40W",
+        "Sound Blaster 音頻技術"
+      ]
+    },
+    {
+      "id": "creative-stage-air-v2",
+      "name": "Creative Stage Air V2 Soundbar",
+      "brand": "Creative",
+      "category": "音響",
+      "price": 899,
+      "desc": "Creative Stage Air V2 輕巧 Soundbar，藍牙 5.0/光纖/AUX/USB/MP3 多種連接。支援 USB FLAC 播放。3.5mm AUX 輸入插孔。",
+      "features": [
+        "藍牙 5.0",
+        "光纖/AUX/USB/MP3",
+        "支援 USB FLAC 播放",
+        "3.5mm AUX 輸入",
+        "可連接外部麥克風",
+        "相容 PC/PS4/PS5/Switch"
+      ]
+    },
+    {
+      "id": "creative-stage-se-mini",
+      "name": "Creative Stage SE mini Soundbar",
+      "brand": "Creative",
+      "category": "音響",
+      "price": 398,
+      "desc": "Creative Stage SE mini 小巧顯示器下條形喇叭。全頻釹驅動單元，峰值功率 24W。USB Type-C 供電，藍牙 5.4 連接。6 小時電池續航。",
+      "features": [
+        "全頻釹驅動單元",
+        "峰值功率 24W",
+        "USB Type-C 供電",
+        "藍牙 5.4",
+        "6 小時電池續航",
+        "410x94x75mm 小巧緊湊"
+      ]
+    },
+    {
+      "id": "sound-blaster-gs3",
+      "name": "Sound Blaster GS3 Soundbar",
+      "brand": "Creative",
+      "category": "音響",
+      "price": 428,
+      "desc": "Sound Blaster GS3，耳機輸出/USB 音訊/3.5mm AUX/藍牙。專為電影/音樂/遊戲設計。2x6W RMS，峰值 24W。藍牙 5.4。",
+      "features": [
+        "耳機輸出/USB/3.5mm AUX/藍牙",
+        "2x6W RMS，峰值 24W",
+        "藍牙 5.4",
+        "65-20,000Hz 頻率響應",
+        "410x92.7x73.7mm",
+        "USB-C 供電"
+      ]
+    },
+    {
+      "id": "sound-blaster-gs5",
+      "name": "Sound Blaster GS5 Soundbar",
+      "brand": "Creative",
+      "category": "音響",
+      "price": 588,
+      "desc": "Sound Blaster GS5 SuperWide 技術，近場遠場雙模式。60W 最大輸出，強勁低音。藍牙 5.3/3.5mm Aux/USB-C/光纖/耳機輸出多種連接。",
+      "features": [
+        "SuperWide 技術 (近場/遠場)",
+        "60W 最大輸出",
+        "藍牙 5.3",
+        "3.5mm Aux/USB-C/光纖",
+        "RGB 燈光預設",
+        "510x102x82.6mm"
+      ]
+    },
+    {
+      "id": "creative-stage-pro-21",
+      "name": "Creative Stage Pro 2.1 Soundbar",
+      "brand": "Creative",
+      "category": "音響",
+      "price": 1388,
+      "desc": "Creative Stage Pro 2.1 Soundbar，160W 最大輸出搭載超低音音箱。Dolby Audio，HDMI ARC/藍牙/3.5mm Aux/USB/光纖多種連接。支援 PS5/Switch。",
+      "features": [
+        "160W 最大輸出 + 超低音音箱",
+        "Dolby Audio",
+        "HDMI ARC/藍牙/3.5mm Aux/USB/光纖",
+        "SuperWide 技術",
+        "支援 PS5/Nintendo Switch",
+        "精密調校中音單體"
+      ]
+    },
+    {
+      "id": "sora-21-soundbar",
+      "name": "SORA 2.1 Soundbar",
+      "brand": "SORA",
+      "category": "音響",
+      "price": 799,
+      "desc": "SORA 2.1 Soundbar，兩個 3 吋中高音單元 + 6.5 吋超低音喇叭。190W peak power，搖控調節 Bass/高音/EQ。藍牙 5.0/Aux/光纖/USB/HDMI。",
+      "features": [
+        "2x3 吋中高音 + 6.5 吋超低音",
+        "190W peak power",
+        "藍牙 5.0/Aux/光纖/USB/HDMI",
+        "附遙控器及掛牆配件",
+        "附光纖線"
+      ]
+    },
+    {
+      "id": "sora-pro-21-soundbar",
+      "name": "SORA Pro 2.1 Soundbar",
+      "brand": "SORA",
+      "category": "音響",
+      "price": 1099,
+      "desc": "SORA Pro 2.1 Soundbar，總 RMS 140W 峰值 200W。4x3 吋全音域 + 2x1.25 吋高音 + 6.5 吋無線低音。藍牙 5.0/HDMI ARC/光纖/同軸/AUX/USB。",
+      "features": [
+        "RMS 140W / 峰值 200W",
+        "4x3 吋全音域 + 2x1.25 吋高音",
+        "6.5 吋無線低音揚聲器",
+        "藍牙 5.0/HDMI ARC/光纖/同軸/AUX/USB",
+        "獨立高低頻控制"
+      ]
+    },
+    {
+      "id": "sabi-20-soundbar",
+      "name": "SABI+ 2.0 Soundbar",
+      "brand": "SORA",
+      "category": "音響",
+      "price": 599,
+      "desc": "SABI+ 2.0 Soundbar，HDMI/同軸/光纖/AUX/USB 多種輸入。3 種 EQ 模式，40W 高功率輸出。2x2.25 吋全音域揚聲器，可掛牆。",
+      "features": [
+        "HDMI/同軸/光纖/AUX/USB",
+        "3 種 EQ 模式",
+        "40W 高功率輸出",
+        "2x2.25 吋全音域",
+        "可掛牆",
+        "聲壓 > 80dB"
+      ]
+    },
+    {
+      "id": "shiro-bookshelf",
+      "name": "SHIRO Bookshelf 2.0 書架喇叭",
+      "brand": "SORA",
+      "category": "音響",
+      "price": 799,
+      "desc": "SHIRO Bookshelf 2.0 書架喇叭，100W 輸出功率。2.0 立體聲道，藍牙 5.0。3.5mm AUX/RCA/光纖連接，3 款音效模式。無線遙控。",
+      "features": [
+        "100W 輸出功率",
+        "2.0 立體聲道",
+        "藍牙 5.0",
+        "3.5mm AUX/RCA/光纖",
+        "3 款音效模式",
+        "127x190x114mm"
+      ]
+    },
+    {
+      "id": "my-music-hue-hear",
+      "name": "My Music Hue Hear 藍牙喇叭",
+      "brand": "My Music",
+      "category": "音響",
+      "price": 399,
+      "desc": "My Music Hue Hear 便攜藍牙喇叭，IP67 防水防塵可漂浮。附掛繩適合戶外使用，配備 2 個強勁低音單元。內置咪高風免提通話。藍牙 5.0。",
+      "features": [
+        "IP67 防水防塵可漂浮",
+        "附掛繩",
+        "2 個強勁低音單元",
+        "內置咪高風免提通話",
+        "3.5mm 音源線連接",
+        "無線立體聲連接"
+      ]
+    },
+    {
+      "id": "n-power-lite",
+      "name": "N-Power Lite 藍牙喇叭",
+      "brand": "N-Power",
+      "category": "音響",
+      "price": 399,
+      "desc": "N-Power Lite 7 色燈光 3 種燈效模式，藍牙 5.0。床頭鬧鐘 + 收音機功能。BT/AUX/TF/USB 多種播放，5Wx2 + 無源散熱器。",
+      "features": [
+        "7 色燈光 3 種燈效",
+        "床頭鬧鐘 + 收音機",
+        "BT/AUX/TF/USB",
+        "5Wx2 + 無源散熱器",
+        "復古旋鈕 + LED 顯示屏",
+        "電量約 4-6 小時"
+      ]
+    },
+    {
+      "id": "soundbox-life",
+      "name": "Soundbox Life 復古藍牙喇叭",
+      "brand": "Soundbox",
+      "category": "音響",
+      "price": 699,
+      "desc": "Soundbox Life 復古設計藍牙喇叭，強勁低音。多種類型連接，Micro-SD/Aux-in/FM 收音機選項。豪華舒適長時間享受。",
+      "features": [
+        "復古設計",
+        "強勁低音",
+        "Micro-SD/Aux-in",
+        "FM 收音機",
+        "多種類型連接",
+        "長時間播放"
+      ]
+    },
+    {
+      "id": "ow1100anc",
+      "name": "OW1100ANC 主動降噪頭戴式耳機",
+      "brand": "OW Series",
+      "category": "耳機",
+      "price": 348,
+      "desc": "OW1100ANC 主動降噪耳機，降噪幅度 -20dB~-22dB。超低音超長播放時間長達 30 小時。3.5mm 線路輸入，可折疊便攜。支援語音助手。藍牙 5.3。",
+      "features": [
+        "ANC 主動降噪 (-20~-22dB)",
+        "超長 30 小時播放",
+        "3.5mm 線路輸入",
+        "可折疊便攜",
+        "麥克風免提通話",
+        "支援語音助手",
+        "藍牙 5.3"
+      ]
+    },
+    {
+      "id": "nhp-x2",
+      "name": "NHP-X2 頭戴式藍牙耳機",
+      "brand": "NHP Series",
+      "category": "耳機",
+      "price": 349,
+      "desc": "NHP-X2 超高音質連重低音頭戴式耳機。超強降噪欣賞音樂，高清通話。摺疊式設計方便攜帶，藍牙 5.0 兼融 IOS & Android。",
+      "features": [
+        "超高音質重低音",
+        "超強降噪",
+        "高清通話",
+        "摺疊式設計",
+        "藍牙 5.0",
+        "舒適耳綿設計",
+        "3.5mm 插頭兼容"
+      ]
+    },
+    {
+      "id": "ow1500anc",
+      "name": "OW1500ANC 主動降噪頭戴式耳機",
+      "brand": "OW Series",
+      "category": "耳機",
+      "price": 499,
+      "desc": "OW1500ANC 主動降噪耳機，降噪幅度 -35db。ENC 環境音模式。藍牙 5.3 超低延遲遊戲模式，13mm 驅動單元。LED 數字顯示。",
+      "features": [
+        "ANC 主動降噪 (-35db)",
+        "ENC 環境音模式",
+        "藍牙 5.3",
+        "超低延遲遊戲模式",
+        "13mm 驅動單元",
+        "LED 數字顯示",
+        "英語語音提示"
+      ]
+    },
+    {
+      "id": "tw018enc",
+      "name": "TW018ENC 真無線耳機",
+      "brand": "TW Series",
+      "category": "耳機",
+      "price": 198,
+      "desc": "TW018ENC 真無線耳機，ENC 環境降噪。IPX4 防水防塵，無線充電。35 小時續航（帶充電盒），藍牙 5.3。支援單雙耳使用。",
+      "features": [
+        "ENC 環境降噪",
+        "IPX4 防水防塵",
+        "無線充電",
+        "35 小時續航",
+        "藍牙 5.3",
+        "支援單雙耳使用",
+        "低延遲遊戲模式"
+      ]
+    },
+    {
+      "id": "elite-tw150nc",
+      "name": "Elite TW150NC 主動降噪真無線耳機",
+      "brand": "Elite Series",
+      "category": "耳機",
+      "price": 598,
+      "desc": "Elite TW150NC 真無線耳機，15 小時播放時間（配合充電盒）。ANC 主動降噪 -35db，ENC 環境音模式。合金製充電倉，觸控式設計。",
+      "features": [
+        "15 小時播放時間",
+        "ANC 主動降噪 (-35db)",
+        "ENC 環境音模式",
+        "合金製充電倉",
+        "觸控式設計",
+        "藍牙 5.3",
+        "支援單雙耳使用"
+      ]
+    },
+    {
+      "id": "mv101-earphone",
+      "name": "MV101 入耳雙磁單動圈耳機",
+      "brand": "MV Series",
+      "category": "耳機",
+      "price": 299,
+      "desc": "MV101 入耳式耳機，10mm 驅動器強勁低音清脆人聲。繞耳式配帶人體工學，可拆卸音頻線。鍍金 2 針設計。",
+      "features": [
+        "10mm 驅動器",
+        "強勁低音清脆人聲",
+        "繞耳式人體工學",
+        "可拆卸音頻線",
+        "鍍金 2 針設計",
+        "柔軟矽膠耳帽"
+      ]
+    },
+    {
+      "id": "mv200-earphone",
+      "name": "MV200 入耳式圈鐵混動 Hi-Fi 耳機",
+      "brand": "MV Series",
+      "category": "耳機",
+      "price": 399,
+      "desc": "MV200 入耳式 Hi-Fi 耳機，9mm 雙磁單動圈 + 動鐵單元。帶麥克風單鍵線控，3.5mm 接口。鍍銀線增強人聲性能。",
+      "features": [
+        "9mm 雙磁單動圈 + 動鐵",
+        "Hi-Fi 音質",
+        "單鍵線控麥克風",
+        "可拆卸鍍銀線",
+        "鍍金 2 針連接器",
+        "繞耳式佩戴"
+      ]
+    },
+    {
+      "id": "mv500-earphone",
+      "name": "MV500 HI-RES 專業級 1圈4鐵入耳式監聽耳機",
+      "brand": "MV Series",
+      "category": "耳機",
+      "price": 899,
+      "desc": "MV500 HI-RES 專業監聽耳機，1 動態 + 4 平衡電樞單元。頻率響應 7-40,000Hz，阻抗 22Ω。0.75mm 鍍金 2 針，雙絞鍍銀線 1.25m。",
+      "features": [
+        "1 動態 + 4 平衡電樞",
+        "7-40,000Hz 頻率響應",
+        "108dB 靈敏度",
+        "0.75mm 鍍金 2 針",
+        "雙絞鍍銀音頻電纜",
+        "3.5mm 鍍金插頭"
+      ]
+    },
+    {
+      "id": "hq-x11",
+      "name": "HQ-X11 入耳式耳機",
+      "brand": "HQ Series",
+      "category": "耳機",
+      "price": 299,
+      "desc": "HQ-X11 11mm 動圈設計迫力清晰音樂。透明設計科技感，反戴式人體工學設計。設有線控及咪高峰，3.5mm 入耳式耳機。",
+      "features": [
+        "11mm 動圈設計",
+        "透明設計",
+        "反戴式人體工學",
+        "線控功能及咪高峰",
+        "3.5mm 入耳式",
+        "強勁低音"
+      ]
+    },
+    {
+      "id": "nokia-e1200-anc",
+      "name": "Nokia E1200 ANC 頭戴式藍牙耳機",
+      "brand": "Nokia",
+      "category": "耳機",
+      "price": 639,
+      "desc": "Nokia E1200 ANC 40mm 大動圈單元，主動降噪技術。陽極氧化鋁合金面蓋堅固耐用，PU 皮革耳墊舒適佩戴。長達 40 小時無線播放。可折疊頭帶。",
+      "features": [
+        "40mm 大動圈單元",
+        "主動降噪 ANC",
+        "陽極氧化鋁合金面蓋",
+        "PU 皮革耳墊",
+        "40 小時無線播放",
+        "可折疊頭帶",
+        "附 3.5mm 音頻線"
+      ]
+    },
+    {
+      "id": "nokia-e1200",
+      "name": "Nokia E1200 頭戴式藍牙耳機",
+      "brand": "Nokia",
+      "category": "耳機",
+      "price": 498,
+      "desc": "Nokia E1200 頭戴式藍牙耳機，40mm 大動圈單元清晰豐富音樂體驗。陽極氧化鋁合金面蓋，PU 皮革耳墊。40 小時無線播放。可折疊設計。",
+      "features": [
+        "40mm 大動圈單元",
+        "陽極氧化鋁合金面蓋",
+        "PU 皮革耳墊舒適",
+        "40 小時無線播放",
+        "可折疊頭帶",
+        "附 3.5mm 音頻線, 有線無線切換"
+      ]
+    },
+    {
+      "id": "nokia-e1300",
+      "name": "Nokia E1300 頭戴式藍牙耳機",
+      "brand": "Nokia",
+      "category": "耳機",
+      "price": 498,
+      "desc": "Nokia E1300 頭戴式藍牙耳機，40mm 動圈低音澎湃高音通透。藍牙 5.3 連接更穩更快。超長續航 40 小時，柔軟人造皮久戴不痛。可折疊設計。",
+      "features": [
+        "40mm 動圈低音澎湃",
+        "藍牙 5.3",
+        "超長續航 40 小時",
+        "柔軟人造皮材質",
+        "可折疊設計",
+        "無電時可使用 3.5mm 插頭"
+      ]
+    },
+    {
+      "id": "philips-tab5105",
+      "name": "Philips TAB5105/96 真無線耳機",
+      "brand": "Philips",
+      "category": "耳機",
+      "price": 399,
+      "desc": "Philips TAB5105/96 真無線耳機，13mm 驅動單元。人體工學設計零感受佩戴。藍牙 5.3，6 小時續航充 15 分鐘可用 1 小時。AI 收音咪超清晰通話。IPX4 防水。",
+      "features": [
+        "13mm 驅動單元",
+        "人體工學設計",
+        "藍牙 5.3",
+        "6 小時續航",
+        "AI 收音咪超清晰通話",
+        "IPX4 防水"
+      ]
+    },
+    {
+      "id": "philips-e218l",
+      "name": "Philips E218L 入耳式耳機",
+      "brand": "Philips",
+      "category": "耳機",
+      "price": 238,
+      "desc": "Philips E218L 藍牙 5.3 入耳式耳機，12-22,000Hz 頻響。15mm 喇叭驅動器，耐用的 Flexi-Grip 堅固彈性連接。IPX4 防水。",
+      "features": [
+        "藍牙 5.3",
+        "15mm 喇叭驅動器",
+        "Flexi-Grip 堅固連接",
+        "12-22,000Hz 頻率響應",
+        "IPX4 防水",
+        "輕巧佩戴舒適"
+      ]
+    },
+    {
+      "id": "philips-e528",
+      "name": "Philips E528 入耳式耳機",
+      "brand": "Philips",
+      "category": "耳機",
+      "price": 198,
+      "desc": "Philips E528 入耳式耳機，10mm 驅動器動態低音清晰音質。1.2m 線長適合戶外，3 種尺寸耳塞。整合式線控輕鬆控制音樂通話。",
+      "features": [
+        "10mm 驅動器動態低音",
+        "1.2m 線長",
+        "3 種尺寸耳塞",
+        "整合式線控",
+        "橡膠材質增強耐用性",
+        "隔絕噪音"
+      ]
+    },
+    {
+      "id": "philips-tae2146",
+      "name": "Philips TAE2146/97 Type-C 有線耳機",
+      "brand": "Philips",
+      "category": "耳機",
+      "price": 99,
+      "desc": "Philips TAE2146/97 Type-C 有線耳機，15mm 喇叭驅動器，不設麥克風適合 DSE 考試使用。舒適護蓋耳塞式設計。耐用的 Flexi-Grip 堅固彈性連接。",
+      "features": [
+        "Type-C 接口",
+        "15mm 喇叭驅動器",
+        "不設麥克風 (適合 DSE)",
+        "Flexi-Grip 堅固連接",
+        "舒適貼服設計",
+        "阻抗 16 歐姆"
+      ]
+    },
+    {
+      "id": "philips-tas2505",
+      "name": "Philips TAS2505 藍牙音箱無線喇叭",
+      "brand": "Philips",
+      "category": "音響",
+      "price": 399,
+      "desc": "Philips TAS2505 藍牙音箱，高音質連重低音。線控控制通話音樂音量，內置收音咪免提通話。藍牙 5.3，兼容 IOS & Android。舒適耳綿設計。",
+      "features": [
+        "高音質連重低音",
+        "線控控制通話/音樂/音量",
+        "內置收音咪免提通話",
+        "藍牙 5.3",
+        "兼容 IOS & Android",
+        "舒適耳綿設計",
+        "3.5mm 插頭兼容"
+      ]
+    },
+    {
+      "id": "philips-shp2500",
+      "name": "Philips SHP2500 3.5/6.3mm 頭戴式耳機",
+      "brand": "Philips",
+      "category": "耳機",
+      "price": 198,
+      "desc": "Philips SHP2500 頭戴式耳機，40mm 喇叭驅動器。9-23,000Hz 頻率響應，95dB 靈敏度。6 米 OFC 纜線，3.5 & 6.3mm 鍍鉻連接器。附 2 對 1 適配器。",
+      "features": [
+        "40mm 喇叭驅動器",
+        "9-23,000Hz 頻率響應",
+        "95dB 靈敏度",
+        "6 米 OFC 纜線",
+        "3.5 & 6.3mm 連接器",
+        "耳蓋式貼耳隔音設計"
+      ]
+    },
+    {
+      "id": "philips-shm1900",
+      "name": "Philips SHM1900 頭戴式耳機",
+      "brand": "Philips",
+      "category": "耳機",
+      "price": 198,
+      "desc": "Philips SHM1900 頭戴式耳機，咪高風置於理想位置收音。耳蓋式設計極之舒適貼耳隔音。提供最佳音響效果清晰高質聲音。兼容智能電話/平板/電腦。",
+      "features": [
+        "咪高風理想收音",
+        "耳蓋式舒適貼耳隔音",
+        "清晰高質聲音",
+        "兼容智能電話/平板/電腦",
+        "輕巧設計"
+      ]
+    },
+    {
+      "id": "openear-101",
+      "name": "Openear 101 開放式藍牙耳機",
+      "brand": "Openear",
+      "category": "耳機",
+      "price": 299,
+      "desc": "Openear 101 開放式設計，耳機不入耳不損傷聽力。藍牙 5.3，Monster 聲學腔體高中低音兼顧。4-6 小時播放，充電盒可充約三次。40.2g 輕量。",
+      "features": [
+        "開放式設計不入耳",
+        "藍牙 5.3",
+        "Monster 聲學腔體",
+        "4-6 小時播放",
+        "40.2g 輕量",
+        "數字聲音增強技術",
+        "內置語音咪"
+      ]
+    },
+    {
+      "id": "openear-101-airlink",
+      "name": "101 AIRLINK 開放式藍牙耳機",
+      "brand": "Openear",
+      "category": "耳機",
+      "price": 559,
+      "desc": "101 AIRLINK 開放式藍牙耳機，Pure Monster Sound 調音技術。SecureFit Sportclip 耳翼穩定系統，專注運動不鬆脫。MFB 多功能觸控。6 小時+充電盒 25 小時續航。",
+      "features": [
+        "Pure Monster Sound 調音",
+        "SecureFit Sportclip 耳翼",
+        "MFB 多功能觸控",
+        "6 小時 + 25 小時續航",
+        "金屬充電盒 360° 開盒",
+        "藍牙 5.0",
+        "IPX5 防水"
+      ]
+    },
+    {
+      "id": "aura-fit-d02",
+      "name": "Aura Fit D02 真無線運動耳機",
+      "brand": "Aura",
+      "category": "耳機",
+      "price": 258,
+      "desc": "Aura Fit D02 真無線運動耳機，Pure Monster Sound 10mm 驅動單元。AI 智能降噪通話，人體工學耳翼設計。8+20 小時不間斷聆聽。藍牙 5.4，IPX5 防水。",
+      "features": [
+        "Pure Monster Sound 10mm 單元",
+        "AI 智能降噪",
+        "人體工學耳翼設計",
+        "8+20 小時續航",
+        "藍牙 5.4",
+        "IPX5 防水",
+        "單耳僅 4g"
+      ]
+    },
+    {
+      "id": "airmars-xkt22",
+      "name": "Airmars XKT22 真無線耳機",
+      "brand": "Airmars",
+      "category": "耳機",
+      "price": 198,
+      "desc": "Airmars XKT22 真無線耳機，最新藍牙 5.4。LED 智能屏幕，音樂/遊戲雙模式。立體聲音效，硅麥技術高清通話。13mm 動圈輸出。5-6 小時續航。",
+      "features": [
+        "藍牙 5.4",
+        "LED 智能屏幕",
+        "音樂/遊戲雙模式",
+        "13mm 動圈輸出",
+        "硅麥技術高清通話",
+        "5-6 小時續航"
+      ]
+    },
+    {
+      "id": "airmars-xkt02",
+      "name": "Airmars XKT02 真無線耳機",
+      "brand": "Airmars",
+      "category": "耳機",
+      "price": 199,
+      "desc": "Airmars XKT02 真無線耳機，最新藍牙 5.4。全金屬振膜動圈 Hi-Fi 立體聲。陀螺充電殼減壓設計，13mm 喇叭直徑輸出。4-5 小時續航。",
+      "features": [
+        "藍牙 5.4",
+        "全金屬振膜動圈 Hi-Fi",
+        "陀螺充電殼減壓設計",
+        "13mm 喇叭",
+        "4-5 小時續航",
+        "高清語音通話"
+      ]
+    },
+    {
+      "id": "airmars-xkt08",
+      "name": "Airmars XKT08 真無線耳機",
+      "brand": "Airmars",
+      "category": "耳機",
+      "price": 299,
+      "desc": "Airmars XKT08 真無線耳機，ENC 智能環境降噪。藍牙 5.3，13mm 寬音域動圈單元 20KHz。45ms 低延遲聽聲辨位。佩戴輕巧單耳 4.1g。附掛頸繩。",
+      "features": [
+        "ENC 智能環境降噪",
+        "藍牙 5.3",
+        "13mm 寬音域動圈",
+        "45ms 低延遲",
+        "單耳 4.1g 輕巧",
+        "附掛頸繩"
+      ]
+    },
+    {
+      "id": "airmars-xkt08-pro",
+      "name": "Airmars XKT08 Pro 真無線耳機",
+      "brand": "Airmars",
+      "category": "耳機",
+      "price": 238,
+      "desc": "Airmars XKT08 Pro 真無線耳機，最新藍牙 5.4，13mm 動圈單元。6 小時使用時間，音樂/遊戲雙模式轉換。Type-C 快充，型格充電盒設計。",
+      "features": [
+        "藍牙 5.4",
+        "13mm 動圈單元",
+        "6 小時使用",
+        "音樂/遊戲雙模式",
+        "Type-C 快充",
+        "型格充電盒設計"
+      ]
+    },
+    {
+      "id": "airmars-xkt20",
+      "name": "Airmars XKT20 真無線耳機",
+      "brand": "Airmars",
+      "category": "耳機",
+      "price": 268,
+      "desc": "Airmars XKT20 真無線耳機，入耳式設計 10mm 喇叭單元。IPX4 防水，被動降噪。AI 高清通話超低延遲，藍牙 5.3 連接。13mm 寬音域動圈，ENC 降噪。",
+      "features": [
+        "10mm 喇叭單元",
+        "IPX4 防水",
+        "AI 高清通話超低延遲",
+        "藍牙 5.3",
+        "ENC 降噪",
+        "Type-C 充電"
+      ]
+    },
+    {
+      "id": "monster-openear-hp",
+      "name": "Monster Openear HP 開放式藍牙耳機",
+      "brand": "Monster",
+      "category": "耳機",
+      "price": 899,
+      "desc": "Monster Openear HP 獨家 Pure Monster Sound，空氣骨骼協同傳導。遊戲/音樂雙模式，60ms 低延遲。獨立充電座磁吸即充。雙 Mic 通話降噪。鈦合金記憶骨架 IPX5。",
+      "features": [
+        "Pure Monster Sound",
+        "空氣骨骼協同傳導",
+        "遊戲/音樂雙模式 60ms 低延遲",
+        "獨立充電座磁吸充電",
+        "雙 Mic 通話降噪",
+        "鈦合金記憶骨架",
+        "IPX5 防水"
+      ]
+    },
+    {
+      "id": "n-tune-50",
+      "name": "N Tune 50 頭戴式藍牙耳機",
+      "brand": "N Tune",
+      "category": "耳機",
+      "price": 99,
+      "desc": "N Tune 50 頭戴式藍牙耳機，40mm 驅動單元。藍牙 5.3，IPX4 防水。舒適耳塞帶麥克風免提通話。3.5mm 音頻插孔備用。Type-C 充電，10-24 小時播放。",
+      "features": [
+        "40mm 驅動單元",
+        "藍牙 5.3",
+        "IPX4 防水",
+        "3.5mm 音頻插孔備用",
+        "Type-C 充電",
+        "10-24 小時播放",
+        "舒適輕量化設計"
+      ]
+    },
+    {
+      "id": "storm-xkh01",
+      "name": "Storm XKH01 頭戴式藍牙耳機",
+      "brand": "Storm",
+      "category": "耳機",
+      "price": 399,
+      "desc": "Storm XKH01 頭戴式藍牙耳機，40mm 動態 PU 生物纖維振膜單元。ANC 被動降噪 -25dB，可折疊收納設計。舒適輕膚海綿頭墊，輕薄柔軟耳罩。",
+      "features": [
+        "40mm PU 生物纖維振膜",
+        "ANC 被動降噪 -25dB",
+        "可折疊收納設計",
+        "舒適海綿頭墊",
+        "輕薄柔軟耳罩",
+        "免摘通話設計"
+      ]
+    },
+    {
+      "id": "mission-100",
+      "name": "MISSION 100 頭戴式藍牙耳機",
+      "brand": "MISSION",
+      "category": "耳機",
+      "price": 299,
+      "desc": "MISSION 100 頭戴式藍牙耳機，40mm 動態單元。藍牙 5.3，契合人體工學輕量化設計。個性外觀展現品質追求，舒適輕膚海綿頭墊。",
+      "features": [
+        "40mm 動態單元",
+        "藍牙 5.3",
+        "人體工學輕量化",
+        "舒適海綿頭墊",
+        "可折疊收納"
+      ]
+    },
+    {
+      "id": "ac600-earphone",
+      "name": "AC600 真無線耳機",
+      "brand": "AC Series",
+      "category": "耳機",
+      "price": 199,
+      "desc": "AC600 真無線耳機，創新旋鈕式設計星球能量環。藍牙 5.4，13mm 超大複合鈦金屬振膜單元。AI 智慧降噪，人體曲面工學夾耳設計。IPX5 防水，單次 7 小時續航 30 小時。",
+      "features": [
+        "藍牙 5.4",
+        "旋鈕式設計星球能量環",
+        "13mm 鈦金屬振膜",
+        "AI 智慧降噪",
+        "人體曲面工學夾耳",
+        "IPX5 防水",
+        "7+30 小時續航"
+      ]
+    },
+    {
+      "id": "gt17-earphone",
+      "name": "GT17 真無線耳機",
+      "brand": "GT Series",
+      "category": "耳機",
+      "price": 199,
+      "desc": "GT17 真無線入耳式耳機，藍牙 5.4 ANC 主動降噪。ENC 通話降噪，10mm 大動圈喇叭。IPX4 防水防汗，24 小時超長續航。輕觸多功能控制。",
+      "features": [
+        "藍牙 5.4",
+        "ANC 主動降噪",
+        "ENC 通話降噪",
+        "10mm 大動圈喇叭",
+        "IPX4 防水",
+        "24 小時續航",
+        "Type-C 快充"
+      ]
+    },
+    {
+      "id": "m8-karaoke-mic",
+      "name": "M8 卡拉OK 藍牙麥克風",
+      "brand": "M Series",
+      "category": "音響",
+      "price": 298,
+      "desc": "M8 卡拉OK 藍牙麥克風，RGB 燈光效果開 party 必備。附送 2 支麥克風，多種炫彩燈效。趣味變聲一鍵消原唱變伴奏。專業 AI 智能修音，兼容多種 K 歌 APP。",
+      "features": [
+        "RGB 燈光效果",
+        "2 支麥克風",
+        "多種炫彩燈效",
+        "趣味變聲功能",
+        "一鍵消原唱變伴奏",
+        "AI 智能修音",
+        "兼容多種 K 歌 APP"
+      ]
+    },
+    {
+      "id": "philips-tar1368",
+      "name": "Philips TAR1368 便攜式收音機",
+      "brand": "Philips",
+      "category": "音響",
+      "price": 238,
+      "desc": "Philips TAR1368 迷你口袋復古 FM/AM 收音機。使用 3A 電芯供電，3.5mm 耳機輸出。支援 88-108MHz FM 及 530-1600kHz AM。",
+      "features": [
+        "FM/AM 雙波段",
+        "迷你口袋復古設計",
+        "3A 電芯供電",
+        "3.5mm 耳機輸出",
+        "FM 88-108MHz",
+        "AM 530-1600kHz"
+      ]
+    },
+    {
+      "id": "kaimeda-sr228",
+      "name": "Kaimeda SR-228 AM/FM 收音機",
+      "brand": "Kaimeda",
+      "category": "音響",
+      "price": 128,
+      "desc": "Kaimeda SR-228 AM/FM 兩波段收音機。3.5mm 耳機插孔，使用 2 粒 AAA 電池。推按式操作簡便，40x86x17.5mm 小巧便攜。",
+      "features": [
+        "AM/FM 兩波段",
+        "3.5mm 耳機插孔",
+        "2 粒 AAA 電池供電",
+        "推按式操作",
+        "40x86x17.5mm 輕巧",
+        "附衣領夾方便運動使用"
+      ]
+    },
+    {
+      "id": "philips-tar1506",
+      "name": "Philips TAR1506 便攜式收音機",
+      "brand": "Philips",
+      "category": "音響",
+      "price": 299,
+      "desc": "Philips TAR1506 2.4 吋 QVGA 屏幕收音機。4G 網絡 VoLTE HD 語音通話。FM 收音機，VGA 攝像頭。1850mAh 電池。",
+      "features": [
+        "2.4 吋 QVGA 屏幕",
+        "4G 網絡 VoLTE HD",
+        "FM 收音機",
+        "VGA 攝像頭",
+        "1850mAh 電池",
+        "GSM 900/1800/1900"
+      ]
+    },
+    {
+      "id": "radio-pocket-clip",
+      "name": "RADIO Pocket Clip 迷你收音機",
+      "brand": "SIGMA",
+      "category": "音響",
+      "price": 68,
+      "desc": "RADIO Pocket Clip 迷你收音機，模擬 FM/MW 收音機。輸出功率 100mW 單聲道系統。3.5mm 耳機輸出，2xAAA 電池供電。56x116.2x22mm 口袋尺寸。",
+      "features": [
+        "FM/MW 收音機",
+        "100mW 輸出單聲道",
+        "3.5mm 耳機輸出",
+        "2xAAA 電池",
+        "56x116.2x22mm",
+        "口袋尺寸便攜"
+      ]
+    },
+    {
+      "id": "n-lite-206",
+      "name": "N-Lite 206 真無線耳機",
+      "brand": "N-Lite",
+      "category": "耳機",
+      "price": 158,
+      "desc": "N-Lite 206 真無線耳機，佩戴方式入耳式。10mm 喇叭單元，IPX4 防水。AI 高清通話，藍牙 5.3 連接。13mm 寬音域動圈，ENC 降噪。",
+      "features": [
+        "10mm 喇叭單元",
+        "IPX4 防水",
+        "AI 高清通話",
+        "藍牙 5.3",
+        "ENC 降噪",
+        "Type-C 充電"
+      ]
+    },
+    {
+      "id": "creative-bt-w6",
+      "name": "Creative BT-W6 藍牙發射器",
+      "brand": "Creative",
+      "category": "配件",
+      "price": 398,
+      "desc": "Creative BT-W6 藍牙發射器，Snapdragon Sound 技術支援 aptX Lossless/Adaptive。藍牙 5.4 LE Audio(LC3)。PS5/PS4/Switch/PC/Mac 即插即用。HFP 模式支援語音聊天。",
+      "features": [
+        "Snapdragon Sound 技術",
+        "aptX Lossless/Adaptive/HD",
+        "藍牙 5.4 LE Audio(LC3)",
+        "PS5/PS4/Switch/PC/Mac",
+        "20ms 超低延遲",
+        "USB-C/A 連接"
+      ]
     }
   ]
 }
