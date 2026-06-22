@@ -4111,6 +4111,581 @@
         "20ms 超低延遲",
         "USB-C/A 連接"
       ]
+    },
+    {
+      "id": "savewo-magcell-ultra",
+      "name": "SAVEWO MagCell Ultra 磁吸無線充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 298,
+      "desc": "SAVEWO MagCell Ultra 磁吸無線充電器，支援 MagSafe 磁吸技術自動精準對位。Qi2 認證 15W 快速無線充電，智能安全保護 FOD 異物檢測。",
+      "features": [
+        "MagSafe 磁吸技術",
+        "Qi2 認證 15W 無線快充",
+        "FOD 異物檢測",
+        "智能安全保護",
+        "Type-C 輸入"
+      ]
+    },
+    {
+      "id": "savewo-magcell-mc509",
+      "name": "SAVEWO MagCell MC509 磁吸無線充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 338,
+      "desc": "SAVEWO MagCell MC509 磁吸無線充電器，支援 MagSafe 磁吸對位。Qi2 認證 15W 無線快充，RGB 燈效模式可自定義。",
+      "features": [
+        "MagSafe 磁吸",
+        "Qi2 認證 15W",
+        "RGB 燈光效果 6 種模式",
+        "FOD 異物檢測",
+        "Type-C 輸入"
+      ]
+    },
+    {
+      "id": "savewo-powercell-pc20k1",
+      "name": "SAVEWO PowerCell PC20K1 20000mAh 行動電源",
+      "brand": "SAVEWO",
+      "category": "充電寶",
+      "price": 368,
+      "desc": "SAVEWO PowerCell PC20K1 20000mAh 大容量行動電源。支援多口快充輸出，LED 電量顯示，原裝行貨一年保養。",
+      "features": [
+        "20000mAh 大容量",
+        "多口快充輸出",
+        "LED 電量顯示",
+        "原裝行貨一年保養"
+      ]
+    },
+    {
+      "id": "savewo-magcell-qi2",
+      "name": "SAVEWO MagCell Qi2 (MC511Q2) 磁吸無線充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 328,
+      "desc": "SAVEWO MagCell Qi2 MC511Q2 磁吸無線充電器，Qi2 認證 15W 快速無線充電。支援 MagSafe 磁吸自動對位，智能安全保護。",
+      "features": [
+        "Qi2 認證 15W 快充",
+        "MagSafe 磁吸",
+        "智能安全保護",
+        "FOD 異物檢測"
+      ]
+    },
+    {
+      "id": "savewo-carplug-nano",
+      "name": "SAVEWO CarPlug Nano 車用充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 168,
+      "desc": "SAVEWO CarPlug Nano 車用充電器，小巧便攜。支援 PD 快速充電，多口輸出。",
+      "features": [
+        "車用充電器",
+        "PD 快速充電",
+        "小巧便攜",
+        "多口輸出"
+      ]
+    },
+    {
+      "id": "savewo-flipdock-qi2",
+      "name": "SAVEWO FlipDock Qi2 三合一磁吸摺疊旋轉無線充電座",
+      "brand": "SAVEWO",
+      "category": "配件",
+      "price": 498,
+      "desc": "SAVEWO FlipDock Qi2 三合一磁吸摺疊旋轉無線充電座。支援 Android/iPhone/Apple Watch/AirPods 三種設備同時充電。AR 轉向軸自由旋轉，加固合金底座。",
+      "features": [
+        "Qi2 三合一無線充電",
+        "iPhone/Watch/AirPods 同時充",
+        "AR 轉向軸自由旋轉",
+        "Z 字型摺疊收納",
+        "加固合金底座",
+        "FOD 異物檢測"
+      ]
+    },
+    {
+      "id": "savewo-magmount-pro",
+      "name": "SAVEWO MagMount Pro 磁吸無線充電支架",
+      "brand": "SAVEWO",
+      "category": "配件",
+      "price": 398,
+      "desc": "SAVEWO MagMount Pro Qi2 認證磁吸無線充電支架，支援 15W 快速無線充電。堅固底座可調節機械臂，RGB 燈效 6 種模式。",
+      "features": [
+        "Qi2 認證 15W 快充",
+        "可調節機械臂",
+        "堅固底座",
+        "RGB 燈效 6 種模式",
+        "FOD 異物檢測"
+      ]
+    },
+    {
+      "id": "savewo-magmount-mm01",
+      "name": "SAVEWO MagMount MM-01 汽車伸縮旋轉可摺叠支架",
+      "brand": "SAVEWO",
+      "category": "配件",
+      "price": 168,
+      "desc": "SAVEWO MagMount MM-01 汽車伸縮旋轉可摺叠磁吸支架。可於車內導航或家居使用，伸縮旋轉設計方便調整角度。",
+      "features": [
+        "汽車/家居兩用",
+        "磁吸設計",
+        "伸縮旋轉",
+        "可摺叠收納",
+        "方便調整角度"
+      ]
+    },
+    {
+      "id": "savewo-uniplug-140w",
+      "name": "SAVEWO Uniplug 140W 全球旅行快速充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 499,
+      "desc": "SAVEWO Uniplug 140W 全球旅行充電器，PD3.1 140W 氮化鎵技術。3C+2A 五口輸出，可換式插頭支援 JP/US/AU/EU/UK 超過200個國家。內置 LED 功率顯示。",
+      "features": [
+        "PD3.1 140W 氮化鎵 GaN",
+        "3C+2A 五口輸出 7 設備同時充",
+        "全球 200+ 國家通用",
+        "LED 功率顯示",
+        "E-Mark 安全晶片",
+        "92.7x55x53.7mm 輕巧"
+      ]
+    },
+    {
+      "id": "savewo-uniplug-100w",
+      "name": "SAVEWO Uniplug 100W 全球旅行快速充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 390,
+      "desc": "SAVEWO Uniplug 100W 全球旅行充電器，PD3.0 100W 氮化鎵技術。多口輸出，可換式插頭全球通用。",
+      "features": [
+        "PD3.0 100W 氮化鎵 GaN",
+        "全球通用插頭",
+        "多口輸出",
+        "安全保險絲保護"
+      ]
+    },
+    {
+      "id": "savewo-uniplug-35w",
+      "name": "SAVEWO Uniplug 35W 5口旅行充電插座",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 168,
+      "desc": "SAVEWO Uniplug 35W 5口旅行充電插座，配備 3USB-C + 2USB-A 及萬能轉插。氮化鎵 GaN 技術，可更換插頭支援 JP/US/AU/EU/UK 超過200個國家。",
+      "features": [
+        "氮化鎵 GaN 技術",
+        "3C+2A 五口+萬能轉插",
+        "200+ 國家通用",
+        "10A 保險絲安全活門",
+        "PD3.0 35W",
+        "滑動轉換插頭"
+      ]
+    },
+    {
+      "id": "savewo-procable-usbc-led",
+      "name": "SAVEWO ProCable USB-C LED 充電傳輸線 1M",
+      "brand": "SAVEWO",
+      "category": "充電線",
+      "price": 209,
+      "desc": "SAVEWO ProCable USB-C LED 充電傳輸線 1M，支援 PD 240W 充電功率，USB4 40Gbps 極速傳輸。內置 LED 功率顯示，8K 60Hz Display Port 畫面傳訊。E-Mark 晶片。",
+      "features": [
+        "PD 240W 充電",
+        "USB4 40Gbps 傳輸",
+        "8K 60Hz Display Port",
+        "LED 功率顯示",
+        "E-Mark 安全晶片",
+        "插頭加固設計"
+      ]
+    },
+    {
+      "id": "savewo-procable-usbc-coaxial",
+      "name": "SAVEWO ProCable USB-C Coaxial 極速充電傳輸線 1M",
+      "brand": "SAVEWO",
+      "category": "充電線",
+      "price": 158,
+      "desc": "SAVEWO ProCable USB-C Coaxial 極速充電傳輸線 1M，支援 PD 快速充電及高速數據傳輸。同軸設計耐用穩定。",
+      "features": [
+        "PD 快速充電",
+        "高速數據傳輸",
+        "同軸耐用設計",
+        "1M 長度"
+      ]
+    },
+    {
+      "id": "savewo-procable-usbc-coaxial-2m",
+      "name": "SAVEWO ProCable USB-C Coaxial 極速充電傳輸線 2M",
+      "brand": "SAVEWO",
+      "category": "充電線",
+      "price": 298,
+      "desc": "SAVEWO ProCable USB-C Coaxial 極速充電傳輸線 2M，支援 PD 快速充電及高速數據傳輸。同軸設計耐用穩定。",
+      "features": [
+        "PD 快速充電",
+        "高速數據傳輸",
+        "同軸耐用設計",
+        "2M 長度"
+      ]
+    },
+    {
+      "id": "savewo-powercable",
+      "name": "SAVEWO PowerCable 磁吸自卷收納充電線",
+      "brand": "SAVEWO",
+      "category": "充電線",
+      "price": 250,
+      "desc": "SAVEWO PowerCable 磁吸自卷收納充電線，支援最新 PD3.1 最高充電速度。磁吸自動收納方便攜帶。",
+      "features": [
+        "PD3.1 快速充電",
+        "磁吸自動收納",
+        "耐用設計",
+        "方便攜帶"
+      ]
+    },
+    {
+      "id": "gan36w-travel-charger",
+      "name": "GaN36W 旅行快速充電器 (輕便版)",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 139,
+      "desc": "GaN36W 旅行充電器，氮化鎵技術。USB-C x1 + USB-A x1，支援 PD3.0/PPS/QC4+/QC3.0/SCP/FCP/AFC。可更換插頭三腳/兩扁腳/兩圓腳，多國通用。",
+      "features": [
+        "氮化鎵 GaN 技術",
+        "USB-C 36W PD + USB-A QC3.0",
+        "多國插頭可更換",
+        "BS/CE/機電署認證",
+        "1 年保用",
+        "5 色可選：白/黑/紫/綠"
+      ]
+    },
+    {
+      "id": "gan37w-clip-charger",
+      "name": "GaN 37W 夾枱迷你快速充電器 (1C3A)",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 168,
+      "desc": "GaN 37W 夾枱迷你充電器，隨意夾住或磁力吸住。1C3A 輸出 PD25W + QC3.0 + 2.4A。支援 iPhone/iPad/MacBook Pro 13\" PD 快充及 Samsung PPS 超快速充電。",
+      "features": [
+        "氮化鎵 GaN 技術",
+        "夾枱/磁吸兩用",
+        "1C3A PD25W+QC3.0",
+        "支援 iPhone/Samsung PPS",
+        "手指大小輕巧",
+        "白/黑/紫/綠 4 色"
+      ]
+    },
+    {
+      "id": "gan65w-clip-charger",
+      "name": "GaN 65W 夾枱迷你快速充電器",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 248,
+      "desc": "GaN 65W 夾枱迷你充電器，隨意夾住或磁力吸住。支援 MacBook Air/Pro 13\"-14\"、Samsung Notebook、Dell XPS 等多款 Notebook PD 快充。",
+      "features": [
+        "氮化鎵 GaN 65W",
+        "夾枱/磁吸兩用",
+        "支援多款 Notebook PD 快充",
+        "手指大小輕巧",
+        "BS/CE 認證"
+      ]
+    },
+    {
+      "id": "gan120w-clip-charger",
+      "name": "GaN 120W 夾枱迷你快速充電器 (3C1A)",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 328,
+      "desc": "GaN 120W 夾枱迷你充電器 3C1A，隨意夾住或磁力吸住。120W 大功率支援多設備同時快充，適合 Notebook/平板/手機。",
+      "features": [
+        "氮化鎵 GaN 120W",
+        "3C1A 四口輸出",
+        "夾枱/磁吸兩用",
+        "支援多設備同時快充",
+        "輕巧設計"
+      ]
+    },
+    {
+      "id": "gan45w-fold-charger",
+      "name": "GaN 45W 摺腳雙 TYPE-C 迷你快速充電器",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 198,
+      "desc": "GaN 45W 摺腳雙 TYPE-C 迷你充電器，摺疊插頭方便攜帶。雙 Type-C 輸出，PD 3.0 45W 快速充電。6+1 重保護功能安全可靠。",
+      "features": [
+        "氮化鎵 GaN 45W",
+        "摺疊插頭便攜",
+        "雙 Type-C PD 3.0",
+        "6+1 重安全保護",
+        "BS/CE 認證"
+      ]
+    },
+    {
+      "id": "pdtc-30w-tsu",
+      "name": "PDQC 30.5W T蘇 PD20W 快充版 防雷保護",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 220,
+      "desc": "PDQC 30.5W T蘇 PD20W 快充版防雷保護，一插即用五位輸出。2個13A三腳插 + USB-C PD20W + USB-A QC3.0 + USB-A 2.1A。",
+      "features": [
+        "2x13A 三腳插 + 3xUSB",
+        "PD20W + QC3.0 + 2.1A",
+        "防雷保護設計",
+        "一插即用五位輸出"
+      ]
+    },
+    {
+      "id": "gan50w-tsu",
+      "name": "GaN 50.5W T蘇 PD快充",
+      "brand": "SIGMA",
+      "category": "充電器",
+      "price": 298,
+      "desc": "GaN 50.5W T蘇 PD快充，氮化鎵技術。PD20W + USB 多口輸出，防雷保護。",
+      "features": [
+        "氮化鎵 GaN 技術",
+        "PD20W 快充",
+        "多口 USB 輸出",
+        "防雷保護"
+      ]
+    },
+    {
+      "id": "power-strip-4位-2a1c",
+      "name": "4位拖板 2A1C PD30W 快速充電",
+      "brand": "SIGMA",
+      "category": "配件",
+      "price": 328,
+      "desc": "4位電源拖板 2A1C PD30W，3個USB-A + 1個USB-C 快充輸出。6.5尺線長適合家居或辦公室使用。",
+      "features": [
+        "4位插座 + 2A1C USB",
+        "PD30W 快速充電",
+        "6.5 尺線長",
+        "安全保護設計"
+      ]
+    },
+    {
+      "id": "savewo-eva-magcell",
+      "name": "SAVEWO x EVANGELION MagCell 聯乘磁吸充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 368,
+      "desc": "SAVEWO x EVANGELION 聯乘 MagCell 磁吸充電器，EVA 初號機主題設計。支援 MagSafe 磁吸無線充電。",
+      "features": [
+        "EVANGELION 聯乘設計",
+        "MagSafe 磁吸無線充",
+        "EVA 初號機主題",
+        "Qi2 認證"
+      ]
+    },
+    {
+      "id": "savewo-uniplug-up100",
+      "name": "SAVEWO Uniplug UP100 100W USB-C 充電器",
+      "brand": "SAVEWO",
+      "category": "充電器",
+      "price": 298,
+      "desc": "SAVEWO Uniplug UP100 100W USB-C 充電器，PD 100W 大功率輸出。支援 MacBook 等快速充電。",
+      "features": [
+        "PD 100W 大功率",
+        "USB-C 輸出",
+        "支援 MacBook",
+        "氮化鎵技術"
+      ]
+    },
+    {
+      "id": "miffy-mif23-65w",
+      "name": "Miffy MIF23 65W PD 充電器",
+      "brand": "Miffy",
+      "category": "充電器",
+      "price": 199,
+      "desc": "Miffy MIF23 65W PD 充電器，可愛 Miffy 造型。65W 大功率 PD 快速充電，支援 Notebook/平板/手機。",
+      "features": [
+        "Miffy 可愛造型",
+        "65W PD 快充",
+        "支援 MacBook/Notebook",
+        "安全保護設計"
+      ]
+    },
+    {
+      "id": "miffy-mif26-35w",
+      "name": "Miffy MIF26 PD35W 5USB 旅行充電插座",
+      "brand": "Miffy",
+      "category": "充電器",
+      "price": 169,
+      "desc": "Miffy MIF26 PD35W 5USB 旅行充電插座，可愛 Miffy 造型。5 個 USB 輸出，PD35W 快速充電，適合旅行使用。",
+      "features": [
+        "Miffy 可愛造型",
+        "5 USB 輸出",
+        "PD35W 快充",
+        "旅行便攜設計"
+      ]
+    },
+    {
+      "id": "miffy-gan35w",
+      "name": "Miffy 2 Port 35W PD3.0 & QC3.0 GaN 充電器",
+      "brand": "Miffy",
+      "category": "充電器",
+      "price": 168,
+      "desc": "Miffy 2 Port 35W GaN 充電器，氮化鎵技術。PD3.0 + QC3.0 雙口輸出，可愛 Miffy 設計。",
+      "features": [
+        "Miffy 可愛造型",
+        "氮化鎵 GaN 技術",
+        "PD3.0 + QC3.0 雙口",
+        "35W 快速充電"
+      ]
+    },
+    {
+      "id": "miffy-mouse",
+      "name": "Miffy 2.4G 無線滑鼠及滑鼠墊套裝",
+      "brand": "Miffy",
+      "category": "配件",
+      "price": 128,
+      "desc": "Miffy 2.4G 無線滑鼠及滑鼠墊套裝，可愛 Miffy 造型設計。無線連接穩定，附送 Miffy 滑鼠墊。",
+      "features": [
+        "Miffy 可愛造型",
+        "2.4G 無線連接",
+        "附送 Miffy 滑鼠墊",
+        "隨插即用"
+      ]
+    },
+    {
+      "id": "miffy-mif21-mirror-clock",
+      "name": "Miffy MIF21 多功能鏡面鬧鐘",
+      "brand": "Miffy",
+      "category": "配件",
+      "price": 159,
+      "desc": "Miffy MIF21 多功能鏡面鬧鐘，可愛 Miffy 鏡面設計。具備鬧鐘、溫度顯示等功能，可作化妝鏡使用。",
+      "features": [
+        "Miffy 可愛造型",
+        "鏡面設計",
+        "鬧鐘功能",
+        "溫度顯示"
+      ]
+    },
+    {
+      "id": "miffy-mif20-power-strip",
+      "name": "Miffy MIF20 PD3.0 2A1C 4位電源拖板",
+      "brand": "Miffy",
+      "category": "配件",
+      "price": 169,
+      "desc": "Miffy MIF20 PD3.0 2A1C 4位電源拖板，可愛 Miffy 造型。4位插座 + 2A1C USB PD30W 快充輸出。",
+      "features": [
+        "Miffy 可愛造型",
+        "4位插座 + 2A1C USB",
+        "PD30W 快充",
+        "安全保護設計"
+      ]
+    },
+    {
+      "id": "cluebox-cb-usbc1",
+      "name": "Clue Box CB-USB-C1 自動伸縮 USB-C 數據充電線",
+      "brand": "Clue Box",
+      "category": "充電線",
+      "price": 89,
+      "desc": "Clue Box CB-USB-C1 自動伸縮 USB-C 數據充電線。240W 大功率快速充電，USB2.0 480Mbps。自動收縮方便使用收藏。",
+      "features": [
+        "240W 大功率",
+        "USB2.0 480Mbps",
+        "自動伸縮收納",
+        "方便攜帶"
+      ]
+    },
+    {
+      "id": "cluebox-cb-phb-l1",
+      "name": "Clue Box CB-PHB-L1 時尚暖蛋連流動電池",
+      "brand": "Clue Box",
+      "category": "健康產品",
+      "price": 159,
+      "desc": "Clue Box CB-PHB-L1 時尚暖蛋連流動電池，3 秒雙面均勻發熱 45-55°C。4000mAh 流動電池可為手機充電，配備分拆式 LED 燈。",
+      "features": [
+        "3 秒雙面發熱 45-55°C",
+        "4000mAh 流動電池",
+        "分拆式 LED 燈",
+        "室內室外照明"
+      ]
+    },
+    {
+      "id": "cluebox-cb-phb-l2",
+      "name": "Clue Box CB-PHB-L2 時尚暖蛋連流動電池 (小忌廉)",
+      "brand": "Clue Box",
+      "category": "健康產品",
+      "price": 169,
+      "desc": "Clue Box CB-PHB-L2 小忌廉款時尚暖蛋連流動電池。3 秒雙面發熱，4000mAh 電池。Sanrio 小忌廉設計。",
+      "features": [
+        "小忌廉可愛設計",
+        "3 秒雙面發熱",
+        "4000mAh 流動電池",
+        "LED 燈照明"
+      ]
+    },
+    {
+      "id": "cluebox-6in1-cable-kit",
+      "name": "Clue Box 6合1 數據充電電線套件連鏡盒",
+      "brand": "Clue Box",
+      "category": "充電線",
+      "price": 169,
+      "desc": "Clue Box 6合1 充電線套件連鏡盒，一盒有齊 Type-C/Lightning/Micro/USB-A/Type-C 接口轉換器。附 SIM 咭彈針及 TF/SIM 位，盒背支架可作電話座。",
+      "features": [
+        "6 合 1 全接口",
+        "附 SIM 咭彈針",
+        "鏡盒設計可照鏡",
+        "盒背支架變電話座",
+        "旅行萬用"
+      ]
+    },
+    {
+      "id": "cluebox-cb-bes1-ion",
+      "name": "Clue Box CB-BES1-ION 藍牙耳機",
+      "brand": "Clue Box",
+      "category": "耳機",
+      "price": 199,
+      "desc": "Clue Box CB-BES1-ION 藍牙耳機，Sanrio 可愛設計。",
+      "features": [
+        "Sanrio 設計",
+        "藍牙連接",
+        "輕巧便攜"
+      ]
+    },
+    {
+      "id": "cluebox-cb-bes2",
+      "name": "Clue Box CB-BES2 藍牙耳機",
+      "brand": "Clue Box",
+      "category": "耳機",
+      "price": 239,
+      "desc": "Clue Box CB-BES2 藍牙耳機，可愛造型設計。",
+      "features": [
+        "可愛造型",
+        "藍牙連接",
+        "輕巧便攜"
+      ]
+    },
+    {
+      "id": "cluebox-cb-hfs5-l1",
+      "name": "Clue Box CB-HFS5-L1 手持風扇",
+      "brand": "Clue Box",
+      "category": "風扇",
+      "price": 99,
+      "desc": "Clue Box CB-HFS5-L1 手持風扇，Sanrio 可愛設計。輕巧便攜強勁風力。",
+      "features": [
+        "Sanrio 可愛設計",
+        "手持便攜",
+        "強勁風力"
+      ]
+    },
+    {
+      "id": "cluebox-cb-bes3",
+      "name": "Clue Box CB-BES3 藍牙耳機",
+      "brand": "Clue Box",
+      "category": "耳機",
+      "price": 159,
+      "desc": "Clue Box CB-BES3 藍牙耳機，可愛造型。",
+      "features": [
+        "可愛造型",
+        "藍牙連接"
+      ]
+    },
+    {
+      "id": "cluebox-km01-bt",
+      "name": "Clue Box KM01-BT 藍牙鍵盤滑鼠套裝",
+      "brand": "Clue Box",
+      "category": "配件",
+      "price": 169,
+      "desc": "Clue Box KM01-BT 藍牙鍵盤滑鼠套裝，可愛設計。藍牙連接穩定，適合平板電腦使用。",
+      "features": [
+        "藍牙連接",
+        "鍵盤+滑鼠套裝",
+        "可愛設計",
+        "適合平板使用"
+      ]
     }
   ]
 }
