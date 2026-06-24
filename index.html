@@ -382,6 +382,24 @@ body{
       </div>
     </div>
 
+    <!-- ══ Slide 7: 牛魔王 ══ -->
+    <div class="carousel-slide niuwang-slide">
+      <img src="assets/slide07.jpg" alt="牛魔王產品" loading="lazy" onerror="this.style.display='none'">
+      <div class="carousel-overlay" style="background:linear-gradient(45deg,rgba(20,15,5,.9),rgba(40,30,10,.6))"></div>
+      <div class="carousel-content">
+        <div class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4a02b" stroke-width="2" stroke-linecap="round" style="vertical-align:-2px"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span style="color:#d4a02b">⚡ 牛魔王 · SINCE 1984</span></div>
+        <h2 style="font-size:36px">🐂 牛魔王 產品總覽</h2>
+        <p style="font-size:15px;max-width:520px">香港 No.1 充電品牌 — 外置充電器 · GaN 快充 · 無線充電 · 充電線 · 旅遊插座 · 專業充電方案，批發零售價</p>
+        <div class="hero-btns" style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="niuwang.html" class="btn-w" style="background:#d4a02b;color:#fff;padding:16px 36px;border-radius:24px;font-size:16px;font-weight:700;text-decoration:none;display:inline-block;border:none;cursor:pointer;font-family:inherit;box-shadow:0 4px 20px rgba(212,160,43,.4)">⚡ 立即選購 →</a>
+          <a href="niuwang.html" class="btn-o" style="background:rgba(212,160,43,.15);color:#d4a02b;padding:16px 26px;border-radius:24px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(212,160,43,.4);display:inline-block;cursor:pointer;font-family:inherit">📄 瀏覽全部產品</a>
+        </div>
+        <div style="display:flex;gap:20px;justify-content:center;margin-top:20px;flex-wrap:wrap;font-size:13px;color:#aaa">
+          <span>🔋 充電寶</span><span>🔌 GaN 充電器</span><span>📡 無線充</span><span>🔌 充電線</span><span>🌍 旅遊插座</span><span>🔋 UPS 電源</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Arrows -->
@@ -395,6 +413,8 @@ body{
     <button class="carousel-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
     <button class="carousel-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
     <button class="carousel-dot" onclick="goToSlide(4)" aria-label="Slide 5"></button>
+    <button class="carousel-dot" onclick="goToSlide(5)" aria-label="SIGMA"></button>
+    <button class="carousel-dot" onclick="goToSlide(6)" aria-label="牛魔王"></button>
   </div>
 </section>
 
@@ -745,7 +765,7 @@ rTable('panel-other',['品牌','型號','爆玻璃面','爆液晶屏','備註'],
 
 // ── Carousel ──
 let currentSlide = 0;
-const totalSlides = 5;
+const totalSlides = 7;
 let autoplayInterval;
 
 function updateCarousel(){
