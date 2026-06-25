@@ -134,11 +134,13 @@ function getCatEmoji(catId) {
   return '📦';
 }
 
-/* ── Init (load data from external file) ── */
-fetch('sigma_products.json')
-  .then(r => r.json())
-  .then(data => {
-    sigmaProducts = data.products || data;
+/* ── Init (load data from external files) ── */
+Promise.all([
+  fetch('sigma_products.json').then(r => r.json()),
+  fetch('niuwang_products.json').then(r => r.json())
+])
+  .then(([sigma, niuwang]) => {
+    sigmaProducts = (sigma.products || sigma).concat(niuwang.products || niuwang);
     renderCatTabs();
     renderProducts();
   })
