@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>熊貓商城 — 管理後台</title>
+<style>
+:root{--bg:#0d0d0d;--card:#1a1a1a;--text:#e5e5e5;--muted:#888;--border:#2a2a2a;--gold:#d4a02b;--green:#22c55e;--red:#ef4444;--radius:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+.login-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px;width:380px;max-width:100%;text-align:center}
+.login-box h1{font-size:22px;margin-bottom:4px}
+.login-box p{color:var(--muted);font-size:13px;margin-bottom:24px}
+.login-box input[type=password]{width:100%;padding:12px 16px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:15px;font-family:inherit;outline:none;margin-bottom:14px;transition:border-color .2s}
+.login-box input:focus{border-color:var(--gold)}
+.login-box button{width:100%;padding:12px;border-radius:25px;border:none;background:var(--gold);color:#111;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s}
+.login-box button:hover{background:#c4961a}
+.login-box .error{color:var(--red);font-size:13px;margin-top:10px;display:none}
+.admin-screen{display:none}
+/* ── Header ── */
+.hdr{background:#111;border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+.hdr h2{font-size:16px;font-weight:700}
+.hdr-actions{display:flex;gap:8px}
+.hdr-actions button{padding:7px 16px;border-radius:20px;border:none;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s}
+.btn-deploy{background:var(--green);color:#111}
+.btn-deploy:hover{background:#16a34a}
+.btn-logout{background:var(--card);border:1px solid var(--border)!important;color:var(--muted)}
+.btn-logout:hover{color:var(--text)}
+.container{max-width:900px;margin:0 auto;padding:24px}
+/* ── Tabs ── */
+.tabs{display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap}
+.tab{padding:8px 18px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .2s}
+.tab:hover{border-color:#555;color:#fff}
+.tab.active{background:var(--gold);border-color:var(--gold);color:#111;font-weight:700}
+.tab-content{display:none}
+.tab-content.active{display:block}
+/* ── Cards ── */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:16px}
+.card h3{font-size:15px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.card h3 small{font-size:11px;font-weight:400;color:var(--muted)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:10px 14px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:60px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-group .hint{font-size:11px;color:var(--muted);margin-top:3px}
+/* ── Toggle ── */
+.toggle-group{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.toggle{cursor:pointer}
+.toggle input{display:none}
+.toggle-slider{width:44px;height:24px;background:var(--border);border-radius:12px;position:relative;display:inline-block;transition:all .3s;flex-shrink:0}
+.toggle-slider::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--muted);transition:all .3s}
+.toggle input:checked+.toggle-slider{background:var(--green)}
+.toggle input:checked+.toggle-slider::after{background:#fff;transform:translateX(20px)}
+.toggle-label{font-size:13px;user-select:none}
+/* ── Buttons ── */
+.btn-save{width:100%;padding:12px;border-radius:25px;border:none;background:var(--gold);color:#111;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s;margin-top:8px}
+.btn-save:hover{background:#c4961a}
+.btn-save:disabled{opacity:.4;cursor:not-allowed}
+/* ── Toast ── */
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-80px);background:var(--green);color:#fff;padding:12px 24px;border-radius:8px;font-size:13px;font-weight:600;z-index:9999;transition:transform .4s;box-shadow:0 4px 20px rgba(34,197,94,.3)}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.toast.error{background:var(--red);box-shadow:0 4px 20px rgba(239,68,68,.3)}
+/* ── Deploy Section ── */
+.deploy-section{text-align:center;padding:40px 24px}
+.deploy-section h3{font-size:18px;margin-bottom:8px}
+.deploy-section p{color:var(--muted);font-size:13px;margin-bottom:20px;line-height:1.6}
+.deploy-section .github-setup{text-align:left;margin-bottom:20px}
+.github-setup label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.github-setup input{width:100%;padding:10px 14px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:13px;font-family:monospace;outline:none;margin-bottom:10px}
+.github-setup input:focus{border-color:var(--gold)}
+.github-setup .hint{font-size:11px;color:var(--muted);line-height:1.6}
+.btn-deploy-now{background:var(--green);color:#111;border:none;padding:14px 40px;border-radius:25px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s}
+.btn-deploy-now:hover{background:#16a34a;transform:scale(1.02)}
+.btn-deploy-now:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.deploy-log{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:12px;font-family:monospace;color:var(--muted);text-align:left;max-height:200px;overflow-y:auto;display:none;white-space:pre-wrap;line-height:1.6}
+.deploy-log.show{display:block}
+.preview-link{display:inline-block;margin-top:12px;color:var(--green);text-decoration:none;font-size:13px;font-weight:600}
+.preview-link:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<!-- ═══ LOGIN ═══ -->
+<div class="login-screen" id="loginScreen">
+  <div class="login-box">
+    <div style="font-size:48px;margin-bottom:12px">🔐</div>
+    <h1>🐼 熊貓商城管理後台</h1>
+    <p>請輸入管理密碼</p>
+    <input type="password" id="loginPass" placeholder="管理密碼" onkeydown="if(event.key==='Enter')doLogin()">
+    <button onclick="doLogin()">登入</button>
+    <div class="error" id="loginError">❌ 密碼錯誤，請再試</div>
+  </div>
+</div>
+
+<!-- ═══ ADMIN ═══ -->
+<div class="admin-screen" id="adminScreen">
+  <div class="hdr">
+    <h2>🐼 熊貓商城管理後台</h2>
+    <div class="hdr-actions">
+      <button class="btn-deploy" onclick="scrollToDeploy()">🚀 發布</button>
+      <button class="btn-logout" onclick="doLogout()">登出</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('store',this)">🏪 商店設定</button>
+      <button class="tab" onclick="switchTab('payment',this)">💳 付款設定</button>
+      <button class="tab" onclick="switchTab('deploy',this)">🚀 發布</button>
+    </div>
+
+    <!-- ═══ TAB 1: STORE ═══ -->
+    <div class="tab-content active" id="tab-store">
+      <div class="card">
+        <h3>🏪 商店基本資料</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>商店名稱（中文）</label>
+            <input type="text" id="f_name" value="熊貓商城">
+          </div>
+          <div class="form-group">
+            <label>商店名稱（英文）</label>
+            <input type="text" id="f_name_en" value="PANDA MALL">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>標題副句</label>
+          <input type="text" id="f_hero_subtitle" value="全線產品，批發零售價">
+        </div>
+        <div class="form-group">
+          <label>標題描述</label>
+          <input type="text" id="f_hero_desc" value="🛍️ 加入購物車落單，多種付款方法">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>WhatsApp 號碼（含國碼）</label>
+            <input type="text" id="f_whatsapp" value="85268557181">
+            <div class="hint">格式：852xxxxxxxx</div>
+          </div>
+          <div class="form-group">
+            <label>店舖電話</label>
+            <input type="text" id="f_phone" value="68557181">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>門市地址</label>
+          <input type="text" id="f_address" value="紅磡黃埔108商場54號舖">
+        </div>
+        <div class="form-group">
+          <label>營業時間</label>
+          <input type="text" id="f_hours" value="星期一至六 09:00-19:00">
+        </div>
+        <button class="btn-save" onclick="saveStore()">💾 儲存商店設定</button>
+      </div>
+
+      <div class="card">
+        <h3>📦 取貨方式</h3>
+        <div class="toggle-group">
+          <label class="toggle">
+            <input type="checkbox" id="f_self_pickup" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">🏪 門市自取</span>
+        </div>
+        <div class="toggle-group">
+          <label class="toggle">
+            <input type="checkbox" id="f_sf_express" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">📦 順豐寄貨（運費到付）</span>
+        </div>
+        <div class="form-group">
+          <label>自取標籤文字</label>
+          <input type="text" id="f_self_label" value="🏪 紅磡黃埔門市自取">
+        </div>
+        <div class="form-group">
+          <label>順豐標籤文字</label>
+          <input type="text" id="f_sf_label" value="📦 順豐寄貨（運費到付）">
+        </div>
+        <button class="btn-save" onclick="saveShipping()">💾 儲存取貨設定</button>
+      </div>
+    </div>
+
+    <!-- ═══ TAB 2: PAYMENT ═══ -->
+    <div class="tab-content" id="tab-payment">
+      <!-- PayMe -->
+      <div class="card">
+        <h3>💚 PayMe</h3>
+        <div class="toggle-group">
+          <label class="toggle">
+            <input type="checkbox" id="f_payme_enabled" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">啟用 PayMe 付款</span>
+        </div>
+        <div class="form-group">
+          <label>顯示名稱</label>
+          <input type="text" id="f_payme_label" value="PayMe">
+        </div>
+        <div class="form-group">
+          <label>PayMe 電話號碼</label>
+          <input type="text" id="f_payme_phone" value="98554396">
+          <div class="hint">PayMe Link 會自動生成：payme.hsbc/{號碼}</div>
+        </div>
+        <div class="form-group">
+          <label>付款說明（HTML 可用）</label>
+          <textarea id="f_payme_detail" rows="3">📱 PayMe 電話號碼：<strong>9855 4396</strong><br>🔗 <a href="https://payme.hsbc/98554396" target="_blank" style="color:var(--gold)">payme.hsbc/98554396</a><br><br>俾完錢 Cap 圖 WhatsApp 俾我哋確認就得 👍</textarea>
+        </div>
+        <button class="btn-save" onclick="savePayme()">💾 儲存 PayMe 設定</button>
+      </div>
+
+      <!-- FPS -->
+      <div class="card">
+        <h3>💳 FPS 轉數快</h3>
+        <div class="toggle-group">
+          <label class="toggle">
+            <input type="checkbox" id="f_fps_enabled" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">啟用 FPS 轉數快</span>
+        </div>
+        <div class="form-group">
+          <label>顯示名稱</label>
+          <input type="text" id="f_fps_label" value="FPS 轉數快">
+        </div>
+        <div class="form-group">
+          <label>FPS 電話號碼</label>
+          <input type="text" id="f_fps_phone" value="98554396">
+        </div>
+        <div class="form-group">
+          <label>收款銀行</label>
+          <input type="text" id="f_fps_bank" value="HSBC 滙豐銀行">
+        </div>
+        <div class="form-group">
+          <label>付款說明（HTML 可用）</label>
+          <textarea id="f_fps_detail" rows="3">📱 FPS 電話號碼：<strong>9855 4396</strong><br>🏦 收款銀行：<strong>HSBC 滙豐銀行</strong><br><br>轉完 Cap 圖 WhatsApp 俾我哋確認 ✅</textarea>
+        </div>
+        <button class="btn-save" onclick="saveFps()">💾 儲存 FPS 設定</button>
+      </div>
+
+      <!-- Bank -->
+      <div class="card">
+        <h3>🏦 銀行過數</h3>
+        <div class="toggle-group">
+          <label class="toggle">
+            <input type="checkbox" id="f_bank_enabled" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">啟用銀行過數</span>
+        </div>
+        <div class="form-group">
+          <label>顯示名稱</label>
+          <input type="text" id="f_bank_label" value="銀行過數">
+        </div>
+        <div class="form-group">
+          <label>付款說明（HTML 可用）</label>
+          <textarea id="f_bank_detail" rows="4">🏧 銀行戶口資料：<br><strong>銀行：</strong>HSBC 滙豐銀行<br><strong>戶口名稱：</strong>（請 WhatsApp 查詢）<br><strong>戶口號碼：</strong>（請 WhatsApp 查詢）<br><br>或直接 WhatsApp 我哋索取戶口資料 📱</textarea>
+        </div>
+        <button class="btn-save" onclick="saveBank()">💾 儲存銀行過數設定</button>
+      </div>
+
+      <!-- Cash -->
+      <div class="card">
+        <h3>💰 到店付款</h3>
+        <div class="toggle-group">
+          <label class="toggle">
+            <input type="checkbox" id="f_cash_enabled" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">啟用到店付款</span>
+        </div>
+        <div class="form-group">
+          <label>顯示名稱</label>
+          <input type="text" id="f_cash_label" value="到店付款">
+        </div>
+        <div class="form-group">
+          <label>付款說明（HTML 可用）</label>
+          <textarea id="f_cash_detail" rows="3">🏪 門市俾現金<br><strong>紅磡黃埔108商場54號舖</strong><br>星期一至六 09:00-19:00<br><br>🅿️ 可以俾現金、PayMe、FPS、八達通</textarea>
+        </div>
+        <button class="btn-save" onclick="saveCash()">💾 儲存到店付款設定</button>
+      </div>
+    </div>
+
+    <!-- ═══ TAB 3: DEPLOY ═══ -->
+    <div class="tab-content" id="tab-deploy">
+      <div class="deploy-section" id="deploySection">
+        <h3>🚀 一鍵發布到 GitHub Pages</h3>
+        <p>改完設定之後，撳下面個掣就可以將所有變更加載到 <strong>mall-config.json</strong>，<br>然後直接發布上 GitHub，等 1-2 分鐘網站就會自動更新 🎉</p>
+
+        <div class="github-setup" id="githubSetup">
+          <label>🔑 GitHub Token</label>
+          <input type="text" id="f_github_token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" value="">
+          <div class="hint">
+            第一次使用要先填 Token。去 
+            <a href="https://github.com/settings/tokens" target="_blank" style="color:var(--gold)">github.com/settings/tokens</a>
+            建立一個 Personal Access Token（要剔 <strong>repo</strong> 權限），貼上去就得。之後會自動 save 喺瀏覽器。
+          </div>
+          <label style="margin-top:12px">Repository</label>
+          <input type="text" id="f_github_repo" value="pandatelecom/pandatelecom.github.io">
+          <div class="hint">格式：用戶名/倉庫名</div>
+        </div>
+
+        <button class="btn-deploy-now" id="deployBtn" onclick="doDeploy()">🚀 發布到 GitHub</button>
+        <div class="deploy-log" id="deployLog"></div>
+        <a class="preview-link" id="previewLink" href="https://pandatelecom.github.io/products.html" target="_blank">🔗 前往熊貓商城 →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ═══════════════════════════════════════
+   STATE
+   ═══════════════════════════════════════ */
+const ADMIN_PASSWORD = 'panda2024';
+let configData = null;
+
+/* ═══════════════════════════════════════
+   LOGIN
+   ═══════════════════════════════════════ */
+function doLogin() {
+  const pass = document.getElementById('loginPass').value;
+  if(pass === ADMIN_PASSWORD) {
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('adminScreen').style.display = 'block';
+    loadConfig();
+    // Restore saved token
+    const saved = localStorage.getItem('mallGitHubToken');
+    if(saved) document.getElementById('f_github_token').value = saved;
+  } else {
+    document.getElementById('loginError').style.display = 'block';
+    document.getElementById('loginPass').value = '';
+    document.getElementById('loginPass').focus();
+  }
+}
+function doLogout() {
+  document.getElementById('adminScreen').style.display = 'none';
+  document.getElementById('loginScreen').style.display = 'flex';
+  document.getElementById('loginPass').value = '';
+  document.getElementById('loginError').style.display = 'none';
+}
+
+/* ═══════════════════════════════════════
+   TABS
+   ═══════════════════════════════════════ */
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+}
+
+/* ═══════════════════════════════════════
+   LOAD CONFIG
+   ═══════════════════════════════════════ */
+async function loadConfig() {
+  try {
+    const r = await fetch('mall-config.json?' + Date.now());
+    configData = await r.json();
+    applyConfig();
+    showToast('✅ 已載入設定');
+  } catch(e) {
+    showToast('⚠️ 無法載入 mall-config.json，使用預設值', true);
+  }
+}
+
+function applyConfig() {
+  if(!configData) return;
+  const s = configData.store || {};
+  const p = configData.payment || {};
+  const sh = configData.shipping || {};
+
+  // Store
+  document.getElementById('f_name').value = s.name || '熊貓商城';
+  document.getElementById('f_name_en').value = s.name_en || 'PANDA MALL';
+  document.getElementById('f_hero_subtitle').value = s.hero_subtitle || '';
+  document.getElementById('f_hero_desc').value = s.hero_desc || '';
+  document.getElementById('f_whatsapp').value = s.contact_whatsapp || '85268557181';
+  document.getElementById('f_phone').value = s.contact_phone || '68557181';
+  document.getElementById('f_address').value = s.store_address || '';
+  document.getElementById('f_hours').value = s.business_hours || '';
+
+  // Shipping
+  if(sh.self_pickup) {
+    document.getElementById('f_self_pickup').checked = sh.self_pickup.enabled !== false;
+    document.getElementById('f_self_label').value = sh.self_pickup.label || '🏪 紅磡黃埔門市自取';
+  }
+  if(sh.sf_express) {
+    document.getElementById('f_sf_express').checked = sh.sf_express.enabled !== false;
+    document.getElementById('f_sf_label').value = sh.sf_express.label || '📦 順豐寄貨（運費到付）';
+  }
+
+  // Payment - PayMe
+  if(p.payme) {
+    document.getElementById('f_payme_enabled').checked = p.payme.enabled !== false;
+    document.getElementById('f_payme_label').value = p.payme.label || 'PayMe';
+    document.getElementById('f_payme_phone').value = p.payme.phone || '98554396';
+    document.getElementById('f_payme_detail').value = p.payme.detail || '';
+  }
+  // Payment - FPS
+  if(p.fps) {
+    document.getElementById('f_fps_enabled').checked = p.fps.enabled !== false;
+    document.getElementById('f_fps_label').value = p.fps.label || 'FPS 轉數快';
+    document.getElementById('f_fps_phone').value = p.fps.phone || '98554396';
+    document.getElementById('f_fps_bank').value = p.fps.bank || 'HSBC 滙豐銀行';
+    document.getElementById('f_fps_detail').value = p.fps.detail || '';
+  }
+  // Payment - Bank
+  if(p.bank) {
+    document.getElementById('f_bank_enabled').checked = p.bank.enabled !== false;
+    document.getElementById('f_bank_label').value = p.bank.label || '銀行過數';
+    document.getElementById('f_bank_detail').value = p.bank.detail || '';
+  }
+  // Payment - Cash
+  if(p.cash) {
+    document.getElementById('f_cash_enabled').checked = p.cash.enabled !== false;
+    document.getElementById('f_cash_label').value = p.cash.label || '到店付款';
+    document.getElementById('f_cash_detail').value = p.cash.detail || '';
+  }
+}
+
+/* ═══════════════════════════════════════
+   BUILD CONFIG (from form fields)
+   ═══════════════════════════════════════ */
+function buildConfig() {
+  return {
+    store: {
+      name: document.getElementById('f_name').value,
+      name_en: document.getElementById('f_name_en').value,
+      hero_subtitle: document.getElementById('f_hero_subtitle').value,
+      hero_desc: document.getElementById('f_hero_desc').value,
+      contact_whatsapp: document.getElementById('f_whatsapp').value,
+      contact_phone: document.getElementById('f_phone').value,
+      store_address: document.getElementById('f_address').value,
+      business_hours: document.getElementById('f_hours').value
+    },
+    payment: {
+      payme: {
+        enabled: document.getElementById('f_payme_enabled').checked,
+        label: document.getElementById('f_payme_label').value,
+        emoji: '💚',
+        phone: document.getElementById('f_payme_phone').value,
+        detail: document.getElementById('f_payme_detail').value
+      },
+      fps: {
+        enabled: document.getElementById('f_fps_enabled').checked,
+        label: document.getElementById('f_fps_label').value,
+        emoji: '💳',
+        phone: document.getElementById('f_fps_phone').value,
+        bank: document.getElementById('f_fps_bank').value,
+        detail: document.getElementById('f_fps_detail').value
+      },
+      bank: {
+        enabled: document.getElementById('f_bank_enabled').checked,
+        label: document.getElementById('f_bank_label').value,
+        emoji: '🏦',
+        detail: document.getElementById('f_bank_detail').value
+      },
+      cash: {
+        enabled: document.getElementById('f_cash_enabled').checked,
+        label: document.getElementById('f_cash_label').value,
+        emoji: '💰',
+        detail: document.getElementById('f_cash_detail').value
+      }
+    },
+    shipping: {
+      self_pickup: {
+        enabled: document.getElementById('f_self_pickup').checked,
+        label: document.getElementById('f_self_label').value
+      },
+      sf_express: {
+        enabled: document.getElementById('f_sf_express').checked,
+        label: document.getElementById('f_sf_label').value
+      }
+    }
+  };
+}
+
+/* ═══════════════════════════════════════
+   SAVE INDIVIDUAL SECTIONS
+   ═══════════════════════════════════════ */
+function saveStore() {
+  if(!configData) return;
+  const cfg = buildConfig();
+  configData.store = cfg.store;
+  configData.shipping = cfg.shipping;
+  showToast('✅ 商店設定已儲存（未發布到網站）');
+}
+
+function saveShipping() {
+  if(!configData) return;
+  const cfg = buildConfig();
+  configData.shipping = cfg.shipping;
+  showToast('✅ 取貨設定已儲存（未發布到網站）');
+}
+
+function savePayme() {
+  if(!configData) return;
+  const cfg = buildConfig();
+  configData.payment.payme = cfg.payment.payme;
+  showToast('✅ PayMe 設定已儲存（未發布到網站）');
+}
+
+function saveFps() {
+  if(!configData) return;
+  const cfg = buildConfig();
+  configData.payment.fps = cfg.payment.fps;
+  showToast('✅ FPS 設定已儲存（未發布到網站）');
+}
+
+function saveBank() {
+  if(!configData) return;
+  const cfg = buildConfig();
+  configData.payment.bank = cfg.payment.bank;
+  showToast('✅ 銀行過數設定已儲存（未發布到網站）');
+}
+
+function saveCash() {
+  if(!configData) return;
+  const cfg = buildConfig();
+  configData.payment.cash = cfg.payment.cash;
+  showToast('✅ 到店付款設定已儲存（未發布到網站）');
+}
+
+/* ═══════════════════════════════════════
+   DEPLOY TO GITHUB
+   ═══════════════════════════════════════ */
+function scrollToDeploy() {
+  switchTab('deploy', document.querySelector('.tab:last-child'));
+  document.getElementById('deploySection').scrollIntoView({ behavior: 'smooth' });
+}
+
+async function doDeploy() {
+  const token = document.getElementById('f_github_token').value.trim();
+  const repo = document.getElementById('f_github_repo').value.trim();
+
+  if(!token) { showToast('❌ 請先填 GitHub Token', true); return; }
+  if(!repo) { showToast('❌ 請填 Repository', true); return; }
+
+  // Save token
+  localStorage.setItem('mallGitHubToken', token);
+
+  const btn = document.getElementById('deployBtn');
+  const log = document.getElementById('deployLog');
+  btn.disabled = true;
+  btn.textContent = '⏳ 發布中...';
+  log.classList.add('show');
+  log.textContent = '🚀 開始發布...\n';
+
+  function logLine(msg) { log.textContent += msg + '\n'; log.scrollTop = log.scrollHeight; }
+
+  try {
+    // Build final config
+    const cfg = buildConfig();
+    const jsonContent = JSON.stringify(cfg, null, 2);
+    logLine('✅ 設定已打包 (' + jsonContent.length + ' bytes)');
+
+    // Get current file SHA
+    logLine('📡 連接 GitHub...');
+    const getResp = await fetch(`https://api.github.com/repos/${repo}/contents/mall-config.json?ref=main`, {
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github.v3+json' }
+    });
+
+    let sha = '';
+    if(getResp.ok) {
+      const data = await getResp.json();
+      sha = data.sha;
+      logLine('✅ 找到現有 mall-config.json (SHA: ' + sha.substring(0,7) + '...)');
+    } else if(getResp.status === 404) {
+      logLine('📝 mall-config.json 未存在，將建立新檔');
+    } else {
+      const err = await getResp.text();
+      throw new Error('GitHub GET failed: ' + err.substring(0,200));
+    }
+
+    // Upload
+    logLine('📤 上傳 mall-config.json...');
+    const putResp = await fetch(`https://api.github.com/repos/${repo}/contents/mall-config.json`, {
+      method: 'PUT',
+      headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+      body: JSON.stringify({
+        message: '🔄 更新收款設定 (via Admin)',
+        content: btoa(unescape(encodeURIComponent(jsonContent))),
+        sha: sha || undefined
+      })
+    });
+
+    if(!putResp.ok) {
+      const err = await putResp.text();
+      throw new Error('GitHub PUT failed: ' + err.substring(0,300));
+    }
+
+    logLine('✅ mall-config.json 已更新到 GitHub!');
+    logLine('⏳ GitHub Pages 自動部署中，約 1-2 分鐘...');
+    logLine('');
+    logLine('🔗 https://pandatelecom.github.io/products.html');
+
+    btn.textContent = '✅ 發布成功！';
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = '🚀 發布到 GitHub';
+    }, 3000);
+
+    showToast('🎉 發布成功！1-2分鐘後網站會自動更新');
+
+  } catch(e) {
+    logLine('❌ 錯誤: ' + e.message);
+    btn.disabled = false;
+    btn.textContent = '🚀 發布到 GitHub';
+    showToast('❌ 發布失敗: ' + e.message.substring(0,80), true);
+  }
+}
+
+/* ═══════════════════════════════════════
+   TOAST
+   ═══════════════════════════════════════ */
+let toastTimer;
+function showToast(msg, isError) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast' + (isError ? ' error' : '');
+  clearTimeout(toastTimer);
+  requestAnimationFrame(() => { t.classList.add('show'); });
+  toastTimer = setTimeout(() => { t.classList.remove('show'); }, 3000);
+}
+</script>
+</body>
+</html>

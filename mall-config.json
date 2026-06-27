@@ -1,0 +1,51 @@
+{
+  "store": {
+    "name": "熊貓商城",
+    "name_en": "PANDA MALL",
+    "hero_subtitle": "全線產品，批發零售價",
+    "hero_desc": "🛍️ 加入購物車落單，多種付款方法",
+    "contact_whatsapp": "85268557181",
+    "contact_phone": "68557181",
+    "store_address": "紅磡黃埔108商場54號舖",
+    "business_hours": "星期一至六 09:00-19:00"
+  },
+  "payment": {
+    "payme": {
+      "enabled": true,
+      "label": "PayMe",
+      "emoji": "💚",
+      "phone": "98554396",
+      "detail": "📱 PayMe 電話號碼：<strong>9855 4396</strong><br>🔗 <a href=\"https://payme.hsbc/98554396\" target=\"_blank\" style=\"color:var(--gold)\">payme.hsbc/98554396</a><br><br>俾完錢 Cap 圖 WhatsApp 俾我哋確認就得 👍"
+    },
+    "fps": {
+      "enabled": true,
+      "label": "FPS 轉數快",
+      "emoji": "💳",
+      "phone": "98554396",
+      "bank": "HSBC 滙豐銀行",
+      "detail": "📱 FPS 電話號碼：<strong>9855 4396</strong><br>🏦 收款銀行：<strong>HSBC 滙豐銀行</strong><br><br>轉完 Cap 圖 WhatsApp 俾我哋確認 ✅"
+    },
+    "bank": {
+      "enabled": true,
+      "label": "銀行過數",
+      "emoji": "🏦",
+      "detail": "🏧 銀行戶口資料：<br><strong>銀行：</strong>HSBC 滙豐銀行<br><strong>戶口名稱：</strong>（請 WhatsApp 查詢）<br><strong>戶口號碼：</strong>（請 WhatsApp 查詢）<br><br>或直接 WhatsApp 我哋索取戶口資料 📱"
+    },
+    "cash": {
+      "enabled": true,
+      "label": "到店付款",
+      "emoji": "💰",
+      "detail": "🏪 門市俾現金<br><strong>紅磡黃埔108商場54號舖</strong><br>星期一至六 09:00-19:00<br><br>🅿️ 可以俾現金、PayMe、FPS、八達通"
+    }
+  },
+  "shipping": {
+    "self_pickup": {
+      "enabled": true,
+      "label": "🏪 紅磡黃埔門市自取"
+    },
+    "sf_express": {
+      "enabled": true,
+      "label": "📦 順豐寄貨（運費到付）"
+    }
+  }
+}

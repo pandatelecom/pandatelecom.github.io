@@ -259,30 +259,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans T
 
 <script>
 /* ═══════════════════════════════════════════
-   💳 付款設定 — 億萬富翁自己改呢度就得！
+   💳 付款設定 — 由 mall-config.json 動態載入
    ═══════════════════════════════════════════ */
-const PAYMENT_CONFIG = {
-  payme: {
-    label: 'PayMe',
-    emoji: '💚',
-    detail: '📱 PayMe 電話號碼：<strong>9855 4396</strong><br>🔗 <a href="https://payme.hsbc/98554396" target="_blank" style="color:var(--gold)">payme.hsbc/98554396</a><br><br>俾完錢 Cap 圖 WhatsApp 俾我哋確認就得 👍'
-  },
-  fps: {
-    label: 'FPS 轉數快',
-    emoji: '💳',
-    detail: '📱 FPS 電話號碼：<strong>9855 4396</strong><br>🏦 收款銀行：<strong>HSBC 滙豐銀行</strong><br><br>轉完 Cap 圖 WhatsApp 俾我哋確認 ✅'
-  },
-  bank: {
-    label: '銀行過數',
-    emoji: '🏦',
-    detail: '🏧 銀行戶口資料：<br><strong>銀行：</strong>HSBC 滙豐銀行<br><strong>戶口名稱：</strong>（請 WhatsApp 查詢）<br><strong>戶口號碼：</strong>（請 WhatsApp 查詢）<br><br>或直接 WhatsApp 我哋索取戶口資料 📱'
-  },
-  cash: {
-    label: '到店付款',
-    emoji: '💰',
-    detail: '🏪 門市俾現金<br><strong>紅磡黃埔108商場54號舖</strong><br>星期一至六 09:00-19:00<br><br>🅿️ 可以俾現金、PayMe、FPS、八達通'
-  }
-};
+let PAYMENT_CONFIG = {};
 
 /* ═══════════════════════════════════════
    DATA
@@ -622,13 +601,17 @@ function setBrand(brand) {
   renderProducts();
 }
 
-/* ── Init ── */
+/* ── Init (load products + config) ── */
 Promise.all([
   fetch('sigma_products.json').then(r => r.json()),
-  fetch('niuwang_products.json').then(r => r.json())
+  fetch('niuwang_products.json').then(r => r.json()),
+  fetch('mall-config.json?' + Date.now()).then(r => r.json()).catch(() => ({}))
 ])
-  .then(([sigma, niuwang]) => {
+  .then(([sigma, niuwang, config]) => {
     sigmaProducts = (sigma.products || sigma).concat(niuwang.products || niuwang);
+    // Apply config
+    if(config.payment) PAYMENT_CONFIG = config.payment;
+    else PAYMENT_CONFIG = {}; // will use fallback
     renderCatTabs();
     renderBrandTabs();
     renderProducts();
