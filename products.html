@@ -1,730 +1,485 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>熊貓商城 Panda Mall — 熊貓電訊 Panda Telecom</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Panda Telecom 熊貓電訊 — 產品目錄</title>
+<meta name="description" content="Momax、ARGO、SMARTCOBY、Sincos 等品牌手機配件、充電器、線材。紅磡黃埔實體店，即場購買。" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐼</text></svg>" />
 <style>
-:root{--bg:#0d0d0d;--card:#1a1a1a;--text:#e5e5e5;--muted:#888;--border:#2a2a2a;--gold:#d4a02b;--green:#22c55e;--red:#ef4444;--radius:12px;--shadow:0 2px 16px rgba(0,0,0,.3)}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;scroll-padding-top:120px}
-.header{background:#111;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-.hdr{max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
-.logo-img{width:40px;height:40px;border-radius:50%;object-fit:cover}
-.logo h1{font-size:16px;font-weight:700}
-.logo p{font-size:10px;color:#888}
-.hdr-actions{display:flex;align-items:center;gap:10px}
-.hdr-cta{background:#fff;color:#111;border:none;padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:transform .15s}
-.hdr-cta:hover{transform:scale(1.03)}
-/* ── Cart Button ── */
-.cart-btn{position:relative;background:var(--card);border:1px solid var(--border);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;color:var(--text);font-size:18px}
-.cart-btn:hover{border-color:var(--green);color:var(--green)}
-.cart-badge{position:absolute;top:-4px;right:-4px;background:var(--green);color:#fff;font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center}
-.cart-badge.show{display:flex}
-/* ── Cart Sidebar ── */
-.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;opacity:0;visibility:hidden;transition:all .3s}
-.cart-overlay.active{opacity:1;visibility:visible}
-.cart-sidebar{position:fixed;top:0;right:0;bottom:0;width:440px;max-width:90vw;background:var(--card);border-left:1px solid var(--border);z-index:2001;transform:translateX(100%);transition:all .3s;display:flex;flex-direction:column}
-.cart-sidebar.active{transform:translateX(0)}
-.cart-sidebar .cart-hdr{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid var(--border)}
-.cart-sidebar .cart-hdr h3{font-size:16px;font-weight:700}
-.cart-close{background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;padding:4px;transition:color .2s}
-.cart-close:hover{color:#fff}
-.cart-items{flex:1;overflow-y:auto;padding:12px 24px}
-.cart-empty{text-align:center;padding:60px 0;color:var(--muted);font-size:14px}
-.cart-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);align-items:center}
-.cart-item-emoji{font-size:28px;width:44px;text-align:center;flex-shrink:0}
-.cart-item-info{flex:1;min-width:0}
-.cart-item-name{font-size:14px;font-weight:600;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cart-item-price{font-size:13px;color:var(--gold);margin-bottom:4px}
-.cart-item-qty{display:flex;align-items:center;gap:8px}
-.qty-btn{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text);font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.qty-btn:hover{background:var(--green);border-color:var(--green)}
-.qty-num{font-size:14px;font-weight:600;min-width:20px;text-align:center}
-.cart-item-del{background:none;border:none;color:var(--muted);font-size:16px;cursor:pointer;padding:4px;transition:color .2s}
-.cart-item-del:hover{color:var(--red)}
-.cart-footer{border-top:1px solid var(--border);padding:18px 24px}
-.cart-total{display:flex;justify-content:space-between;font-size:16px;font-weight:700;margin-bottom:14px}
-.cart-total span:last-child{color:var(--gold)}
-.cart-actions{display:flex;gap:8px}
-.cart-actions .btn{flex:1;padding:12px;border-radius:25px;border:none;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;text-align:center}
-.btn-checkout{background:var(--gold);color:#111}
-.btn-checkout:hover{background:#c4961a;transform:scale(1.02)}
-.btn-whatsapp{background:transparent;border:1px solid var(--border)!important;color:var(--text)}
-.btn-whatsapp:hover{border-color:var(--green)!important;color:var(--green)}
-/* ── Checkout Modal ── */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:3000;opacity:0;visibility:hidden;transition:all .3s}
-.modal-overlay.active{opacity:1;visibility:visible}
-.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.92);width:560px;max-width:92vw;max-height:88vh;background:#1a1a1a;border:1px solid var(--border);border-radius:var(--radius);z-index:3001;opacity:0;visibility:hidden;transition:all .3s;overflow-y:auto}
-.modal.active{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
-.modal-hdr{display:flex;justify-content:space-between;align-items:center;padding:20px 24px 14px;border-bottom:1px solid var(--border)}
-.modal-hdr h3{font-size:17px;font-weight:700}
-.modal-close-btn{background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;padding:4px;transition:color .2s}
-.modal-close-btn:hover{color:#fff}
-.modal-body{padding:20px 24px}
-.modal-body h4{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;margin-top:20px}
-.modal-body h4:first-child{margin-top:0}
-.form-group{margin-bottom:14px}
-.form-group label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
-.form-group input,.form-group textarea,.form-group select{width:100%;padding:10px 14px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
-.form-group textarea{resize:vertical;min-height:50px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-/* ── Payment Options ── */
-.pay-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.pay-opt{padding:12px;border-radius:10px;border:1px solid var(--border);background:var(--card);cursor:pointer;transition:all .2s;text-align:center;font-size:13px;font-weight:600}
-.pay-opt:hover{border-color:#555}
-.pay-opt.selected{border-color:var(--gold);background:rgba(212,160,43,.1);color:var(--gold)}
-.pay-opt .pay-emoji{font-size:24px;display:block;margin-bottom:4px}
-.pay-detail{display:none;margin-top:12px;padding:12px 16px;border-radius:8px;background:var(--card);border:1px solid var(--border);font-size:13px;line-height:1.7;color:var(--muted)}
-.pay-detail.show{display:block}
-.pay-detail strong{color:var(--text)}
-/* ── Order Summary ── */
-.order-summary{border:1px solid var(--border);border-radius:8px;padding:12px 16px;background:var(--card);margin-bottom:14px;max-height:180px;overflow-y:auto}
-.order-summary .os-item{display:flex;justify-content:space-between;font-size:13px;padding:4px 0;color:var(--muted)}
-.order-summary .os-item span:last-child{color:var(--text)}
-.order-summary .os-total{display:flex;justify-content:space-between;font-size:15px;font-weight:700;padding-top:8px;margin-top:8px;border-top:1px solid var(--border)}
-.order-summary .os-total span:last-child{color:var(--gold)}
-.submit-btn{width:100%;padding:14px;border-radius:25px;border:none;background:var(--gold);color:#111;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s;margin-top:4px}
-.submit-btn:hover{background:#c4961a;transform:scale(1.02)}
-.submit-btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
-/* ─── Success Toast ── */
-.toast{position:fixed;top:24px;left:50%;transform:translateX(-50%) translateY(-80px);background:var(--green);color:#fff;padding:14px 28px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;transition:transform .4s;box-shadow:0 4px 20px rgba(34,197,94,.3)}
-.toast.show{transform:translateX(-50%) translateY(0)}
-.toast.error{background:var(--red);box-shadow:0 4px 20px rgba(239,68,68,.3)}
-/* ── Hero / Controls ── */
-.hero{text-align:center;padding:40px 24px 20px;max-width:1200px;margin:0 auto}
-.hero h2{font-size:28px;font-weight:800;margin-bottom:6px}
-.hero p{color:var(--muted);font-size:14px;max-width:600px;margin:0 auto 16px;line-height:1.7}
-.controls{position:sticky;top:60px;z-index:90;background:var(--bg);padding:8px 24px 8px;border-bottom:1px solid var(--border)}
-.controls-inner{max-width:1200px;margin:0 auto}
-.search-wrap{display:flex;gap:8px;margin-bottom:6px}
-.search-wrap input{flex:1;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;color:#fff;font-size:14px;font-family:inherit;outline:none}
-.search-wrap input:focus{border-color:var(--green)}
-.search-wrap input::placeholder{color:var(--muted)}
-.cat-tabs{display:flex;gap:6px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:none}
-.cat-tabs::-webkit-scrollbar{display:none}
-.cat-tab{padding:4px 10px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:11px;cursor:pointer;transition:all .2s;font-family:inherit;white-space:nowrap;flex-shrink:0}
-.cat-tab:hover{border-color:#555;color:#fff}
-.cat-tab.active{background:var(--green);border-color:var(--green);color:#fff;font-weight:600}
-.brand-tabs{display:flex;gap:4px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;margin-top:4px;scrollbar-width:none}
-.brand-tabs::-webkit-scrollbar{display:none}
-.brand-tab{padding:3px 9px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:10px;cursor:pointer;transition:all .2s;font-family:inherit;white-space:nowrap;flex-shrink:0}
-.brand-tab:hover{border-color:var(--gold);color:var(--gold)}
-.brand-tab.active{background:var(--gold);border-color:var(--gold);color:#fff;font-weight:600}
-.products{max-width:1200px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
-.product-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .2s,border-color .2s;display:flex;flex-direction:column}
-.product-card:hover{transform:translateY(-2px);border-color:#444}
-.p-body{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
-.p-cat{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-.p-brand{font-size:11px;color:var(--muted);margin-bottom:6px}
-.p-name{font-size:16px;font-weight:700;margin-bottom:6px;line-height:1.4}
-.p-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px;flex:1}
-.p-features{margin-bottom:14px;padding-left:16px}
-.p-features li{font-size:12px;color:#999;line-height:1.7;list-style:disc}
-.p-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:14px;margin-top:auto}
-.p-price{font-size:20px;font-weight:800;color:#fff}
-.p-price small{font-size:12px;font-weight:400;color:var(--muted)}
-.p-actions{display:flex;gap:6px}
-.p-btn{color:#fff;border:none;padding:9px 14px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
-.p-btn.add-cart{background:var(--gold)}
-.p-btn.add-cart:hover{background:#c4961a;transform:scale(1.02)}
-.p-btn.add-cart.added{background:var(--green)}
-.p-btn.inquiry{background:transparent;border:1px solid var(--border);color:var(--muted);font-size:11px;padding:9px 10px}
-.p-btn.inquiry:hover{border-color:var(--green);color:var(--green)}
-.count{text-align:center;padding:8px 24px 0;font-size:13px;color:var(--muted)}
-.back-link{display:inline-flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;font-size:14px;margin-bottom:16px;transition:color .2s}
-.back-link:hover{color:#fff}
-@media(max-width:600px){
-  .hero{padding:30px 16px 16px}
-  .hero h2{font-size:22px}
-  .products{grid-template-columns:1fr;padding:16px}
-  .controls{padding:10px 16px 12px}
-  .modal{width:100vw;max-height:95vh;border-radius:12px 12px 0 0;top:auto;bottom:0;left:0;right:0;transform:translateY(100%)}
-  .modal.active{transform:translateY(0)}
-  .form-row{grid-template-columns:1fr}
-  .pay-options{grid-template-columns:1fr}
-  .cart-sidebar{width:100vw}
+:root {
+  --primary: #111111;
+  --accent: #e91e63;
+  --accent2: #25D366;
+  --text: #222;
+  --muted: #888;
+  --bg: #f8f8f8;
+  --border: #e5e7eb;
+  --radius: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang HK", "Noto Sans CJK HK", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+
+.status-bar {
+  background: var(--primary); color: #fff;
+  text-align: center; font-size: 12px; padding: 5px 16px; font-weight: 500;
+  transition: background .5s;
+}
+.status-bar.open { background: #15803d; }
+.status-bar.closed { background: #92400e; }
+
+nav {
+  background: #fff; border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+}
+nav .inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 16px;
+  display: flex; align-items: center; justify-content: space-between; height: 56px;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 15px; text-decoration: none; color: var(--text);
+}
+.logo-mark {
+  width: 30px; height: 30px; background: var(--primary); color: #fff;
+  border-radius: 7px; display: grid; place-items: center; font-size: 10px; font-weight: 800;
+}
+.nav-back {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 6px 14px; border-radius: 8px; background: #f0f0f0; color: #333;
+  text-decoration: none; font-size: 13px;
+}
+.nav-back:hover { background: #e5e5e5; }
+
+.main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  border-radius: 16px; padding: 28px 24px; margin: 8px 0 16px; color: #fff;
+}
+.banner h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.banner p { font-size: 13px; opacity: .85; }
+
+/* Brand tabs */
+.brand-tabs {
+  display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 16px;
+}
+.brand-tab {
+  padding: 8px 16px; border-radius: 20px; background: #fff;
+  border: 1.5px solid var(--border); font-size: 13px; color: #555;
+  cursor: pointer; transition: all .15s; user-select: none;
+  font-weight: 500; white-space: nowrap;
+}
+.brand-tab:hover { border-color: #bbb; }
+.brand-tab.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+.brand-tab .badge { font-size: 11px; opacity: .7; }
+
+/* Search */
+.search-wrap { margin: 8px 0; }
+.search-input {
+  width: 100%; padding: 12px 16px; border-radius: 10px;
+  border: 1.5px solid var(--border); font-size: 15px; font-family: var(--font);
+  outline: none; transition: border-color .2s; background: #fff;
+}
+.search-input:focus { border-color: var(--accent); }
+
+/* Category pills */
+.cats { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 12px; }
+.cat-chip {
+  padding: 5px 12px; border-radius: 16px; background: #fff;
+  border: 1px solid var(--border); font-size: 11px; color: #777;
+  cursor: pointer; transition: all .15s; user-select: none;
+}
+.cat-chip:hover { border-color: #bbb; }
+.cat-chip.on { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* Stats */
+.stats-bar {
+  display: flex; gap: 16px; padding: 8px 0;
+  font-size: 13px; color: var(--muted); align-items: center; flex-wrap: wrap;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 12px;
+  margin-bottom: 100px;
+}
+.card {
+  background: #fff; border-radius: var(--radius);
+  overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  transition: transform .2s, box-shadow .2s; cursor: pointer;
+  display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+
+.card-thumb {
+  height: 170px; display: flex; align-items: center; justify-content: center;
+  background: #fafafa; position: relative; overflow: hidden;
+}
+.card-thumb img {
+  max-width: 92%; max-height: 92%; object-fit: contain;
+  transition: transform .3s;
+}
+.card:hover .card-thumb img { transform: scale(1.05); }
+.card-thumb .no-img {
+  font-size: 48px; color: #ddd;
+}
+
+.card-body { padding: 10px 12px 14px; flex: 1; display: flex; flex-direction: column; }
+.card-brand { font-size: 10px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
+.card-name { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card-prices { margin-top: auto; }
+.card-msrp { font-size: 17px; color: var(--accent); font-weight: 700; }
+.card-srp { font-size: 12px; color: #bbb; text-decoration: line-through; margin-left: 6px; }
+.card-wa {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-top: 8px; padding: 6px 12px;
+  background: #dcf8c6; color: #075e54; border-radius: 6px;
+  font-size: 11px; font-weight: 600; text-decoration: none;
+  transition: background .2s;
+}
+.card-wa:hover { background: #c5e8b0; }
+
+/* Product modal */
+.modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.5); z-index: 1000;
+  align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.show { display: flex; }
+.modal {
+  background: #fff; border-radius: 16px; max-width: 520px; width: 100%;
+  max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,.2);
+}
+.modal-close {
+  position: sticky; top: 0; float: right; z-index: 2;
+  width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,.05);
+  border: none; font-size: 20px; cursor: pointer; margin: 12px 12px 0 0;
+  display: grid; place-items: center; color: #666;
+}
+.modal-close:hover { background: rgba(0,0,0,.1); }
+.modal-img {
+  width: 100%; max-height: 280px; object-fit: contain;
+  background: #fafafa; display: block;
+}
+.modal-body { padding: 20px 24px 24px; }
+.modal-brand { font-size: 11px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+.modal-name { font-size: 18px; font-weight: 700; margin: 4px 0 12px; line-height: 1.4; }
+.modal-price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
+.modal-msrp { font-size: 24px; color: var(--accent); font-weight: 700; }
+.modal-srp { font-size: 15px; color: #bbb; text-decoration: line-through; }
+.modal-desc { font-size: 14px; color: #555; line-height: 1.6; margin-bottom: 12px; }
+.modal-features { margin-bottom: 16px; }
+.modal-features li {
+  font-size: 13px; color: #666; padding: 4px 0; line-height: 1.5;
+  list-style: none;
+}
+.modal-features li::before { content: '✓ '; color: #25D366; font-weight: 700; }
+.modal-wa-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 12px 24px; background: var(--accent2); color: #fff;
+  border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 14px;
+  transition: background .2s;
+}
+.modal-wa-btn:hover { background: #1da851; }
+
+/* Empty state */
+.empty-state { text-align: center; padding: 60px 20px; color: #bbb; }
+.empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
+.empty-state p { font-size: 15px; }
+
+/* Footer */
+.footer-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: #fff; border-top: 1px solid var(--border);
+  padding: 10px 16px; display: flex; gap: 10px; z-index: 100;
+}
+.footer-bar .btn {
+  flex: 1; padding: 12px; border-radius: 10px; text-align: center;
+  text-decoration: none; color: #fff; font-weight: 600; font-size: 14px;
+}
+.footer-bar .btn-call { background: var(--primary); }
+.footer-bar .btn-wa { background: var(--accent2); }
+
+.site-footer { text-align: center; font-size: 11px; color: #bbb; padding: 16px 0 80px; }
+
+@media (max-width: 500px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .card-thumb { height: 140px; }
+  .card-name { font-size: 12px; }
+  .brand-tab { font-size: 12px; padding: 6px 12px; }
 }
 </style>
 </head>
 <body>
 
-<!-- ═══ HEADER ═══ -->
-<header class="header"><div class="hdr">
-  <a href="https://pandatelecom.github.io/" class="logo">
-    <img class="logo-img" src="assets/panda-logo.jpg" alt="熊貓電訊">
-    <div><h1>熊貓電訊</h1><p>PANDA TELECOM</p></div>
-  </a>
-  <div class="hdr-actions">
-    <button class="cart-btn" onclick="toggleCart()" aria-label="購物車">
-      <span>🛒</span>
-      <span class="cart-badge" id="cartBadge">0</span>
-    </button>
-    <a href="https://wa.me/85268557181" class="hdr-cta">📱 WhatsApp</a>
-  </div>
-</div></header>
+<div class="status-bar" id="statusBar">🕐 檢查營業狀態中…</div>
 
-<div class="hero">
-  <a href="https://pandatelecom.github.io/" class="back-link">← 返回主頁</a>
-  <h2>🛒 熊貓商城 Panda Mall</h2>
-  <p>全線產品，批發零售價｜🛍️ 加入購物車落單，多種付款方法</p>
+<nav>
+  <div class="inner">
+    <a href="./" class="nav-brand">
+      <div class="logo-mark">熊貓</div>
+      <span>Panda Telecom</span>
+    </a>
+    <a class="nav-back" href="./">← 主頁</a>
+  </div>
+</nav>
+
+<div class="main">
+
+<div class="banner">
+  <h1>📦 產品目錄</h1>
+  <p id="bannerSub">10個品牌 · 440+ 產品 · WhatsApp 查詢庫存及報價</p>
 </div>
 
-<div class="controls"><div class="controls-inner">
-  <div class="search-wrap">
-    <input type="text" id="search" placeholder="🔍 搜尋產品名稱、型號或品牌..." oninput="filterProducts()">
-  </div>
-  <div class="cat-tabs" id="catTabs"></div>
-  <div class="brand-tabs" id="brandTabs"></div>
-</div></div>
-
-<div class="count" id="count"></div>
-<div class="products" id="products"></div>
-
-<!-- ═══ CART SIDEBAR ═══ -->
-<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-<div class="cart-sidebar" id="cartSidebar">
-  <div class="cart-hdr">
-    <h3>🛒 購物車</h3>
-    <button class="cart-close" onclick="toggleCart()">✕</button>
-  </div>
-  <div class="cart-items" id="cartItems">
-    <div class="cart-empty" id="cartEmpty">購物車係空嘅 🐼<br>去揀啲產品啦！</div>
-  </div>
-  <div class="cart-footer" id="cartFooter" style="display:none">
-    <div class="cart-total">
-      <span>合計</span>
-      <span id="cartTotal">HK$0</span>
-    </div>
-    <div class="cart-actions">
-      <button class="btn btn-whatsapp" onclick="whatsappCart()">📱 查詢報價</button>
-      <button class="btn btn-checkout" onclick="openCheckout()">💳 結帳</button>
-    </div>
-  </div>
+<div class="stats-bar">
+  <span>📦 <strong id="totalCount">0</strong> 件</span>
+  <span>🏷️ <strong id="shownCount">0</strong> 顯示</span>
+  <span>🖼️ <strong id="imgCount">0</strong> 有圖</span>
 </div>
 
-<!-- ═══ CHECKOUT MODAL ═══ -->
-<div class="modal-overlay" id="modalOverlay" onclick="closeCheckout()"></div>
-<div class="modal" id="checkoutModal">
-  <div class="modal-hdr">
-    <h3>💳 結帳</h3>
-    <button class="modal-close-btn" onclick="closeCheckout()">✕</button>
-  </div>
-  <div class="modal-body">
-    <!-- Order Summary -->
-    <div class="order-summary" id="checkoutSummary"></div>
+<div class="brand-tabs" id="brandTabs"></div>
+<div class="search-wrap">
+  <input class="search-input" id="search" placeholder="🔍 搜尋產品名、品牌或型號..." autocomplete="off">
+</div>
+<div class="cats" id="cats"></div>
 
-    <!-- Customer Info -->
-    <h4>📋 收貨資料</h4>
-    <div class="form-row">
-      <div class="form-group">
-        <label>姓名 *</label>
-        <input type="text" id="coName" placeholder="陳大文" required>
+<div id="list"></div>
+
+<div class="site-footer">© 2026 Panda Telecom 熊貓電訊 · 紅磡黃埔108商場54號舖</div>
+
+</div>
+
+<!-- Product Detail Modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <img class="modal-img" id="modalImg" src="" alt="" />
+    <div class="modal-body">
+      <div class="modal-brand" id="modalBrand"></div>
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-price-row">
+        <span class="modal-msrp" id="modalMsrp"></span>
+        <span class="modal-srp" id="modalSrp"></span>
       </div>
-      <div class="form-group">
-        <label>電話 *</label>
-        <input type="tel" id="coPhone" placeholder="61234567" required>
-      </div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <ul class="modal-features" id="modalFeatures"></ul>
+      <a class="modal-wa-btn" id="modalWa" href="#" target="_blank" rel="noopener">💬 WhatsApp 查詢庫存及報價</a>
     </div>
-    <div class="form-group">
-      <label>取貨方式</label>
-      <select id="coDelivery">
-        <option value="自取">🏪 紅磡黃埔門市自取</option>
-        <option value="順豐">📦 順豐寄貨（運費到付）</option>
-      </select>
-    </div>
-    <div class="form-group" id="coAddressGroup" style="display:none">
-      <label>送貨地址</label>
-      <textarea id="coAddress" placeholder="順豐站/智能櫃編號 或 詳細地址"></textarea>
-    </div>
-    <div class="form-group">
-      <label>備註</label>
-      <textarea id="coNote" placeholder="例如：放低俾管理處、特定時間先送到等"></textarea>
-    </div>
-
-    <!-- Payment -->
-    <h4>💳 付款方式</h4>
-    <div class="pay-options" id="payOptions"></div>
-    <div class="pay-detail" id="payDetail"></div>
-
-    <button class="submit-btn" id="submitBtn" onclick="submitOrder()">📱 提交訂單</button>
   </div>
 </div>
 
-<!-- ═══ TOAST ═══ -->
-<div class="toast" id="toast"></div>
+<div class="footer-bar">
+  <a class="btn btn-call" href="tel:+85268557181">📞 致電 6855 7181</a>
+  <a class="btn btn-wa" href="https://wa.me/85268557181?text=我想查詢產品" target="_blank" rel="noopener">💬 WhatsApp 詢價</a>
+</div>
 
+<script src="products-all.js"></script>
 <script>
-/* ═══════════════════════════════════════════
-   💳 付款設定 — 由 mall-config.json 動態載入
-   ═══════════════════════════════════════════ */
-let PAYMENT_CONFIG = {};
-
-/* ═══════════════════════════════════════
-   DATA
-   ═══════════════════════════════════════ */
-let sigmaProducts = [];
-let currentCat = 'all';
-let currentBrand = 'all';
-
-const catConfig = [
-  { id:'充電器', label:'充電器', emoji:'🔌', match:['充電器','火牛','充電頭'] },
-  { id:'充電寶', label:'充電寶', emoji:'🔋', match:['充電寶','電源','power'] },
-  { id:'充電線', label:'充電線', emoji:'🔗', match:['充電線','線材','cable'] },
-  { id:'無線充電器', label:'無線充', emoji:'📡', match:['無線充電器'] },
-  { id:'旅遊插座', label:'旅遊插座', emoji:'🌍', match:['旅遊插座'] },
-  { id:'流動AC電源', label:'AC電源', emoji:'🔋', match:['流動AC電源'] },
-  { id:'UPS', label:'UPS', emoji:'🔋', match:['UPS'] },
-  { id:'電源插座', label:'插座', emoji:'🔌', match:['電源插座'] },
-  { id:'電腦充電器', label:'電腦充', emoji:'💻', match:['電腦充電器'] },
-  { id:'汽車充電器', label:'車充', emoji:'🚗', match:['汽車充電器'] },
-  { id:'充電配件', label:'充電配件', emoji:'🔧', match:['充電配件'] },
-  { id:'充電車', label:'充電車', emoji:'📦', match:['充電車'] },
-  { id:'顯示器支架', label:'支架', emoji:'🖥️', match:['顯示器支架'] },
-  { id:'電動升降桌', label:'升降桌', emoji:'🪑', match:['升降桌'] },
-  { id:'耳機', label:'耳機', emoji:'🎧', match:['耳機','earbud','headphone'] },
-  { id:'音響', label:'音響', emoji:'🔊', match:['音響','喇叭','speaker'] },
-  { id:'風扇', label:'風扇', emoji:'🌀', match:['風扇','fan'] },
-  { id:'健康產品', label:'健康', emoji:'❤️', match:['健康','血壓','體溫'] },
-  { id:'智能科技', label:'智能', emoji:'🤖', match:['智能','翻譯','mouse','手錶'] },
-  { id:'影音器材', label:'影音', emoji:'🎬', match:['影音','投影','收音','麥克風','咪'] },
-  { id:'生活電器', label:'生活', emoji:'🏠', match:['生活電器','空氣','吸塵','煮食','電暖','熨斗','濾芯'] },
-  { id:'智能家居', label:'智能家居', emoji:'🔧', match:['智能家居','路由','WiFi','ip cam','插座'] },
-  { id:'配件', label:'配件', emoji:'📱', match:['配件','掛繩','保溫'] },
-  { id:'手機配件', label:'手機配件', emoji:'📱', match:['手機配件','保護貼','保護殼'] },
-  { id:'工具', label:'工具', emoji:'🧰', match:['工具','螺絲','門鈴'] },
-  { id:'袋/磅', label:'袋/磅', emoji:'🎒', match:['袋','磅'] },
-  { id:'線材配件', label:'線材配件', emoji:'🔗', match:['線材配件'] },
-  { id:'其他', label:'其他', emoji:'📦', match:[] },
-];
-
-function matchCategory(prodCat) {
-  const c = (prodCat||'').toLowerCase();
-  for(const cfg of catConfig) {
-    for(const kw of cfg.match) {
-      if(c.includes(kw.toLowerCase())) return cfg.id;
-    }
-  }
-  return '其他';
-}
-function getCatEmoji(catId) {
-  for(const c of catConfig) if(c.id === catId) return c.emoji;
-  return '📦';
-}
-
-const brandConfig = [
-  { id:'牛魔王', emoji:'🐂' },
-  { id:'Philips', emoji:'💡' },
-  { id:'Sincos', emoji:'🤖' },
-  { id:'JBL', emoji:'🔊' },
-  { id:'MOFT', emoji:'📐' },
-  { id:'SAVEWO', emoji:'🔌' },
-  { id:'Sanrio', emoji:'🎀' },
-  { id:'ARGO', emoji:'⚡' },
-  { id:'Clue Box', emoji:'📦' },
-  { id:'Ismartdigi', emoji:'🔋' },
-  { id:'BOYA', emoji:'🎤' },
-  { id:'TP-Link', emoji:'🌐' },
-  { id:'Creative', emoji:'🎵' },
-  { id:'SMARTCOBY', emoji:'📱' },
-  { id:'Huawei', emoji:'📶' },
-  { id:'Miffy', emoji:'🐰' },
-  { id:'Ringke', emoji:'📱' },
-  { id:'GaN', emoji:'⚡' },
-  { id:'AMG', emoji:'🔊' },
-  { id:'Airmars', emoji:'🎧' },
-  { id:'Airbot', emoji:'🤖' },
-  { id:'Nokia', emoji:'📱' },
-  { id:'Sony', emoji:'🎧' },
-  { id:'10Denki', emoji:'🔋' },
-];
-function getBrandEmoji(brandId) {
-  for(const b of brandConfig) if(b.id === brandId) return b.emoji;
-  return '🏷️';
-}
-
-/* ═══════════════════════════════════════
-   CART (localStorage)
-   ═══════════════════════════════════════ */
-function getCart() {
-  try { return JSON.parse(localStorage.getItem('pandaMallCart')) || []; } catch { return []; }
-}
-function saveCart(cart) {
-  localStorage.setItem('pandaMallCart', JSON.stringify(cart));
-  updateCartBadge();
-}
-function updateCartBadge() {
-  const cart = getCart();
-  const total = cart.reduce((s,i) => s + i.qty, 0);
-  const badge = document.getElementById('cartBadge');
-  if(total > 0) { badge.textContent = total; badge.classList.add('show'); }
-  else { badge.classList.remove('show'); }
-}
-function addToCart(pid, name, price) {
-  let cart = getCart();
-  const existing = cart.find(i => i.id === pid);
-  if(existing) { existing.qty += 1; }
-  else { cart.push({ id: pid, name, price, qty: 1 }); }
-  saveCart(cart);
-  renderCart();
-  showToast(`✅ ${name} 已加入購物車`);
-  // Button feedback
-  const btn = document.querySelector(`[data-pid="${pid}"]`);
-  if(btn) {
-    btn.textContent = '✓ 已加入';
-    btn.classList.add('added');
-    setTimeout(() => {
-      btn.textContent = '🛒 加入購物車';
-      btn.classList.remove('added');
-    }, 1500);
-  }
-}
-function removeFromCart(pid) {
-  let cart = getCart().filter(i => i.id !== pid);
-  saveCart(cart);
-  renderCart();
-}
-function updateQty(pid, delta) {
-  let cart = getCart();
-  const item = cart.find(i => i.id === pid);
-  if(!item) return;
-  item.qty += delta;
-  if(item.qty <= 0) { cart = cart.filter(i => i.id !== pid); }
-  saveCart(cart);
-  renderCart();
-}
-function clearCart() {
-  localStorage.removeItem('pandaMallCart');
-  updateCartBadge();
-  renderCart();
-}
-function getCartTotal() {
-  return getCart().reduce((s,i) => s + i.price * i.qty, 0);
-}
-
-/* ═══ Render Cart Sidebar ═══ */
-function renderCart() {
-  const cart = getCart();
-  const container = document.getElementById('cartItems');
-  const footer = document.getElementById('cartFooter');
-  const empty = document.getElementById('cartEmpty');
-
-  // Remove old items
-  container.querySelectorAll('.cart-item').forEach(el => el.remove());
-
-  if(cart.length === 0) {
-    empty.style.display = 'block';
-    footer.style.display = 'none';
-    return;
-  }
-  empty.style.display = 'none';
-  footer.style.display = 'block';
-  document.getElementById('cartTotal').textContent = 'HK$' + getCartTotal().toLocaleString();
-
-  cart.forEach(item => {
-    const div = document.createElement('div');
-    div.className = 'cart-item';
-    div.innerHTML = `
-      <div class="cart-item-emoji">📦</div>
-      <div class="cart-item-info">
-        <div class="cart-item-name">${item.name}</div>
-        <div class="cart-item-price">HK$${item.price.toLocaleString()}</div>
-        <div class="cart-item-qty">
-          <button class="qty-btn" onclick="updateQty('${item.id}', -1)">−</button>
-          <span class="qty-num">${item.qty}</span>
-          <button class="qty-btn" onclick="updateQty('${item.id}', 1)">+</button>
-        </div>
-      </div>
-      <button class="cart-item-del" onclick="removeFromCart('${item.id}')">✕</button>
-    `;
-    container.appendChild(div);
+(function(){
+  var P = ALL_PRODUCTS || [];
+  
+  // Brand data
+  var brands = {};
+  P.forEach(function(p){
+    var b = p.brand;
+    if (!brands[b]) brands[b] = { products: [], cats: new Set(), withImg: 0 };
+    brands[b].products.push(p);
+    brands[b].cats.add(p.category);
+    if (p.image) brands[b].withImg++;
   });
-}
 
-function toggleCart(force) {
-  const s = document.getElementById('cartSidebar');
-  const o = document.getElementById('cartOverlay');
-  if(force === true) { s.classList.add('active'); o.classList.add('active'); }
-  else if(s.classList.contains('active')) { s.classList.remove('active'); o.classList.remove('active'); }
-  else { s.classList.add('active'); o.classList.add('active'); }
-}
+  var brandNames = Object.keys(brands).sort();
+  
+  // Render brand tabs
+  var tabsEl = document.getElementById('brandTabs');
+  var allTab = document.createElement('span');
+  allTab.className = 'brand-tab on';
+  allTab.innerHTML = '全部 <span class="badge">'+P.length+'</span>';
+  allTab.onclick = function(){ setBrand(''); };
+  tabsEl.appendChild(allTab);
 
-function whatsappCart() {
-  const cart = getCart();
-  if(!cart.length) return;
-  let msg = '你好，我想查詢以下產品：%0A%0A';
-  cart.forEach(i => { msg += `- ${i.name} x${i.qty} (HK$${(i.price*i.qty).toLocaleString()})%0A`; });
-  msg += `%0A總額：HK$${getCartTotal().toLocaleString()}`;
-  window.open(`https://wa.me/85268557181?text=${msg}`, '_blank');
-}
-
-/* ═══════════════════════════════════════
-   CHECKOUT
-   ═══════════════════════════════════════ */
-function openCheckout() {
-  const cart = getCart();
-  if(!cart.length) { showToast('購物車係空嘅 🐼', true); return; }
-
-  // Build summary
-  const summary = document.getElementById('checkoutSummary');
-  summary.innerHTML = cart.map(i => `<div class="os-item"><span>${i.name} ×${i.qty}</span><span>HK$${(i.price*i.qty).toLocaleString()}</span></div>`).join('') +
-    `<div class="os-total"><span>合計</span><span>HK$${getCartTotal().toLocaleString()}</span></div>`;
-
-  // Build payment options
-  const payOpts = document.getElementById('payOptions');
-  payOpts.innerHTML = Object.entries(PAYMENT_CONFIG).map(([k,v]) =>
-    `<div class="pay-opt" data-pay="${k}" onclick="selectPay('${k}')"><span class="pay-emoji">${v.emoji}</span>${v.label}</div>`
-  ).join('');
-
-  // Reset
-  document.getElementById('coName').value = '';
-  document.getElementById('coPhone').value = '';
-  document.getElementById('coDelivery').value = '自取';
-  document.getElementById('coAddressGroup').style.display = 'none';
-  document.getElementById('coNote').value = '';
-  document.getElementById('payDetail').className = 'pay-detail';
-  document.querySelectorAll('.pay-opt').forEach(el => el.classList.remove('selected'));
-  document.getElementById('submitBtn').disabled = false;
-  document.getElementById('submitBtn').textContent = '📱 提交訂單';
-
-  // Show modal
-  document.getElementById('checkoutModal').classList.add('active');
-  document.getElementById('modalOverlay').classList.add('active');
-}
-
-function closeCheckout() {
-  document.getElementById('checkoutModal').classList.remove('active');
-  document.getElementById('modalOverlay').classList.remove('active');
-}
-
-function selectPay(key) {
-  document.querySelectorAll('.pay-opt').forEach(el => el.classList.toggle('selected', el.dataset.pay === key));
-  const detail = document.getElementById('payDetail');
-  const cfg = PAYMENT_CONFIG[key];
-  if(cfg) {
-    detail.innerHTML = `💳 <strong>${cfg.emoji} ${cfg.label}</strong><br><br>${cfg.detail}`;
-    detail.className = 'pay-detail show';
-  } else {
-    detail.className = 'pay-detail';
-  }
-}
-
-// Show/hide address field based on delivery
-document.addEventListener('change', function(e) {
-  if(e.target.id === 'coDelivery') {
-    document.getElementById('coAddressGroup').style.display = e.target.value === '順豐' ? 'block' : 'none';
-  }
-});
-
-function submitOrder() {
-  const name = document.getElementById('coName').value.trim();
-  const phone = document.getElementById('coPhone').value.trim();
-  const delivery = document.getElementById('coDelivery').value;
-  const address = document.getElementById('coAddress').value.trim();
-  const note = document.getElementById('coNote').value.trim();
-
-  if(!name || !phone) { showToast('請填姓名同電話 📝', true); return; }
-
-  const btn = document.getElementById('submitBtn');
-  btn.disabled = true;
-  btn.textContent = '⏳ 處理中...';
-
-  const cart = getCart();
-  const selectedPay = document.querySelector('.pay-opt.selected');
-  const payMethod = selectedPay ? selectedPay.dataset.pay : '未選擇';
-
-  const now = new Date();
-  const dateStr = now.toLocaleDateString('zh-HK');
-  const timeStr = now.toLocaleTimeString('zh-HK', { hour:'2-digit', minute:'2-digit' });
-  const orderId = 'PM' + now.getTime().toString(36).toUpperCase();
-
-  let msg = `🛒 *新訂單 #${orderId}*%0A`;
-  msg += `━━━━━━━━━━━━━━━%0A`;
-  msg += `👤 *${name}*%0A`;
-  msg += `📞 ${phone}%0A`;
-  msg += `📅 ${dateStr} ${timeStr}%0A%0A`;
-  msg += `*🛍️ 產品：*%0A`;
-  cart.forEach(i => { msg += `  ${i.name} ×${i.qty} = HK$${(i.price*i.qty).toLocaleString()}%0A`; });
-  msg += `%0A💵 *總額：HK$${getCartTotal().toLocaleString()}*%0A`;
-  msg += `━━━━━━━━━━━━━━━%0A`;
-  msg += `📦 *取貨：*${delivery}%0A`;
-  if(address) msg += `📍 *地址：*${address}%0A`;
-  msg += `💳 *付款：*${PAYMENT_CONFIG[payMethod] ? PAYMENT_CONFIG[payMethod].emoji + ' ' + PAYMENT_CONFIG[payMethod].label : payMethod}%0A`;
-  if(note) msg += `📝 *備註：*${note}%0A`;
-  msg += `━━━━━━━━━━━━━━━%0A`;
-  msg += `🐼 熊貓電訊 Panda Telecom`;
-
-  // Open WhatsApp and clear cart
-  window.open(`https://wa.me/85268557181?text=${msg}`, '_blank');
-
-  setTimeout(() => {
-    clearCart();
-    closeCheckout();
-    showToast('🎉 訂單已送出！我哋會盡快 WhatsApp 你確認');
-    renderCart();
-  }, 500);
-}
-
-/* ═══════════════════════════════════════
-   TOAST
-   ═══════════════════════════════════════ */
-let toastTimer;
-function showToast(msg, isError) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = 'toast' + (isError ? ' error' : '');
-  clearTimeout(toastTimer);
-  requestAnimationFrame(() => { t.classList.add('show'); });
-  toastTimer = setTimeout(() => { t.classList.remove('show'); }, 3000);
-}
-
-/* ═══════════════════════════════════════
-   PRODUCT RENDERING
-   ═══════════════════════════════════════ */
-function renderBrandTabs() {
-  const allProds = getFilteredProducts(true);
-  const brands = new Set();
-  allProds.forEach(p => { if(p.brand) brands.add(p.brand); });
-  const ordered = brandConfig.filter(b => brands.has(b.id));
-  const others = [...brands].filter(b => !brandConfig.some(c => c.id === b));
-  const container = document.getElementById('brandTabs');
-  container.innerHTML = `<button class="brand-tab active" data-brand="all" onclick="setBrand('all')">🏷️ 全部品牌</button>` +
-    ordered.map(b => `<button class="brand-tab" data-brand="${b.id}" onclick="setBrand('${b.id}')">${b.emoji} ${b.id}</button>`).join('') +
-    (others.length ? `<button class="brand-tab" data-brand="__other__" onclick="setBrand('__other__')">🏷️ 其他</button>` : '');
-}
-function setBrand(brand) {
-  currentBrand = brand;
-  document.querySelectorAll('.brand-tab').forEach(t => t.classList.toggle('active', t.dataset.brand === brand));
-  renderProducts();
-}
-
-/* ── Init (load products + config) ── */
-async function loadProducts() {
-  // Try unified mall-products.json first, fall back to old files
-  let data;
-  try {
-    const r = await fetch('mall-products.json?' + Date.now());
-    data = await r.json();
-    sigmaProducts = data.products || data;
-  } catch(e) {
-    const [sigma, niuwang] = await Promise.all([
-      fetch('sigma_products.json').then(r => r.json()),
-      fetch('niuwang_products.json').then(r => r.json())
-    ]);
-    sigmaProducts = (sigma.products || sigma).concat(niuwang.products || niuwang);
-  }
-  // Load config
-  try {
-    const r = await fetch('mall-config.json?' + Date.now());
-    const cfg = await r.json();
-    if(cfg.payment) PAYMENT_CONFIG = cfg.payment;
-  } catch(e) {
-    // Config file may not exist yet
-  }
-}
-
-loadProducts().then(() => {
-  renderCatTabs();
-  renderBrandTabs();
-  renderProducts();
-  updateCartBadge();
-  renderCart();
-}).catch(err => {
-  document.getElementById('count').textContent = '⚠️ 無法載入產品數據，請稍後再試';
-  console.error('Failed to load products:', err);
-});
-
-function renderCatTabs() {
-  const allProds = getFilteredProducts(true);
-  const cats = new Set();
-  allProds.forEach(p => cats.add(matchCategory(p.category)));
-  const ordered = catConfig.filter(c => cats.has(c.id) || c.id === '其他');
-  const container = document.getElementById('catTabs');
-  container.innerHTML = `<button class="cat-tab active" data-cat="all" onclick="setCategory('all')">全部</button>` +
-    ordered.filter(c => c.id !== '其他').map(c => 
-      `<button class="cat-tab" data-cat="${c.id}" onclick="setCategory('${c.id}')">${c.emoji} ${c.label}</button>`
-    ).join('') +
-    (cats.has('其他') ? `<button class="cat-tab" data-cat="其他" onclick="setCategory('其他')">📦 其他</button>` : '');
-}
-
-function setCategory(cat) {
-  currentCat = cat;
-  document.querySelectorAll('.cat-tab').forEach(t => t.classList.toggle('active', t.dataset.cat === cat));
-  renderProducts();
-}
-function filterProducts() { renderProducts(); }
-
-function getFilteredProducts(ignoreCat) {
-  let pool = sigmaProducts;
-  if(ignoreCat) return pool;
-  const q = (document.getElementById('search').value || '').toLowerCase().trim();
-  const targetCat = currentCat;
-  const targetBrand = currentBrand;
-  return pool.filter(p => {
-    // Hide unavailable products
-    if(p.available === false) return false;
-    if(targetCat !== 'all') {
-      const matched = matchCategory(p.category);
-      if(matched !== targetCat) return false;
-    }
-    if(targetBrand !== 'all') {
-      if(targetBrand === '__other__') {
-        if(brandConfig.some(c => c.id === p.brand)) return false;
-      } else {
-        if(p.brand !== targetBrand) return false;
-      }
-    }
-    if(q) {
-      const haystack = (p.name + ' ' + p.brand + ' ' + (p.desc||'') + ' ' + (p.category||'') + ' ' + p.id).toLowerCase();
-      return haystack.includes(q);
-    }
-    return true;
+  brandNames.forEach(function(b){
+    var tab = document.createElement('span');
+    tab.className = 'brand-tab';
+    tab.innerHTML = b + ' <span class="badge">'+brands[b].products.length+'</span>';
+    tab.onclick = function(){ setBrand(b); };
+    tabsEl.appendChild(tab);
   });
-}
 
-function renderProducts() {
-  const filtered = getFilteredProducts(false);
-  document.getElementById('count').textContent = `共 ${filtered.length} 件產品`;
-  const grid = document.getElementById('products');
-  grid.innerHTML = filtered.map(p => {
-    const brand = p.brand || '其他';
-    const catId = matchCategory(p.category);
-    const emoji = getCatEmoji(catId);
-    const msg = encodeURIComponent(`你好，我想查詢產品：${p.name}（HKD $${p.price}）`);
-    const imgSrc = 'images/prod/' + p.id + '.png';
-    return `<div class="product-card">
-      <div style="height:220px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border);position:relative;border-radius:12px 12px 0 0">
-        <div style="position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;background:var(--green);color:#fff;z-index:2">${brand}</div>
-        <img src="${imgSrc}" alt="${p.name}" style="max-width:90%;max-height:90%;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\\'font-size:48px;color:#555;display:flex;align-items:center;justify-content:center;width:100%;height:100%\\'>${emoji}</div>'">
-      </div>
-      <div class="p-body">
-        <div class="p-cat" style="color:var(--green)">${emoji} ${p.category || '其他'}</div>
-        <div class="p-brand">${brand} · ${p.id.toUpperCase()}</div>
-        <div class="p-name">${p.name}</div>
-        <div class="p-desc">${p.desc || ''}</div>
-        ${p.features && p.features.length ? `<ul class="p-features">${p.features.slice(0,4).map(f => `<li>${f}</li>`).join('')}</ul>` : ''}
-        <div class="p-foot">
-          <div class="p-price">$${p.price}<small> SRP</small></div>
-          <div class="p-actions">
-            <button class="p-btn add-cart" data-pid="${p.id}" onclick="addToCart('${p.id}','${p.name.replace(/'/g,"\\'")}',${p.price})">🛒 加入購物車</button>
-            <a href="https://wa.me/85268557181?text=${msg}" class="p-btn inquiry" target="_blank" rel="noopener" title="WhatsApp 查詢">💬</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
+  var currentBrand = '';
+  var currentCat = '';
+  var currentQuery = '';
 
-/* ── Keyboard shortcut ── */
-document.addEventListener('keydown', e => {
-  if(e.key === 'Escape') {
-    if(document.getElementById('checkoutModal').classList.contains('active')) closeCheckout();
-    else if(document.getElementById('cartSidebar').classList.contains('active')) toggleCart();
+  function setBrand(b){
+    currentBrand = b;
+    currentCat = '';
+    tabsEl.querySelectorAll('.brand-tab').forEach(function(t){ t.classList.remove('on'); });
+    if (b) {
+      var idx = brandNames.indexOf(b) + 1;
+      tabsEl.children[idx].classList.add('on');
+    } else {
+      tabsEl.children[0].classList.add('on');
+    }
+    renderCats();
+    render();
   }
-});
+
+  // Category pills
+  function renderCats(){
+    var cats = new Set();
+    var src = currentBrand ? brands[currentBrand].products : P;
+    src.forEach(function(p){ cats.add(p.category); });
+    var catsArr = Array.from(cats).sort();
+    
+    var catsEl = document.getElementById('cats');
+    catsEl.innerHTML = '';
+    
+    var allCat = document.createElement('span');
+    allCat.className = 'cat-chip' + (currentCat ? '' : ' on');
+    allCat.textContent = '全部分類';
+    allCat.onclick = function(){
+      currentCat = '';
+      catsEl.querySelectorAll('.cat-chip').forEach(function(c){ c.classList.remove('on'); });
+      allCat.classList.add('on');
+      render();
+    };
+    catsEl.appendChild(allCat);
+    
+    catsArr.forEach(function(c){
+      var chip = document.createElement('span');
+      chip.className = 'cat-chip';
+      chip.textContent = c;
+      chip.onclick = function(){
+        currentCat = c;
+        catsEl.querySelectorAll('.cat-chip').forEach(function(x){ x.classList.remove('on'); });
+        chip.classList.add('on');
+        render();
+      };
+      catsEl.appendChild(chip);
+    });
+  }
+
+  function render(){
+    var q = (document.getElementById('search').value || '').toLowerCase().trim();
+    var src = currentBrand ? brands[currentBrand].products : P;
+    
+    if (currentCat) src = src.filter(function(p){ return p.category === currentCat; });
+    if (q) src = src.filter(function(p){
+      return p.name.toLowerCase().indexOf(q) !== -1 || 
+             (p.id || '').toLowerCase().indexOf(q) !== -1 ||
+             (p.brand || '').toLowerCase().indexOf(q) !== -1;
+    });
+
+    document.getElementById('shownCount').textContent = src.length;
+    
+    if (!src.length) {
+      document.getElementById('list').innerHTML = '<div class="empty-state"><div class="empty-icon">😕</div><p>冇搵到相關產品</p></div>';
+      return;
+    }
+
+    var out = '<div class="grid">';
+    src.forEach(function(p){
+      var imgHtml = p.image 
+        ? '<img src="'+p.image+'" alt="'+p.name+'" loading="lazy" onerror="this.parentElement.innerHTML=\\'<span class=no-img>📦</span>\\'" />'
+        : '<span class="no-img">📦</span>';
+      
+      var srpHtml = p.msrp && p.srp && p.msrp < p.srp 
+        ? '<span class="card-srp">$'+p.srp+'</span>' : '';
+      
+      out += '<div class="card" onclick="openModal(\''+p.id+'\')">';
+      out += '<div class="card-thumb">'+imgHtml+'</div>';
+      out += '<div class="card-body">';
+      if (p.brand) out += '<div class="card-brand">'+p.brand+'</div>';
+      out += '<div class="card-name">'+p.name+'</div>';
+      out += '<div class="card-prices">';
+      out += '<span class="card-msrp">$'+(p.msrp || p.srp)+'</span>';
+      out += srpHtml;
+      out += '</div>';
+      out += '<a class="card-wa" href="https://wa.me/85268557181?text='+encodeURIComponent('我想查詢 '+p.brand+' '+p.name)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">💬 查詢</a>';
+      out += '</div></div>';
+    });
+    out += '</div>';
+    document.getElementById('list').innerHTML = out;
+  }
+
+  // Modal
+  window.openModal = function(id){
+    var p = P.find(function(x){ return x.id === id; });
+    if (!p) return;
+    
+    document.getElementById('modalImg').src = p.image || '';
+    document.getElementById('modalImg').style.display = p.image ? '' : 'none';
+    document.getElementById('modalBrand').textContent = p.brand || '';
+    document.getElementById('modalName').textContent = p.name;
+    document.getElementById('modalMsrp').textContent = '$'+(p.msrp || p.srp);
+    
+    if (p.msrp && p.srp && p.msrp < p.srp) {
+      document.getElementById('modalSrp').textContent = '$'+p.srp;
+      document.getElementById('modalSrp').style.display = '';
+    } else {
+      document.getElementById('modalSrp').style.display = 'none';
+    }
+    
+    document.getElementById('modalDesc').textContent = p.desc || '';
+    document.getElementById('modalDesc').style.display = p.desc ? '' : 'none';
+    
+    var featEl = document.getElementById('modalFeatures');
+    featEl.innerHTML = '';
+    if (p.features && p.features.length) {
+      p.features.forEach(function(f){
+        var li = document.createElement('li');
+        li.textContent = f;
+        featEl.appendChild(li);
+      });
+    }
+    
+    document.getElementById('modalWa').href = 'https://wa.me/85268557181?text='+encodeURIComponent('我想查詢 '+p.brand+' '+p.name+' ('+p.id+')');
+    document.getElementById('modal').classList.add('show');
+  };
+
+  window.closeModal = function(){
+    document.getElementById('modal').classList.remove('show');
+  };
+
+  document.getElementById('modal').addEventListener('click', function(e){
+    if (e.target === this) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeModal();
+  });
+
+  // Search
+  var searchEl = document.getElementById('search');
+  var timer;
+  searchEl.addEventListener('input', function(){
+    clearTimeout(timer);
+    timer = setTimeout(render, 150);
+  });
+
+  // Init
+  document.getElementById('totalCount').textContent = P.length;
+  document.getElementById('imgCount').textContent = P.filter(function(p){ return p.image; }).length;
+  renderCats();
+  render();
+
+  // Status bar
+  (function(){
+    var bar = document.getElementById('statusBar');
+    var now = new Date();
+    var hk = new Date(now.toLocaleString('en-US', {timeZone:'Asia/Hong_Kong'}));
+    var h = hk.getHours(), m = hk.getMinutes();
+    var totalMin = h * 60 + m;
+    var isOpen = (totalMin >= 660 && totalMin < 1140); // 11:00-19:00
+    if(isOpen) { bar.textContent = '🟢 而家營業中 · 11:00-19:00'; bar.className = 'status-bar open'; }
+    else if(totalMin < 660) { bar.textContent = '🟠 未開門 · 今日 11:00 開舖'; bar.className = 'status-bar closed'; }
+    else { bar.textContent = '🔴 已關門 · 聽日 11:00 再開'; bar.className = 'status-bar closed'; }
+  })();
+})();
 </script>
 </body>
 </html>
