@@ -6120,7 +6120,7 @@ const ALL_PRODUCTS = [
     "srp": 118.0,
     "msrp": 118.0,
     "res": 0.0,
-    "image": "products-img/240w-12cm.png",
+    "image": "",
     "desc": "",
     "features": []
   },
@@ -8515,7 +8515,7 @@ const ALL_PRODUCTS = [
     "srp": 1388.0,
     "msrp": 1388.0,
     "res": 0.0,
-    "image": "products-img/.png",
+    "image": "",
     "desc": "",
     "features": []
   },
@@ -10814,7 +10814,7 @@ const ALL_PRODUCTS = [
     "srp": 548.0,
     "msrp": 548.0,
     "res": 0.0,
-    "image": "products-img/.png",
+    "image": "",
     "desc": "",
     "features": []
   },
@@ -11186,7 +11186,7 @@ const ALL_PRODUCTS = [
     "srp": 138.0,
     "msrp": 138.0,
     "res": 0.0,
-    "image": "products-img/.png",
+    "image": "",
     "desc": "",
     "features": []
   },
