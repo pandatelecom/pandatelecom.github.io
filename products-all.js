@@ -1,7 +1,6 @@
 // Panda Telecom - Unified Product Catalog
-// Auto-generated - DO NOT EDIT
 // 854 products across 54 brands
-// Generated: 2026-07-19
+// Generated: 2026-07-25
 
 const ALL_PRODUCTS = [
   {
@@ -24,7 +23,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/AP11SLX.svg",
     "desc": "",
     "features": []
   },
@@ -36,7 +35,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/AP16SLX3.svg",
     "desc": "",
     "features": []
   },
@@ -48,7 +47,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 98.0,
     "res": 98.0,
-    "image": "",
+    "image": "products-img/AP6SLX.svg",
     "desc": "",
     "features": []
   },
@@ -60,7 +59,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 198.0,
     "res": 198.0,
-    "image": "",
+    "image": "products-img/AP8SLX.svg",
     "desc": "",
     "features": []
   },
@@ -72,7 +71,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 108.0,
     "res": 108.0,
-    "image": "",
+    "image": "products-img/AP9SLX.svg",
     "desc": "",
     "features": []
   },
@@ -84,7 +83,7 @@ const ALL_PRODUCTS = [
     "srp": 69.0,
     "msrp": 34.0,
     "res": 34.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -96,7 +95,7 @@ const ALL_PRODUCTS = [
     "srp": 319.0,
     "msrp": 299.0,
     "res": 168.0,
-    "image": "",
+    "image": "products-img/UA22UKM.svg",
     "desc": "",
     "features": []
   },
@@ -108,7 +107,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 349.0,
     "res": 238.0,
-    "image": "",
+    "image": "products-img/UA10UKD.svg",
     "desc": "",
     "features": []
   },
@@ -120,7 +119,7 @@ const ALL_PRODUCTS = [
     "srp": 649.0,
     "msrp": 599.0,
     "res": 390.0,
-    "image": "",
+    "image": "products-img/UA17UKD.svg",
     "desc": "",
     "features": []
   },
@@ -132,7 +131,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 60.0,
-    "image": "",
+    "image": "products-img/UA29UKM.svg",
     "desc": "",
     "features": []
   },
@@ -144,7 +143,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 60.0,
-    "image": "",
+    "image": "products-img/UA29UKW.svg",
     "desc": "",
     "features": []
   },
@@ -156,7 +155,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 60.0,
-    "image": "",
+    "image": "products-img/UA29UKD.svg",
     "desc": "",
     "features": []
   },
@@ -168,7 +167,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 179.0,
     "res": 128.0,
-    "image": "",
+    "image": "products-img/UA9UKW.svg",
     "desc": "",
     "features": []
   },
@@ -180,7 +179,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 179.0,
     "res": 128.0,
-    "image": "",
+    "image": "products-img/UA9UKD.svg",
     "desc": "",
     "features": []
   },
@@ -192,7 +191,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 179.0,
     "res": 128.0,
-    "image": "",
+    "image": "products-img/UA9UKE.svg",
     "desc": "",
     "features": []
   },
@@ -204,7 +203,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 269.0,
     "res": 158.0,
-    "image": "",
+    "image": "products-img/UA8AUKU.svg",
     "desc": "",
     "features": []
   },
@@ -216,7 +215,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 269.0,
     "res": 158.0,
-    "image": "",
+    "image": "products-img/UA8AUKD.svg",
     "desc": "",
     "features": []
   },
@@ -228,7 +227,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 269.0,
     "res": 158.0,
-    "image": "",
+    "image": "products-img/UA8AUKW.svg",
     "desc": "",
     "features": []
   },
@@ -240,7 +239,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 269.0,
     "res": 158.0,
-    "image": "",
+    "image": "products-img/UA8AUKE.svg",
     "desc": "",
     "features": []
   },
@@ -252,7 +251,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 69.0,
     "res": 39.0,
-    "image": "",
+    "image": "products-img/UA19UKE.svg",
     "desc": "",
     "features": []
   },
@@ -264,7 +263,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 69.0,
     "res": 39.0,
-    "image": "",
+    "image": "products-img/UA19UKW.svg",
     "desc": "",
     "features": []
   },
@@ -276,7 +275,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 69.0,
     "res": 39.0,
-    "image": "",
+    "image": "products-img/UA19UKP.svg",
     "desc": "",
     "features": []
   },
@@ -288,7 +287,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 69.0,
     "res": 39.0,
-    "image": "",
+    "image": "products-img/UA19UKD.svg",
     "desc": "",
     "features": []
   },
@@ -300,7 +299,7 @@ const ALL_PRODUCTS = [
     "srp": 449.0,
     "msrp": 399.0,
     "res": 270.0,
-    "image": "",
+    "image": "products-img/UA23UKL.svg",
     "desc": "",
     "features": []
   },
@@ -312,7 +311,7 @@ const ALL_PRODUCTS = [
     "srp": 449.0,
     "msrp": 399.0,
     "res": 270.0,
-    "image": "",
+    "image": "products-img/UA23UKD.svg",
     "desc": "",
     "features": []
   },
@@ -324,7 +323,7 @@ const ALL_PRODUCTS = [
     "srp": 749.0,
     "msrp": 669.0,
     "res": 470.0,
-    "image": "",
+    "image": "products-img/UA28UKL.svg",
     "desc": "",
     "features": []
   },
@@ -336,7 +335,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 149.0,
     "res": 99.0,
-    "image": "",
+    "image": "products-img/UA26UKW.svg",
     "desc": "",
     "features": []
   },
@@ -348,7 +347,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 149.0,
     "res": 99.0,
-    "image": "",
+    "image": "products-img/UA26UKD.svg",
     "desc": "",
     "features": []
   },
@@ -360,7 +359,7 @@ const ALL_PRODUCTS = [
     "srp": 209.0,
     "msrp": 179.0,
     "res": 115.0,
-    "image": "",
+    "image": "products-img/UA27UKL2.svg",
     "desc": "",
     "features": []
   },
@@ -372,7 +371,7 @@ const ALL_PRODUCTS = [
     "srp": 209.0,
     "msrp": 179.0,
     "res": 115.0,
-    "image": "",
+    "image": "products-img/UA27UKD.svg",
     "desc": "",
     "features": []
   },
@@ -384,7 +383,7 @@ const ALL_PRODUCTS = [
     "srp": 319.0,
     "msrp": 299.0,
     "res": 168.0,
-    "image": "",
+    "image": "products-img/UA22UKL2.svg",
     "desc": "",
     "features": []
   },
@@ -396,7 +395,7 @@ const ALL_PRODUCTS = [
     "srp": 319.0,
     "msrp": 299.0,
     "res": 168.0,
-    "image": "",
+    "image": "products-img/UA22UKD.svg",
     "desc": "",
     "features": []
   },
@@ -408,7 +407,7 @@ const ALL_PRODUCTS = [
     "srp": 339.0,
     "msrp": 210.0,
     "res": 210.0,
-    "image": "",
+    "image": "products-img/UA30UKL.svg",
     "desc": "",
     "features": []
   },
@@ -420,7 +419,7 @@ const ALL_PRODUCTS = [
     "srp": 339.0,
     "msrp": 210.0,
     "res": 210.0,
-    "image": "",
+    "image": "products-img/UA30UKD.svg",
     "desc": "",
     "features": []
   },
@@ -432,7 +431,7 @@ const ALL_PRODUCTS = [
     "srp": 2380.0,
     "msrp": 1280.0,
     "res": 1280.0,
-    "image": "",
+    "image": "products-img/AP16SUKW.svg",
     "desc": "",
     "features": []
   },
@@ -444,7 +443,7 @@ const ALL_PRODUCTS = [
     "srp": 89.0,
     "msrp": 79.0,
     "res": 45.0,
-    "image": "",
+    "image": "products-img/DC25D.svg",
     "desc": "",
     "features": []
   },
@@ -504,7 +503,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 50.0,
-    "image": "",
+    "image": "products-img/DC26W.svg",
     "desc": "",
     "features": []
   },
@@ -516,7 +515,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 50.0,
-    "image": "",
+    "image": "products-img/DC26D.svg",
     "desc": "",
     "features": []
   },
@@ -588,7 +587,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 80.0,
-    "image": "",
+    "image": "products-img/DC39D.svg",
     "desc": "",
     "features": []
   },
@@ -840,7 +839,7 @@ const ALL_PRODUCTS = [
     "srp": 119.0,
     "msrp": 105.0,
     "res": 68.0,
-    "image": "",
+    "image": "products-img/DL39M.svg",
     "desc": "",
     "features": []
   },
@@ -852,7 +851,7 @@ const ALL_PRODUCTS = [
     "srp": 89.0,
     "msrp": 79.0,
     "res": 53.0,
-    "image": "",
+    "image": "products-img/DL35W.svg",
     "desc": "",
     "features": []
   },
@@ -864,7 +863,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 159.0,
     "res": 99.0,
-    "image": "",
+    "image": "products-img/UC19E.svg",
     "desc": "",
     "features": []
   },
@@ -876,7 +875,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 89.0,
-    "image": "",
+    "image": "products-img/UC17E.svg",
     "desc": "",
     "features": []
   },
@@ -888,7 +887,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 58.0,
-    "image": "",
+    "image": "products-img/UC16E.svg",
     "desc": "",
     "features": []
   },
@@ -900,7 +899,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 70.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/UC16GSC.svg",
     "desc": "",
     "features": []
   },
@@ -912,7 +911,7 @@ const ALL_PRODUCTS = [
     "srp": 159.0,
     "msrp": 95.0,
     "res": 95.0,
-    "image": "",
+    "image": "products-img/UC16GSL.svg",
     "desc": "",
     "features": []
   },
@@ -936,7 +935,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 99.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/CM22E.svg",
     "desc": "",
     "features": []
   },
@@ -948,7 +947,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 99.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/CM22L.svg",
     "desc": "",
     "features": []
   },
@@ -960,7 +959,7 @@ const ALL_PRODUCTS = [
     "srp": 189.0,
     "msrp": 149.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/CM30E.svg",
     "desc": "",
     "features": []
   },
@@ -972,7 +971,7 @@ const ALL_PRODUCTS = [
     "srp": 189.0,
     "msrp": 149.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/CM30L.svg",
     "desc": "",
     "features": []
   },
@@ -984,7 +983,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 329.0,
     "res": 235.0,
-    "image": "",
+    "image": "products-img/CM32L.svg",
     "desc": "",
     "features": []
   },
@@ -1032,7 +1031,7 @@ const ALL_PRODUCTS = [
     "srp": 159.0,
     "msrp": 129.0,
     "res": 80.0,
-    "image": "",
+    "image": "products-img/UM71UKL2.svg",
     "desc": "",
     "features": []
   },
@@ -1272,7 +1271,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 79.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/UM56UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1284,7 +1283,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 179.0,
     "res": 118.0,
-    "image": "",
+    "image": "products-img/UM50UKP.svg",
     "desc": "",
     "features": []
   },
@@ -1296,7 +1295,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 64.0,
     "res": 64.0,
-    "image": "",
+    "image": "products-img/US10UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1308,7 +1307,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/US6UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1320,7 +1319,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/US6UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1332,7 +1331,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/US8UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1344,7 +1343,7 @@ const ALL_PRODUCTS = [
     "srp": 189.0,
     "msrp": 149.0,
     "res": 120.0,
-    "image": "",
+    "image": "products-img/US3UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1356,7 +1355,7 @@ const ALL_PRODUCTS = [
     "srp": 189.0,
     "msrp": 149.0,
     "res": 120.0,
-    "image": "",
+    "image": "products-img/US3UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1368,7 +1367,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 179.0,
     "res": 150.0,
-    "image": "",
+    "image": "products-img/US5UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1380,7 +1379,7 @@ const ALL_PRODUCTS = [
     "srp": 269.0,
     "msrp": 219.0,
     "res": 175.0,
-    "image": "",
+    "image": "products-img/US11UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1392,7 +1391,7 @@ const ALL_PRODUCTS = [
     "srp": 269.0,
     "msrp": 219.0,
     "res": 175.0,
-    "image": "",
+    "image": "products-img/US11UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1404,7 +1403,7 @@ const ALL_PRODUCTS = [
     "srp": 249.0,
     "msrp": 199.0,
     "res": 160.0,
-    "image": "",
+    "image": "products-img/US18UKE.svg",
     "desc": "",
     "features": []
   },
@@ -1416,7 +1415,7 @@ const ALL_PRODUCTS = [
     "srp": 249.0,
     "msrp": 199.0,
     "res": 160.0,
-    "image": "",
+    "image": "products-img/US18UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1428,7 +1427,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 719.0,
     "res": 468.0,
-    "image": "",
+    "image": "products-img/UD30MFIE.svg",
     "desc": "",
     "features": []
   },
@@ -1440,7 +1439,7 @@ const ALL_PRODUCTS = [
     "srp": 899.0,
     "msrp": 585.0,
     "res": 585.0,
-    "image": "",
+    "image": "products-img/UD31L2.svg",
     "desc": "",
     "features": []
   },
@@ -1452,7 +1451,7 @@ const ALL_PRODUCTS = [
     "srp": 899.0,
     "msrp": 585.0,
     "res": 585.0,
-    "image": "",
+    "image": "products-img/UD31L.svg",
     "desc": "",
     "features": []
   },
@@ -1464,7 +1463,7 @@ const ALL_PRODUCTS = [
     "srp": 899.0,
     "msrp": 585.0,
     "res": 585.0,
-    "image": "",
+    "image": "products-img/UD31D.svg",
     "desc": "",
     "features": []
   },
@@ -1476,7 +1475,7 @@ const ALL_PRODUCTS = [
     "srp": 269.0,
     "msrp": 209.0,
     "res": 150.0,
-    "image": "",
+    "image": "products-img/UD32L.svg",
     "desc": "",
     "features": []
   },
@@ -1512,7 +1511,7 @@ const ALL_PRODUCTS = [
     "srp": 499.0,
     "msrp": 275.0,
     "res": 275.0,
-    "image": "",
+    "image": "products-img/RO9E.svg",
     "desc": "",
     "features": []
   },
@@ -1524,7 +1523,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 220.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/RO12E.svg",
     "desc": "",
     "features": []
   },
@@ -1536,7 +1535,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 220.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/RO12W.svg",
     "desc": "",
     "features": []
   },
@@ -1548,7 +1547,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 220.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/RO12D.svg",
     "desc": "",
     "features": []
   },
@@ -1560,7 +1559,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/RO3LX.svg",
     "desc": "",
     "features": []
   },
@@ -1572,7 +1571,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 228.0,
     "res": 228.0,
-    "image": "",
+    "image": "products-img/RO3E.svg",
     "desc": "",
     "features": []
   },
@@ -1584,7 +1583,7 @@ const ALL_PRODUCTS = [
     "srp": 499.0,
     "msrp": 250.0,
     "res": 250.0,
-    "image": "",
+    "image": "products-img/RO7LX1.svg",
     "desc": "",
     "features": []
   },
@@ -1596,7 +1595,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 50.0,
     "res": 50.0,
-    "image": "",
+    "image": "products-img/RO7LX2.svg",
     "desc": "",
     "features": []
   },
@@ -1608,7 +1607,7 @@ const ALL_PRODUCTS = [
     "srp": 599.0,
     "msrp": 300.0,
     "res": 300.0,
-    "image": "",
+    "image": "products-img/RO8LX1.svg",
     "desc": "",
     "features": []
   },
@@ -1620,7 +1619,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 50.0,
     "res": 50.0,
-    "image": "",
+    "image": "products-img/RO8LX2.svg",
     "desc": "",
     "features": []
   },
@@ -1632,7 +1631,7 @@ const ALL_PRODUCTS = [
     "srp": 24.0,
     "msrp": 12.0,
     "res": 12.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -1644,7 +1643,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 179.0,
     "res": 99.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -1656,7 +1655,7 @@ const ALL_PRODUCTS = [
     "srp": 159.0,
     "msrp": 68.0,
     "res": 68.0,
-    "image": "",
+    "image": "products-img/AP13LX.svg",
     "desc": "",
     "features": []
   },
@@ -1668,7 +1667,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 178.0,
     "res": 178.0,
-    "image": "",
+    "image": "products-img/AP12UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1680,7 +1679,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 139.0,
     "res": 75.0,
-    "image": "",
+    "image": "products-img/IF22W.svg",
     "desc": "",
     "features": []
   },
@@ -1692,7 +1691,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 139.0,
     "res": 75.0,
-    "image": "",
+    "image": "products-img/IF22G.svg",
     "desc": "",
     "features": []
   },
@@ -1704,7 +1703,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 189.0,
     "res": 110.0,
-    "image": "",
+    "image": "products-img/IF23W.svg",
     "desc": "",
     "features": []
   },
@@ -1716,7 +1715,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 159.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/IF21W.svg",
     "desc": "",
     "features": []
   },
@@ -1728,7 +1727,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 159.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/IF21G.svg",
     "desc": "",
     "features": []
   },
@@ -1740,7 +1739,7 @@ const ALL_PRODUCTS = [
     "srp": 249.0,
     "msrp": 189.0,
     "res": 138.0,
-    "image": "",
+    "image": "products-img/IF18L2.svg",
     "desc": "",
     "features": []
   },
@@ -1752,7 +1751,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 139.0,
     "res": 99.0,
-    "image": "",
+    "image": "products-img/IF20L2.svg",
     "desc": "",
     "features": []
   },
@@ -1764,7 +1763,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 239.0,
     "res": 239.0,
-    "image": "",
+    "image": "products-img/IF16UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1776,7 +1775,7 @@ const ALL_PRODUCTS = [
     "srp": 599.0,
     "msrp": 349.0,
     "res": 349.0,
-    "image": "",
+    "image": "products-img/IF17UKW.svg",
     "desc": "",
     "features": []
   },
@@ -1788,7 +1787,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 149.0,
     "res": 107.0,
-    "image": "",
+    "image": "products-img/IF15W.svg",
     "desc": "",
     "features": []
   },
@@ -1800,7 +1799,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 149.0,
     "res": 107.0,
-    "image": "",
+    "image": "products-img/IF15U.svg",
     "desc": "",
     "features": []
   },
@@ -1812,7 +1811,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 149.0,
     "res": 107.0,
-    "image": "",
+    "image": "products-img/IF15B.svg",
     "desc": "",
     "features": []
   },
@@ -1872,7 +1871,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 269.0,
     "res": 159.0,
-    "image": "",
+    "image": "products-img/HL17W.svg",
     "desc": "",
     "features": []
   },
@@ -1968,7 +1967,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 159.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/SR51M.svg",
     "desc": "",
     "features": []
   },
@@ -1980,7 +1979,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 159.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/SR51G.svg",
     "desc": "",
     "features": []
   },
@@ -1992,7 +1991,7 @@ const ALL_PRODUCTS = [
     "srp": 179.0,
     "msrp": 159.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/SR51D.svg",
     "desc": "",
     "features": []
   },
@@ -2004,7 +2003,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 58.0,
-    "image": "",
+    "image": "products-img/SR29E.svg",
     "desc": "",
     "features": []
   },
@@ -2016,7 +2015,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 58.0,
-    "image": "",
+    "image": "products-img/SR29L2.svg",
     "desc": "",
     "features": []
   },
@@ -2028,7 +2027,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 58.0,
-    "image": "",
+    "image": "products-img/SR29B.svg",
     "desc": "",
     "features": []
   },
@@ -2040,7 +2039,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 109.0,
     "res": 58.0,
-    "image": "",
+    "image": "products-img/SR29D.svg",
     "desc": "",
     "features": []
   },
@@ -2052,7 +2051,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 85.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/SR53E.svg",
     "desc": "",
     "features": []
   },
@@ -2064,7 +2063,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 50.0,
     "res": 50.0,
-    "image": "",
+    "image": "products-img/SR52E.svg",
     "desc": "",
     "features": []
   },
@@ -2076,7 +2075,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 138.0,
     "res": 138.0,
-    "image": "",
+    "image": "products-img/SR55E.svg",
     "desc": "",
     "features": []
   },
@@ -2088,7 +2087,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 178.0,
     "res": 178.0,
-    "image": "",
+    "image": "products-img/SR56E.svg",
     "desc": "",
     "features": []
   },
@@ -2100,7 +2099,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 70.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/SR39L2.svg",
     "desc": "",
     "features": []
   },
@@ -2112,7 +2111,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 70.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/SR39U.svg",
     "desc": "",
     "features": []
   },
@@ -2124,7 +2123,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 70.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/SR39D.svg",
     "desc": "",
     "features": []
   },
@@ -2136,7 +2135,7 @@ const ALL_PRODUCTS = [
     "srp": 1299.0,
     "msrp": 999.0,
     "res": 650.0,
-    "image": "",
+    "image": "products-img/QC7W.svg",
     "desc": "",
     "features": []
   },
@@ -2148,7 +2147,7 @@ const ALL_PRODUCTS = [
     "srp": 249.0,
     "msrp": 199.0,
     "res": 99.0,
-    "image": "",
+    "image": "products-img/SR37E.svg",
     "desc": "",
     "features": []
   },
@@ -2160,7 +2159,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -2172,7 +2171,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -2184,7 +2183,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -2196,7 +2195,7 @@ const ALL_PRODUCTS = [
     "srp": 79.0,
     "msrp": 48.0,
     "res": 48.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -2208,7 +2207,7 @@ const ALL_PRODUCTS = [
     "srp": 69.0,
     "msrp": 42.0,
     "res": 42.0,
-    "image": "",
+    "image": "products-img/BR10AE.svg",
     "desc": "",
     "features": []
   },
@@ -2220,7 +2219,7 @@ const ALL_PRODUCTS = [
     "srp": 69.0,
     "msrp": 42.0,
     "res": 42.0,
-    "image": "",
+    "image": "products-img/BR10AW.svg",
     "desc": "",
     "features": []
   },
@@ -2232,7 +2231,7 @@ const ALL_PRODUCTS = [
     "srp": 69.0,
     "msrp": 42.0,
     "res": 42.0,
-    "image": "",
+    "image": "products-img/BR10AR.svg",
     "desc": "",
     "features": []
   },
@@ -2256,7 +2255,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR17M.svg",
     "desc": "",
     "features": []
   },
@@ -2268,7 +2267,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR17W.svg",
     "desc": "",
     "features": []
   },
@@ -2280,7 +2279,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR17D.svg",
     "desc": "",
     "features": []
   },
@@ -2292,7 +2291,7 @@ const ALL_PRODUCTS = [
     "srp": 139.0,
     "msrp": 75.0,
     "res": 75.0,
-    "image": "",
+    "image": "products-img/BR6W.svg",
     "desc": "",
     "features": []
   },
@@ -2304,7 +2303,7 @@ const ALL_PRODUCTS = [
     "srp": 219.0,
     "msrp": 169.0,
     "res": 128.0,
-    "image": "",
+    "image": "products-img/BR8D.svg",
     "desc": "",
     "features": []
   },
@@ -2316,7 +2315,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 119.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR13M.svg",
     "desc": "",
     "features": []
   },
@@ -2328,7 +2327,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 119.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR13W.svg",
     "desc": "",
     "features": []
   },
@@ -2340,7 +2339,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 119.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR13P.svg",
     "desc": "",
     "features": []
   },
@@ -2352,7 +2351,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 119.0,
     "res": 85.0,
-    "image": "",
+    "image": "products-img/BR13D.svg",
     "desc": "",
     "features": []
   },
@@ -2364,7 +2363,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/BR15L2.svg",
     "desc": "",
     "features": []
   },
@@ -2376,7 +2375,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 129.0,
     "res": 90.0,
-    "image": "",
+    "image": "products-img/BR15D.svg",
     "desc": "",
     "features": []
   },
@@ -2388,7 +2387,7 @@ const ALL_PRODUCTS = [
     "srp": 49.0,
     "msrp": 30.0,
     "res": 30.0,
-    "image": "",
+    "image": "products-img/BR10M.svg",
     "desc": "",
     "features": []
   },
@@ -2400,7 +2399,7 @@ const ALL_PRODUCTS = [
     "srp": 49.0,
     "msrp": 30.0,
     "res": 30.0,
-    "image": "",
+    "image": "products-img/BR10W.svg",
     "desc": "",
     "features": []
   },
@@ -2412,7 +2411,7 @@ const ALL_PRODUCTS = [
     "srp": 49.0,
     "msrp": 30.0,
     "res": 30.0,
-    "image": "",
+    "image": "products-img/BR10G.svg",
     "desc": "",
     "features": []
   },
@@ -2424,7 +2423,7 @@ const ALL_PRODUCTS = [
     "srp": 49.0,
     "msrp": 30.0,
     "res": 30.0,
-    "image": "",
+    "image": "products-img/BR10B.svg",
     "desc": "",
     "features": []
   },
@@ -2436,7 +2435,7 @@ const ALL_PRODUCTS = [
     "srp": 49.0,
     "msrp": 30.0,
     "res": 30.0,
-    "image": "",
+    "image": "products-img/BR10D.svg",
     "desc": "",
     "features": []
   },
@@ -2448,7 +2447,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 105.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/BR11W.svg",
     "desc": "",
     "features": []
   },
@@ -2460,7 +2459,7 @@ const ALL_PRODUCTS = [
     "srp": 129.0,
     "msrp": 105.0,
     "res": 70.0,
-    "image": "",
+    "image": "products-img/BR11D.svg",
     "desc": "",
     "features": []
   },
@@ -2520,7 +2519,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 118.0,
     "res": 118.0,
-    "image": "",
+    "image": "products-img/IP165P.svg",
     "desc": "",
     "features": []
   },
@@ -2532,7 +2531,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 118.0,
     "res": 118.0,
-    "image": "",
+    "image": "products-img/IP165U.svg",
     "desc": "",
     "features": []
   },
@@ -2544,7 +2543,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 118.0,
     "res": 118.0,
-    "image": "",
+    "image": "products-img/IP165S.svg",
     "desc": "",
     "features": []
   },
@@ -2772,7 +2771,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 165.0,
     "res": 165.0,
-    "image": "",
+    "image": "products-img/IP137AP.svg",
     "desc": "",
     "features": []
   },
@@ -2784,7 +2783,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 165.0,
     "res": 165.0,
-    "image": "",
+    "image": "products-img/IP137AB.svg",
     "desc": "",
     "features": []
   },
@@ -2796,7 +2795,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 165.0,
     "res": 165.0,
-    "image": "",
+    "image": "products-img/IP137L1.svg",
     "desc": "",
     "features": []
   },
@@ -2916,7 +2915,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 329.0,
     "res": 235.0,
-    "image": "",
+    "image": "products-img/IP180S.svg",
     "desc": "",
     "features": []
   },
@@ -2928,7 +2927,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 329.0,
     "res": 235.0,
-    "image": "",
+    "image": "products-img/IP180R.svg",
     "desc": "",
     "features": []
   },
@@ -2940,7 +2939,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 329.0,
     "res": 235.0,
-    "image": "",
+    "image": "products-img/IP180L.svg",
     "desc": "",
     "features": []
   },
@@ -3120,7 +3119,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 180.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/IP116AM.svg",
     "desc": "",
     "features": []
   },
@@ -3132,7 +3131,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 249.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/IP116AL2.svg",
     "desc": "",
     "features": []
   },
@@ -3144,7 +3143,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 180.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/IP116AP.svg",
     "desc": "",
     "features": []
   },
@@ -3156,7 +3155,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 249.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/IP116AE.svg",
     "desc": "",
     "features": []
   },
@@ -3168,7 +3167,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 249.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/IP116AD.svg",
     "desc": "",
     "features": []
   },
@@ -3180,7 +3179,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 220.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/IP117AM.svg",
     "desc": "",
     "features": []
   },
@@ -3192,7 +3191,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 299.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/IP117AL2.svg",
     "desc": "",
     "features": []
   },
@@ -3204,7 +3203,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 220.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/IP117AP.svg",
     "desc": "",
     "features": []
   },
@@ -3216,7 +3215,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 299.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/IP117AE.svg",
     "desc": "",
     "features": []
   },
@@ -3228,7 +3227,7 @@ const ALL_PRODUCTS = [
     "srp": 369.0,
     "msrp": 299.0,
     "res": 220.0,
-    "image": "",
+    "image": "products-img/IP117AD.svg",
     "desc": "",
     "features": []
   },
@@ -3396,7 +3395,7 @@ const ALL_PRODUCTS = [
     "srp": 498.0,
     "msrp": 448.0,
     "res": 298.0,
-    "image": "",
+    "image": "products-img/HL9E.svg",
     "desc": "",
     "features": []
   },
@@ -3408,7 +3407,7 @@ const ALL_PRODUCTS = [
     "srp": 339.0,
     "msrp": 299.0,
     "res": 185.0,
-    "image": "",
+    "image": "products-img/SL12SW.svg",
     "desc": "",
     "features": []
   },
@@ -3420,7 +3419,7 @@ const ALL_PRODUCTS = [
     "srp": 149.0,
     "msrp": 139.0,
     "res": 82.0,
-    "image": "",
+    "image": "products-img/SL10SD.svg",
     "desc": "",
     "features": []
   },
@@ -3432,7 +3431,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 205.0,
     "res": 148.0,
-    "image": "",
+    "image": "products-img/SL8SW.svg",
     "desc": "",
     "features": []
   },
@@ -3444,7 +3443,7 @@ const ALL_PRODUCTS = [
     "srp": 289.0,
     "msrp": 259.0,
     "res": 188.0,
-    "image": "",
+    "image": "products-img/SL6SW.svg",
     "desc": "",
     "features": []
   },
@@ -3456,7 +3455,7 @@ const ALL_PRODUCTS = [
     "srp": 499.0,
     "msrp": 449.0,
     "res": 325.0,
-    "image": "",
+    "image": "products-img/SL5SW.svg",
     "desc": "",
     "features": []
   },
@@ -3468,7 +3467,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 179.0,
     "res": 128.0,
-    "image": "",
+    "image": "products-img/SL9SW.svg",
     "desc": "",
     "features": []
   },
@@ -3480,7 +3479,7 @@ const ALL_PRODUCTS = [
     "srp": 499.0,
     "msrp": 399.0,
     "res": 298.0,
-    "image": "",
+    "image": "products-img/SL13SW.svg",
     "desc": "",
     "features": []
   },
@@ -3504,7 +3503,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 359.0,
     "res": 238.0,
-    "image": "",
+    "image": "products-img/SL2SW.svg",
     "desc": "",
     "features": []
   },
@@ -3828,7 +3827,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 120.0,
     "res": 120.0,
-    "image": "",
+    "image": "products-img/KH20M.svg",
     "desc": "",
     "features": []
   },
@@ -3840,7 +3839,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 120.0,
     "res": 120.0,
-    "image": "",
+    "image": "products-img/KH20L2.svg",
     "desc": "",
     "features": []
   },
@@ -3852,7 +3851,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 120.0,
     "res": 120.0,
-    "image": "",
+    "image": "products-img/KH20L.svg",
     "desc": "",
     "features": []
   },
@@ -3864,7 +3863,7 @@ const ALL_PRODUCTS = [
     "srp": 199.0,
     "msrp": 120.0,
     "res": 120.0,
-    "image": "",
+    "image": "products-img/KH20D.svg",
     "desc": "",
     "features": []
   },
@@ -3876,7 +3875,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 269.0,
     "res": 165.0,
-    "image": "",
+    "image": "products-img/KM17D.svg",
     "desc": "",
     "features": []
   },
@@ -3888,7 +3887,7 @@ const ALL_PRODUCTS = [
     "srp": 229.0,
     "msrp": 129.0,
     "res": 125.0,
-    "image": "",
+    "image": "products-img/KH8E.svg",
     "desc": "",
     "features": []
   },
@@ -3900,7 +3899,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 239.0,
     "res": 200.0,
-    "image": "",
+    "image": "products-img/KH10E.svg",
     "desc": "",
     "features": []
   },
@@ -3912,7 +3911,7 @@ const ALL_PRODUCTS = [
     "srp": 189.0,
     "msrp": 149.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/KH5L1.svg",
     "desc": "",
     "features": []
   },
@@ -3924,7 +3923,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 49.0,
     "res": 49.0,
-    "image": "",
+    "image": "products-img/KH19M.svg",
     "desc": "",
     "features": []
   },
@@ -3936,7 +3935,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 49.0,
     "res": 49.0,
-    "image": "",
+    "image": "products-img/KH19L2.svg",
     "desc": "",
     "features": []
   },
@@ -3948,7 +3947,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 49.0,
     "res": 49.0,
-    "image": "",
+    "image": "products-img/KH19D.svg",
     "desc": "",
     "features": []
   },
@@ -3960,7 +3959,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 49.0,
     "res": 49.0,
-    "image": "",
+    "image": "products-img/KH19U.svg",
     "desc": "",
     "features": []
   },
@@ -3984,7 +3983,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 100.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/TP10AE.svg",
     "desc": "",
     "features": []
   },
@@ -3996,7 +3995,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 100.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/TP10AW.svg",
     "desc": "",
     "features": []
   },
@@ -4008,7 +4007,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 100.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/TP10AG.svg",
     "desc": "",
     "features": []
   },
@@ -4020,7 +4019,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 100.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/TP10AB.svg",
     "desc": "",
     "features": []
   },
@@ -4032,7 +4031,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 100.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/TP10AY.svg",
     "desc": "",
     "features": []
   },
@@ -4044,7 +4043,7 @@ const ALL_PRODUCTS = [
     "srp": 169.0,
     "msrp": 100.0,
     "res": 100.0,
-    "image": "",
+    "image": "products-img/TP10AD.svg",
     "desc": "",
     "features": []
   },
@@ -4056,7 +4055,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 359.0,
     "res": 218.0,
-    "image": "",
+    "image": "products-img/TP9L.svg",
     "desc": "",
     "features": []
   },
@@ -4068,7 +4067,7 @@ const ALL_PRODUCTS = [
     "srp": 399.0,
     "msrp": 359.0,
     "res": 198.0,
-    "image": "",
+    "image": "products-img/TP3W.svg",
     "desc": "",
     "features": []
   },
@@ -4080,7 +4079,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S4D.svg",
     "desc": "",
     "features": []
   },
@@ -4092,7 +4091,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S5D.svg",
     "desc": "",
     "features": []
   },
@@ -4104,7 +4103,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S6D.svg",
     "desc": "",
     "features": []
   },
@@ -4116,7 +4115,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S7D.svg",
     "desc": "",
     "features": []
   },
@@ -4128,7 +4127,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S1D.svg",
     "desc": "",
     "features": []
   },
@@ -4140,7 +4139,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S2D.svg",
     "desc": "",
     "features": []
   },
@@ -4152,7 +4151,7 @@ const ALL_PRODUCTS = [
     "srp": 1499.0,
     "msrp": 936.0,
     "res": 936.0,
-    "image": "",
+    "image": "products-img/SG1S3D.svg",
     "desc": "",
     "features": []
   },
@@ -4164,7 +4163,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S5L2.svg",
     "desc": "",
     "features": []
   },
@@ -4176,7 +4175,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S6L2.svg",
     "desc": "",
     "features": []
   },
@@ -4188,7 +4187,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S7L2.svg",
     "desc": "",
     "features": []
   },
@@ -4200,7 +4199,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S8L2.svg",
     "desc": "",
     "features": []
   },
@@ -4212,7 +4211,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S1L2.svg",
     "desc": "",
     "features": []
   },
@@ -4224,7 +4223,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S2L2.svg",
     "desc": "",
     "features": []
   },
@@ -4236,7 +4235,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S3L2.svg",
     "desc": "",
     "features": []
   },
@@ -4248,7 +4247,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 460.0,
     "res": 460.0,
-    "image": "",
+    "image": "products-img/SG3S4L2.svg",
     "desc": "",
     "features": []
   },
@@ -4260,7 +4259,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S4E.svg",
     "desc": "",
     "features": []
   },
@@ -4272,7 +4271,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S5E.svg",
     "desc": "",
     "features": []
   },
@@ -4284,7 +4283,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S6E.svg",
     "desc": "",
     "features": []
   },
@@ -4296,7 +4295,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S7E.svg",
     "desc": "",
     "features": []
   },
@@ -4308,7 +4307,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S1E.svg",
     "desc": "",
     "features": []
   },
@@ -4320,7 +4319,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S2E.svg",
     "desc": "",
     "features": []
   },
@@ -4332,7 +4331,7 @@ const ALL_PRODUCTS = [
     "srp": 999.0,
     "msrp": 899.0,
     "res": 530.0,
-    "image": "",
+    "image": "products-img/SG2S3E.svg",
     "desc": "",
     "features": []
   },
@@ -4344,7 +4343,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 399.0,
     "res": 399.0,
-    "image": "",
+    "image": "products-img/SW5SL.svg",
     "desc": "",
     "features": []
   },
@@ -4356,7 +4355,7 @@ const ALL_PRODUCTS = [
     "srp": 799.0,
     "msrp": 399.0,
     "res": 399.0,
-    "image": "",
+    "image": "products-img/SW5SD.svg",
     "desc": "",
     "features": []
   },
@@ -4368,7 +4367,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 279.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/SW1SM.svg",
     "desc": "",
     "features": []
   },
@@ -4380,7 +4379,7 @@ const ALL_PRODUCTS = [
     "srp": 499.0,
     "msrp": 449.0,
     "res": 275.0,
-    "image": "",
+    "image": "products-img/SW2SL.svg",
     "desc": "",
     "features": []
   },
@@ -4392,7 +4391,7 @@ const ALL_PRODUCTS = [
     "srp": 299.0,
     "msrp": 279.0,
     "res": 180.0,
-    "image": "",
+    "image": "products-img/SW1SD.svg",
     "desc": "",
     "features": []
   },
@@ -4404,7 +4403,7 @@ const ALL_PRODUCTS = [
     "srp": 499.0,
     "msrp": 449.0,
     "res": 275.0,
-    "image": "",
+    "image": "products-img/SW2SD.svg",
     "desc": "",
     "features": []
   },
@@ -4416,7 +4415,7 @@ const ALL_PRODUCTS = [
     "srp": 699.0,
     "msrp": 649.0,
     "res": 385.0,
-    "image": "",
+    "image": "products-img/SW3SG.svg",
     "desc": "",
     "features": []
   },
@@ -4428,7 +4427,7 @@ const ALL_PRODUCTS = [
     "srp": 699.0,
     "msrp": 649.0,
     "res": 385.0,
-    "image": "",
+    "image": "products-img/SW3SB.svg",
     "desc": "",
     "features": []
   },
@@ -4440,7 +4439,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 40.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -4452,7 +4451,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 40.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -4464,7 +4463,7 @@ const ALL_PRODUCTS = [
     "srp": 99.0,
     "msrp": 89.0,
     "res": 40.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -4476,7 +4475,7 @@ const ALL_PRODUCTS = [
     "srp": 92.0,
     "msrp": 46.0,
     "res": 46.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -4488,7 +4487,7 @@ const ALL_PRODUCTS = [
     "srp": 49.0,
     "msrp": 39.0,
     "res": 39.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -4500,7 +4499,7 @@ const ALL_PRODUCTS = [
     "srp": 69.0,
     "msrp": 39.0,
     "res": 39.0,
-    "image": "",
+    "image": "products-img/.svg",
     "desc": "",
     "features": []
   },
@@ -4512,7 +4511,7 @@ const ALL_PRODUCTS = [
     "srp": 298,
     "msrp": 298,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-pro-30w.svg",
     "desc": "全港極細30W超級快充10000mAh外置充電器日本品牌。支援PD、QC4+、PPS輸出，電量百分比顯示屏，黑白色可選。",
     "features": [
       "10000mAh 30W",
@@ -4531,7 +4530,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-pro-slim-35w.svg",
     "desc": "超薄35W輸出10000mAh外置充電器，LED數字顯示，防刮花物料花紋設計。2C1U同時支援三個裝置，超薄身16mm重量180g，支援iPhone/Galaxy/MacBook Air。",
     "features": [
       "最大35W輸出",
@@ -4551,7 +4550,7 @@ const ALL_PRODUCTS = [
     "srp": 298,
     "msrp": 298,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-pro-slim-35w-sakura.svg",
     "desc": "櫻花限定版SMARTCOBY PRO SLIM 35W，超薄設計內置LED顯示。防刮花物料花紋，2C1U三裝置同時充電，重量180g。",
     "features": [
       "最大35W輸出",
@@ -4571,7 +4570,7 @@ const ALL_PRODUCTS = [
     "srp": 449,
     "msrp": 449,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-trio-67w.svg",
     "desc": "最大67W輸出20000mAh大容量外置充電器，LED數字顯示，防刮花物料花紋設計。2C1U同時支援三個裝置，重量333g，提供數位電量顯示。",
     "features": [
       "最大67W輸出",
@@ -4591,7 +4590,7 @@ const ALL_PRODUCTS = [
     "srp": 268,
     "msrp": 268,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-duo-40w.svg",
     "desc": "大容量10000mAh同時充電時輸出40W，每兩個連接保持20W輸出。高輸出緊湊設計，LED顯示器顯示電量，為兩部智慧型手機快速充電。",
     "features": [
       "10000mAh大容量",
@@ -4608,7 +4607,7 @@ const ALL_PRODUCTS = [
     "srp": 368,
     "msrp": 368,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-pro-slim-cable-35w.svg",
     "desc": "超薄35W輸出內置Type-C線10000mAh行動電源，支援iPhone 16快充。新款LED數量顯示燈，防刮花物料花紋設計，超薄身17.8mm重量189g。",
     "features": [
       "超薄35W輸出內置Type-C線",
@@ -4627,7 +4626,7 @@ const ALL_PRODUCTS = [
     "srp": 298,
     "msrp": 298,
     "res": 0,
-    "image": "",
+    "image": "products-img/10denki-jd-d1.svg",
     "desc": "提供最大15W磁吸無線快充，內置可拆式Type-C線，PD快充提供最高45W輸出輸入。極速45W輸入約1.5小時充滿，支援同時為三個裝置充電。",
     "features": [
       "最大15W磁吸無線快充",
@@ -4647,7 +4646,7 @@ const ALL_PRODUCTS = [
     "srp": 268,
     "msrp": 268,
     "res": 0,
-    "image": "",
+    "image": "products-img/10denki-j1-d2.svg",
     "desc": "PD45W 10000mAh 3C頭快充移動電源，同時支援3部裝置快充。內嵌式LED電量顯示，激輕薄設計，附60W C to C網纖扁線，符合國際航班上機標準。",
     "features": [
       "總輸出可達PD45W",
@@ -4666,7 +4665,7 @@ const ALL_PRODUCTS = [
     "srp": 368,
     "msrp": 368,
     "res": 0,
-    "image": "",
+    "image": "products-img/cs-pd100.svg",
     "desc": "100W PD大功率行動電源，尺寸約130×77×26mm淨重約360g。可同時輸出三部裝置，支援Macbook Pro 65W、iPhone 30W、iPad Pro 40W、Switch TV MODE 45W，Type-C PD最高輸出100W。",
     "features": [
       "可同時輸出三部裝置",
@@ -4687,7 +4686,7 @@ const ALL_PRODUCTS = [
     "srp": 298,
     "msrp": 298,
     "res": 0,
-    "image": "",
+    "image": "products-img/flashmini-stand.svg",
     "desc": "Tempo紙巾大小的磁吸無線快充行動電源，15W無線快充PD3.0 QC4.0+。最大PD20W Type-C急速充電，電量數字LED顯示，配備金屬製折疊式支架可邊充電邊使用。",
     "features": [
       "Tempo紙巾尺寸",
@@ -4706,7 +4705,7 @@ const ALL_PRODUCTS = [
     "srp": 388,
     "msrp": 388,
     "res": 0,
-    "image": "",
+    "image": "products-img/tl166.svg",
     "desc": "支援5部裝置同時充電的磁吸行動電源，N52磁吸圈夠實淨。15W磁吸無線充電，PD35W快充兼容大部分手機，內置Type-C及Lightning線，UV亮面材質不怕黏。",
     "features": [
       "同時支援5部裝置",
@@ -4727,7 +4726,7 @@ const ALL_PRODUCTS = [
     "srp": 298,
     "msrp": 298,
     "res": 0,
-    "image": "",
+    "image": "products-img/is-pps23.svg",
     "desc": "SMARTCOBY同款同廠出品30W 10000mAh外置充電器，支援PD QC4+ PPS輸出。電量百分比顯示屏，紫粉兩色，小巧輕便。",
     "features": [
       "10000mAh 30W",
@@ -4745,7 +4744,7 @@ const ALL_PRODUCTS = [
     "srp": 198,
     "msrp": 198,
     "res": 0,
-    "image": "",
+    "image": "products-img/ismartdigi-sq15.svg",
     "desc": "8000mAh輕巧行動電源，總輸出最大15W。140g超輕量，91.5×65×14.5mm超薄設計，1 Type-C + 1 USB輸出，1 Type-C + 1 Lightning輸入，多色可選。",
     "features": [
       "8000mAh容量",
@@ -4765,7 +4764,7 @@ const ALL_PRODUCTS = [
     "srp": 198,
     "msrp": 198,
     "res": 0,
-    "image": "",
+    "image": "products-img/ismartdigi-sq16.svg",
     "desc": "8000mAh輕巧行動電源，總輸出最大15W。140g超輕量超薄設計，多色選擇，Type-C+USB輸出，Type-C+Lightning輸入。",
     "features": [
       "8000mAh容量",
@@ -4784,7 +4783,7 @@ const ALL_PRODUCTS = [
     "srp": 98,
     "msrp": 98,
     "res": 0,
-    "image": "",
+    "image": "products-img/ismartdigi-40w-charger.svg",
     "desc": "日本Ismartdigi 40W 2C2U快充充電器，符合國際安全標準防火A0規格。配備1個QC3.0端口及3個2.4A端口，總輸出最高40W，尺寸75×44.5×47mm重量52g。",
     "features": [
       "2 USB + 2 Type-C",
@@ -4804,7 +4803,7 @@ const ALL_PRODUCTS = [
     "srp": 128,
     "msrp": 128,
     "res": 0,
-    "image": "",
+    "image": "products-img/ismartdigi-65w-charger.svg",
     "desc": "Ismartdigi 65W 2C1U快充充電器，支援PD3.0快充。USB-C1/C2最高65W輸出，支援PPS 3.3V-20.3V，多口同時充電智能分配功率。",
     "features": [
       "USB-C1/C2: 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/3.25A",
@@ -4823,7 +4822,7 @@ const ALL_PRODUCTS = [
     "srp": 98,
     "msrp": 98,
     "res": 0,
-    "image": "",
+    "image": "products-img/ismartdigi-is-cll201.svg",
     "desc": "3合1充電線，Type-C ×1 + Lightning ×2，鋁合金外殼金屬電纜線材超級耐用。支援最大480Mbps數據傳輸，1.2米長，黑、灰、藍三色。",
     "features": [
       "3合1 Type-C ×1 + Lightning ×2",
@@ -4841,7 +4840,7 @@ const ALL_PRODUCTS = [
     "srp": 68,
     "msrp": 68,
     "res": 0,
-    "image": "",
+    "image": "products-img/ismartdigi-3in1-cable.svg",
     "desc": "3合1充電線兼容Type-C、Lightning、Micro接口，金屬外殼尼龍布料材質，1.2米長。",
     "features": [
       "3合1 Type-C、Lightning、Micro",
@@ -4857,7 +4856,7 @@ const ALL_PRODUCTS = [
     "srp": 268,
     "msrp": 268,
     "res": 0,
-    "image": "",
+    "image": "products-img/is-cc301-100w.svg",
     "desc": "USB3.1 Gen2高速充電數據線，數據傳輸高達20Gbps。內置E-marker晶片支援PD快充，支援4K@60Hz投屏，224根99.99% 4N無氧銅線芯，金屬外殼尼龍布料。",
     "features": [
       "USB3.1 Gen2 20Gbps數據傳輸",
@@ -4876,7 +4875,7 @@ const ALL_PRODUCTS = [
     "srp": 118,
     "msrp": 118,
     "res": 0,
-    "image": "",
+    "image": "products-img/is-cc501-60w.svg",
     "desc": "USB 60W快速C to C充電數據線，480Mbps數據傳輸，金屬外殼尼龍布料+鋁合金外殼，耐用設計。",
     "features": [
       "60W快速充電",
@@ -4892,7 +4891,7 @@ const ALL_PRODUCTS = [
     "srp": 238,
     "msrp": 238,
     "res": 0,
-    "image": "",
+    "image": "products-img/rhythm-breeze-25.svg",
     "desc": "Rhythm聯同日本品牌10Denki推出Breeze 25便攜式直立手提風扇。內置可活動式掛扣可掛袋、直立坐枱或橫放使用，4檔風速最高檔為自然風模式，更慳電更舒適。",
     "features": [
       "可活動式掛扣多種使用方式",
@@ -4909,7 +4908,7 @@ const ALL_PRODUCTS = [
     "srp": 548,
     "msrp": 548,
     "res": 0,
-    "image": "",
+    "image": "products-img/rhythm-silky-wind-mini.svg",
     "desc": "Silky Wind Mini雙扇葉坐枱風扇，4800+小時使用壽命可用足五年。面板和後蓋方便拆卸易於清潔，內置雙扇葉出風更集中更涼爽，兩段式風速設計，機身可傾斜30度，自動左右搖擺70度，僅重270g。",
     "features": [
       "4800+小時使用壽命",
@@ -4929,7 +4928,7 @@ const ALL_PRODUCTS = [
     "srp": 450,
     "msrp": 450,
     "res": 0,
-    "image": "",
+    "image": "products-img/heal-force-b01.svg",
     "desc": "廣東話/英文真人語音血壓計，雙人各90組記憶功能。心律不齊監測，大屏LCD顯示，三次平均值分析，一鍵使用智能加壓，本港醫療機構使用。",
     "features": [
       "廣東話/英文真人語音",
@@ -4950,7 +4949,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/motorola-mbp66n.svg",
     "desc": "MOTOROLA 3合1非接觸式額溫計，可測量體溫、水溫、物溫。夜間模式可關閉聲響，高溫警示紅燈/正常綠燈，快速測量僅需1秒。AgeSmart年齡選擇按鈕，食物及洗澡水測溫。",
     "features": [
       "非接觸式額溫計",
@@ -4971,7 +4970,7 @@ const ALL_PRODUCTS = [
     "srp": 368,
     "msrp": 368,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartcoby-pro-slim-cable-35w-purple.svg",
     "desc": "紫色限定版SMARTCOBY Pro Slim Cable 35W，超薄35W輸出內置Type-C線10000mAh行動電源。新款LED數量顯示燈，防刮花物料花紋設計，超薄身17.8mm，支援iPhone 16快充。",
     "features": [
       "超薄35W輸出內置Type-C線",
@@ -4990,7 +4989,7 @@ const ALL_PRODUCTS = [
     "srp": 109,
     "msrp": 109,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-kc240.svg",
     "desc": "ARGO KC240 240W 匙扣充電線，採用PU荔枝紋皮質裁縫，線長12cm方便收納。內置E-marker晶片支援PD 3.1 240W快充，支援USB4數據傳輸高達40Gbps，兼容Thunderbolt 3。",
     "features": [
       "支援PD 3.1 240W (48VDC/5A) 超級快充",
@@ -5009,7 +5008,7 @@ const ALL_PRODUCTS = [
     "srp": 128,
     "msrp": 128,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-cc140.svg",
     "desc": "業界首創140W雙口實時功率數顯充電線，支援PD3.1協議，兼容QC5.0/4.0/3.0。智能LED數顯實時顯示充電功率，內置E-Marker智能芯片，支援高效傳輸480Mbps。",
     "features": [
       "支援PD3.1協議，兼容QC5.0/4.0/3.0、華為SCP、三星超快速充電2.0",
@@ -5028,7 +5027,7 @@ const ALL_PRODUCTS = [
     "srp": 118,
     "msrp": 118,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-3in2-cable.svg",
     "desc": "ARGO 3 in 2充電線，市場罕有雙Type-C頭LED顯示屏。支援PD3.0 100W高效快速充電，LED顯示器即時顯示充電瓦數，高性能強化線芯通過20,000次彎折測試。",
     "features": [
       "雙Type-C頭LED顯示屏",
@@ -5047,7 +5046,7 @@ const ALL_PRODUCTS = [
     "srp": 348,
     "msrp": 348,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-bu70.svg",
     "desc": "ARGO BU70 70W充電器，超迷你設計僅55x50x57mm。內置80cm Type-C線，雙Type-C+USB-A三輸出，TFT智慧顯示屏即時顯示充電狀態。",
     "features": [
       "70W超高功率，雙Type-C+USB-A三輸出",
@@ -5066,7 +5065,7 @@ const ALL_PRODUCTS = [
     "srp": 278,
     "msrp": 278,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-magnetic-powerbank-5000.svg",
     "desc": "多合一磁吸行動電源，內置5000mAh電量，配備便攜折疊式充電座。可同時為iPhone、AirPods、iWatch充電，支援USB-C有線充電最高22.5W。",
     "features": [
       "內置5000mAh + 便攜折疊式充電座",
@@ -5085,7 +5084,7 @@ const ALL_PRODUCTS = [
     "srp": 298,
     "msrp": 298,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-5in1-powerbank-10000.svg",
     "desc": "5合1磁吸快充10000mAh行動電源，全港首發半固態電池技術。支援Qi2 15W無線快充+20W PD自帶線，TFT高清數顯實時監控電量，航空級鋰聚合物電芯五重防護。",
     "features": [
       "10000mAh大容量，半固態電池技術",
@@ -5105,7 +5104,7 @@ const ALL_PRODUCTS = [
     "srp": 118,
     "msrp": 118,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-w19.svg",
     "desc": "ARGO W19充電器，Sigma產品線中的充電配件產品。",
     "features": [
       "ARGO品牌充電器",
@@ -5120,7 +5119,7 @@ const ALL_PRODUCTS = [
     "srp": 99,
     "msrp": 99,
     "res": 0,
-    "image": "",
+    "image": "products-img/ssb5-solid-state.svg",
     "desc": "SSB5固態電池行動電源，採用固態電池技術，安全高效，效能大幅提升。",
     "features": [
       "固態電池技術，杜絕電解液洩漏與過熱風險",
@@ -5136,7 +5135,7 @@ const ALL_PRODUCTS = [
     "srp": 118,
     "msrp": 118,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-tfc10-5in1.svg",
     "desc": "ARGO 5in1多功能行動電源TFC10，5合1設計滿足多種充電需求。",
     "features": [
       "5合1多功能設計",
@@ -5151,7 +5150,7 @@ const ALL_PRODUCTS = [
     "srp": 128,
     "msrp": 128,
     "res": 0,
-    "image": "",
+    "image": "products-img/pq001.svg",
     "desc": "PQ001充電配件，Sigma產品線配件產品。",
     "features": [
       "ARGO品牌配件"
@@ -5165,7 +5164,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-am02.svg",
     "desc": "2025年最新第二代AI翻譯滑鼠，2.4GHz + 藍牙雙模式，可同時連接三個裝置。內置ChatGPT無需VPN永久免費，支援語音打字、截圖翻譯、語音搜尋，兼容Windows/Mac雙系統。",
     "features": [
       "2.4GHz + 藍牙雙模式使用",
@@ -5187,7 +5186,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-dc06.svg",
     "desc": "極速電機颶風便攜風扇Pro，4段式風速調節，最高達10萬轉速（25m/s超強風力）。4500mAh電量可使用4-8小時，比手機還小的尺寸方便攜帶，內置聚光LED燈。",
     "features": [
       "4段式風速調節",
@@ -5207,7 +5206,7 @@ const ALL_PRODUCTS = [
     "srp": 399,
     "msrp": 399,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-g3.svg",
     "desc": "運動商務專用單耳藍牙耳機，藍牙5.3版本連接更穩定，ENC+CVC雙降噪技術。石墨烯生物振膜單元音效層次分明，IPX4防水防汗水設計，耳掛可自由旋轉。",
     "features": [
       "最新藍牙5.3版本",
@@ -5227,7 +5226,7 @@ const ALL_PRODUCTS = [
     "srp": 788,
     "msrp": 788,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-s15-lte.svg",
     "desc": "4G全網通智能AI多功能翻譯機，支援ChatGPT智能錄音及138種語言翻譯。可插SIM卡4G在線使用，19種語言離線精準翻譯（含廣東話），74種在線拍照翻譯語言，內置2000mAh鋰電可持續約11小時。",
     "features": [
       "四核處理器",
@@ -5249,7 +5248,7 @@ const ALL_PRODUCTS = [
     "srp": 399,
     "msrp": 399,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-a40-lite.svg",
     "desc": "A40 Lite AI智能翻譯機，支援離線廣東話翻譯，5寸屏幕，翻譯139種不同語言。內置鏡頭拍照翻譯75種語言，17種離線翻譯語言同聲傳譯，1500mAh鋰電可使用約7小時。",
     "features": [
       "支援在線139種語言（可廣東話翻譯）",
@@ -5269,7 +5268,7 @@ const ALL_PRODUCTS = [
     "srp": 599,
     "msrp": 599,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-eb01.svg",
     "desc": "迷你電動螺絲批，350mAh鋰電池充電時間<40分鐘，空轉速度200r/min。配備LED屏幕實時顯示維修狀態，4顆LED無影燈照明，手自一體設計，單次充電可打400+顆精密螺絲。",
     "features": [
       "電池容量350mAh，充電時間<40分鐘",
@@ -5290,7 +5289,7 @@ const ALL_PRODUCTS = [
     "srp": 128,
     "msrp": 128,
     "res": 0,
-    "image": "",
+    "image": "products-img/qd-688.svg",
     "desc": "自發電無線門鈴，按鍵瞬間發電無需電池，4檔音量適合不同人士。內置閃燈配搭響鈴雙重提醒，傳輸距離最大200米，內置58首鈴聲，獲得多項國際認證。",
     "features": [
       "4檔音量，適合不同人士",
@@ -5310,7 +5309,7 @@ const ALL_PRODUCTS = [
     "srp": 238,
     "msrp": 238,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-pscc.svg",
     "desc": "二合一螺旋手機掛繩充電線，PD60W快充兼容大部份手機。鋅合金金屬掛扣具備質感，專利掛扣技術狂甩不鬆脫，Type-C to Type-C頭兼容大部份型號，120cm長度方便斜孭出街。",
     "features": [
       "PD60W快充",
@@ -5330,7 +5329,7 @@ const ALL_PRODUCTS = [
     "srp": 398,
     "msrp": 398,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-mb650.svg",
     "desc": "可磁吸不鏽鋼運動保溫壺650ml，外殼及內殼均採用304食品級不鏽鋼。已通過SGS/BPA FREE認證，支援Magsafe磁吸功能，12小時熱度保溫及24小時凍感。",
     "features": [
       "外殼及內殼均採用304食品級不鏽鋼",
@@ -5350,7 +5349,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-bp03c.svg",
     "desc": "少有廣東話語音血壓計，全自動充氣排氣一鍵測量。智能語音提示，高清大屏幕，雙99組記錄，支援USB充電或AAA電池兩用。",
     "features": [
       "全自動充氣排氣",
@@ -5369,7 +5368,7 @@ const ALL_PRODUCTS = [
     "srp": 399,
     "msrp": 399,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-y4000.svg",
     "desc": "復古便攜式閃光燈智能相機，1080p高清鏡頭可錄影或拍照。內置180mAh電池附380mAh續航底座，1.44吋高清屏幕，自帶90度可旋轉閃光燈，內置6種濾鏡。",
     "features": [
       "1080p高清鏡頭",
@@ -5389,7 +5388,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-sc-nm360.svg",
     "desc": "智能恆溫四手頸部按摩儀，全身可用（肩頸、背部、腰部到大小腿）。智能恆溫熱敷搭配柔軟親膚布料，四點揉捏按摩仿人體工學設計，三種智能模式，最長使用約90分鐘。",
     "features": [
       "全身可用：肩頸、背部、腰部、大小腿",
@@ -5407,7 +5406,7 @@ const ALL_PRODUCTS = [
     "srp": 499,
     "msrp": 499,
     "res": 0,
-    "image": "",
+    "image": "products-img/t9-kids-watch.svg",
     "desc": "最新定位技術兒童智能手錶，前鏡頭可視訊通話。CPU雙核1GB RAM+8G ROM，Android 9.0系統，1.83寸特大高清IPS屏幕，800mAh大容量電池，生活防水聲波排水系統。",
     "features": [
       "最新定位技術",
@@ -5429,7 +5428,7 @@ const ALL_PRODUCTS = [
     "srp": 799,
     "msrp": 799,
     "res": 0,
-    "image": "",
+    "image": "products-img/eb-con-24.svg",
     "desc": "真耳骨傳導耳機（非空氣傳導小喇叭），內置32GB IPX8游水級別防水。DT 3.0脈沖定向全音技術，智能電量屏幕，6-8小時續航，最新藍牙5.3。",
     "features": [
       "真耳骨傳導技術",
@@ -5450,7 +5449,7 @@ const ALL_PRODUCTS = [
     "srp": 788,
     "msrp": 788,
     "res": 0,
-    "image": "",
+    "image": "products-img/eb-con-23.svg",
     "desc": "骨傳導藍牙耳機，採用DIRECTIN TONE定向傳音技術及PeakSlroy防漏音濾芯。續航時間6+20小時，不分主副機可單獨使用，智能觸控功能，IPX5防水。",
     "features": [
       "DIRECTIN TONE定向傳音技術",
@@ -5472,7 +5471,7 @@ const ALL_PRODUCTS = [
     "srp": 799,
     "msrp": 799,
     "res": 0,
-    "image": "",
+    "image": "products-img/co-20-anc.svg",
     "desc": "LED全彩Mon顯示充電盒，ANC降噪功能（降噪/通透模式）。藍牙5.3版本，IPX5防水，Type-C充電15分鐘續航4小時，共32小時超長續航。",
     "features": [
       "LED全彩Mon顯示充電盒",
@@ -5492,7 +5491,7 @@ const ALL_PRODUCTS = [
     "srp": 599,
     "msrp": 599,
     "res": 0,
-    "image": "",
+    "image": "products-img/co-21.svg",
     "desc": "2.1寸高清觸控屏幕充電盒，支援Hi-Res高清音樂，13mm高低音雙單元復合振膜。數字消音技術定向傳音不漏聲，32GB容量MP3隨身聽，多國語言選擇。",
     "features": [
       "2.1寸高清觸控屏幕",
@@ -5514,7 +5513,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/smartbuds.svg",
     "desc": "配備ANC主動降噪和ENC環境降噪技術，LCD觸控螢幕輕鬆控制音樂和通話。內建麥克風確保清晰通話，舒適角度設計實現良好音效隔離。",
     "features": [
       "ANC主動降噪 + ENC環境降噪",
@@ -5531,7 +5530,7 @@ const ALL_PRODUCTS = [
     "srp": 199,
     "msrp": 199,
     "res": 0,
-    "image": "",
+    "image": "products-img/free-pods.svg",
     "desc": "輕量耳塞無線藍牙設計，Hi-Res Audio認證，內置ENC隨處都能清晰通話。10MM動圈單元，耳塞30mAh+充電箱300mAh，一次充電聽6小時，5色選擇。",
     "features": [
       "藍牙5.3",
@@ -5551,7 +5550,7 @@ const ALL_PRODUCTS = [
     "srp": 488,
     "msrp": 488,
     "res": 0,
-    "image": "",
+    "image": "products-img/revolution-headphones.svg",
     "desc": "深度降噪頭戴式耳機，ANC主動降噪+ENC通話降噪。40mm大動圈單元提供強勁低音，ANC開啟最長80小時續航，一體成型鋁合金框架輕奢設計，支援無線/有線雙模式。",
     "features": [
       "ANC主動降噪 + ENC通話降噪",
@@ -5573,7 +5572,7 @@ const ALL_PRODUCTS = [
     "srp": 299,
     "msrp": 299,
     "res": 0,
-    "image": "",
+    "image": "products-img/xspace-earphones.svg",
     "desc": "Xspace真無線藍牙耳機，6個內置ENC環境噪音麥克風。13毫米動態驅動器提供強勁深沉低音，藍牙5.3技術，透明模式可感知環境音，三種尺寸耳塞套。",
     "features": [
       "6個內置ENC環境噪音麥克風",
@@ -5592,7 +5591,7 @@ const ALL_PRODUCTS = [
     "srp": 199,
     "msrp": 199,
     "res": 0,
-    "image": "",
+    "image": "products-img/inspire-headphones.svg",
     "desc": "最新藍牙5.3技術耳罩式耳機，1-3秒快速配對。雙40mm驅動器提供Hi-Fi立體聲和平衡深低音，內建麥克風清晰通話，支援有線和無線連接，內置FM收音機和語音助理。",
     "features": [
       "最新藍牙5.3技術",
@@ -5614,7 +5613,7 @@ const ALL_PRODUCTS = [
     "srp": 228,
     "msrp": 228,
     "res": 0,
-    "image": "",
+    "image": "products-img/leap-earbuds.svg",
     "desc": "療癒解壓神器平耳式藍牙耳機，Hi-Res Audio解碼藍牙5.4版本。13mm重低音單元，連充電座使用時間高達20小時，充電座顯示屏顯示電量，長時間佩戴舒適不易鬆脫。",
     "features": [
       "Hi-Res Audio解碼",
@@ -5633,7 +5632,7 @@ const ALL_PRODUCTS = [
     "srp": 399,
     "msrp": 399,
     "res": 0,
-    "image": "",
+    "image": "products-img/lonzuer-leap-speaker.svg",
     "desc": "迷你藍牙喇叭10W單元帶來震撼低音，IPX7 1米深防水防塵。一次充電可播放長達7小時，TWS真無線立體聲配對可連接兩個喇叭達20W音量，配有自行車支架。",
     "features": [
       "10W單元震撼低音",
@@ -5652,7 +5651,7 @@ const ALL_PRODUCTS = [
     "srp": 399,
     "msrp": 399,
     "res": 0,
-    "image": "",
+    "image": "products-img/tf-01.svg",
     "desc": "3檔調速四扇頁強力風扇，4000mAh大容量電池支援充電和蓄電兩種模式。智能數顯顯示電量及風速，配備一鍵左右搖頭或定位送風，附香薰蓋可添加香氛，低噪穩定。",
     "features": [
       "3檔調速四扇頁",
@@ -5672,7 +5671,7 @@ const ALL_PRODUCTS = [
     "srp": 450,
     "msrp": 450,
     "res": 0,
-    "image": "",
+    "image": "products-img/sincos-3d-circulator-fan.svg",
     "desc": "獨家專利空氣淨化技術零耗材，第三代設計空氣淨化模組與後蓋結合。Treely Air模式僅需5W為常規空氣清新機功耗的6%，12段風速調節，上下及左右各90度擺動，運作功率可低至2W。",
     "features": [
       "獨家專利空氣淨化技術零耗材",
@@ -5694,7 +5693,7 @@ const ALL_PRODUCTS = [
     "srp": 498,
     "msrp": 498,
     "res": 0,
-    "image": "",
+    "image": "products-img/smart-wind-fan.svg",
     "desc": "Ai廣東話語音控制便攜式智能語音空氣循環風扇，3D廣角搖頭全方位空氣流通。8000mAh大容量電池超長續航，5檔風速調節，3/6/9小時計時功能，可拆式調整高度座枱企身兩用。",
     "features": [
       "AI廣東話語音控制",
@@ -5717,7 +5716,7 @@ const ALL_PRODUCTS = [
     "srp": 188,
     "msrp": 188,
     "res": 0,
-    "image": "",
+    "image": "products-img/pe03-stylus.svg",
     "desc": "透明設計iPad觸控筆，兼容2018-2022年蘋果平板電腦。無線充電低功耗晶片可連續使用10小時，斜壓感應模擬真實紙上繪畫體驗，全屏/分屏防觸碰，藍牙實時電池顯示。",
     "features": [
       "兼容2018-2022年蘋果平板電腦",
@@ -5736,7 +5735,7 @@ const ALL_PRODUCTS = [
     "srp": 99,
     "msrp": 99,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-gd80.svg",
     "desc": "ARGO GD80充電配件，Sigma產品線中的標準配件產品。",
     "features": [
       "ARGO品牌配件"
@@ -5750,7 +5749,7 @@ const ALL_PRODUCTS = [
     "srp": 68,
     "msrp": 68,
     "res": 0,
-    "image": "",
+    "image": "products-img/argo-md10-plus.svg",
     "desc": "ARGO MD10 Plus配件產品。",
     "features": [
       "ARGO品牌產品"
@@ -6120,7 +6119,7 @@ const ALL_PRODUCTS = [
     "srp": 118.0,
     "msrp": 118.0,
     "res": 0.0,
-    "image": "",
+    "image": "products-img/argo-240w%E5%82%B3%E8%BC%B8%E5%8C%99%E6%89%A3%E5%85%85%E9%9B%BB%E7%B7%9A-12cm.svg",
     "desc": "",
     "features": []
   },
@@ -8515,7 +8514,7 @@ const ALL_PRODUCTS = [
     "srp": 1388.0,
     "msrp": 1388.0,
     "res": 0.0,
-    "image": "",
+    "image": "products-img/creative-%E9%9B%BB%E8%A6%96%E9%9B%BB%E8%85%A6%E7%92%B0%E7%B9%9E%E9%9F%B3%E6%95%88%E9%80%A3%E8%97%8D%E7%89%99%E5%96%87%E5%8F%AD.svg",
     "desc": "",
     "features": []
   },
@@ -10814,7 +10813,7 @@ const ALL_PRODUCTS = [
     "srp": 548.0,
     "msrp": 548.0,
     "res": 0.0,
-    "image": "",
+    "image": "products-img/yohome-%E7%A9%BA%E6%B0%A3%E6%B7%A8%E5%8C%96%E5%9B%9B%E5%AD%A3%E5%BE%AA%E7%92%B0%E9%A2%A8%E6%89%87.svg",
     "desc": "",
     "features": []
   },
@@ -11186,7 +11185,7 @@ const ALL_PRODUCTS = [
     "srp": 138.0,
     "msrp": 138.0,
     "res": 0.0,
-    "image": "",
+    "image": "products-img/ipeak-%E9%9B%BB%E5%8B%95%E7%A3%A8%E7%9A%AE%E6%A9%9F.svg",
     "desc": "",
     "features": []
   },
