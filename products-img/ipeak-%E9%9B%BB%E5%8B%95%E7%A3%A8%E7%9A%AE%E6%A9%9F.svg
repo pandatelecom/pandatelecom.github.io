@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#8BC34A;stop-opacity:0.03"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="12"/>
+  <g transform="translate(200,155)" fill="#8BC34A" opacity="0.8">
+<polygon points="0,-55 -55,10 55,10" fill="none" stroke="#8BC34A" stroke-width="3.5"/>
+<rect x="-30" y="10" width="60" height="50" fill="#8BC34A" opacity="0.1" stroke="#8BC34A" stroke-width="2.5"/>
+<rect x="-5" y="30" width="25" height="30" rx="2" fill="#8BC34A" opacity="0.2"/>
+</g>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#8BC34A" letter-spacing="0.5">IPEAK</text>
+  <text x="200" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#999999">家電</text>
+  <text x="200" y="355" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#aaaaaa">Panda Telecom</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#795548;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#795548;stop-opacity:0.03"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="12"/>
+  <g transform="translate(200,155)" fill="#795548" opacity="0.8">
+<circle cx="0" cy="0" r="40" fill="none" stroke="#795548" stroke-width="3"/>
+<path d="M0,0 C-10,-35 -30,-40 -25,-20 C-20,0 -10,10 0,0" fill="#795548" opacity="0.3" stroke="#795548" stroke-width="2"/>
+<path d="M0,0 C35,-10 40,-30 20,-25 C0,-20 -10,-10 0,0" fill="#795548" opacity="0.3" stroke="#795548" stroke-width="2"/>
+<path d="M0,0 C10,35 30,40 25,20 C20,0 10,-10 0,0" fill="#795548" opacity="0.3" stroke="#795548" stroke-width="2"/>
+<circle cx="0" cy="0" r="6" fill="#795548"/>
+</g>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#795548" letter-spacing="0.5">YOHOME</text>
+  <text x="200" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#999999">風扇</text>
+  <text x="200" y="355" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#aaaaaa">Panda Telecom</text>
+</svg>
