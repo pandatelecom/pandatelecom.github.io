@@ -70,6 +70,13 @@ P.forEach(function(p){
 var brandList = Object.keys(brands).sort();
 var curBrand = '', curCat = '';
 
+function openCard(el) {
+  var pid = el.getAttribute('data-pid');
+  var p = P.find(function(x){return x.id===pid;});
+  if(!p) return;
+  alert(p.brand+' '+p.name+'\n\nPrice: $'+(p.msrp||p.srp)+'\n\nWhatsApp: 6855 7181');
+}
+
 function render() {
   var q = (document.getElementById('search').value||'').toLowerCase().trim();
   var src = curBrand ? brands[curBrand] : P;
@@ -85,9 +92,9 @@ function render() {
   var h = '<div class="grid">';
   src.forEach(function(p){
     var img = p.image || '';
-    var imgTag = img ? '<img src="'+img+'" alt="'+p.name+'" loading="lazy" onerror="this.style.display=\'none\'"/>'+(!img.match(/http|\.(png|jpe?g|webp)$/i)?'<img src="'+img+'" style="max-width:100%;max-height:100%" />':'') : '';
+    var imgTag = img ? '<img src="'+img+'" alt="'+p.name+'" loading="lazy" onerror="this.style.opacity=0"/>' : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:48px">📦</div>';
     if(!img && img.match(/\.svg$/i)) imgTag = '<img src="'+img+'" style="max-width:100%;max-height:100%" />';
-    h += '<div class="card" onclick="(function(){var x=P.find(function(a){return a.id===\''+(p.id||'').replace(/'/g,'\\\'')+'\';});if(!x)return;alert(x.brand+\' \'+x.name+\'\\n\\nPrice: $\'+(x.msrp||x.srp)+\'\\n\\nWhatsApp: 6855 7181\');})()">';
+    h += '<div class="card" data-pid="'+(p.id||'')+'" onclick="openCard(this)">';
     h += '<div class="card-thumb">';
     if(p.brand) h += '<span class="brand-tag">'+p.brand+'</span>';
     h += imgTag;

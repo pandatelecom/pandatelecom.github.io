@@ -2,7 +2,7 @@
 // 854 products across 54 brands
 // Generated: 2026-07-25
 
-const ALL_PRODUCTS = [
+var ALL_PRODUCTS = [
   {
     "id": "MS02L2",
     "name": "1-Folio A.I. 滑鼠 (沙漠金)",
