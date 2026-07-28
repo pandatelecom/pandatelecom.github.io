@@ -1,5 +1,5 @@
-// Panda Telecom - Unified Product Catalog
-// 851 products across 54 brands
+// Panda Telecom
+// 851 products, 54 brands
 // Generated: 2026-07-26
 
 var ALL_PRODUCTS = [
@@ -76,7 +76,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJDTHL20",
     "name": "SJDTHL20 1-CARE RAZE HL20專用替換磁性刮鬍刀頭 Vacuum",
     "brand": "Momax",
     "category": "配件",
@@ -1624,7 +1624,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJLXRO12",
     "name": "SJLXRO12 1° Airo 高效能 HEPA濾芯 (2 件) Vacuum Cleaner - Accessories",
     "brand": "Momax",
     "category": "其他",
@@ -1636,7 +1636,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJLXRO9",
     "name": "SJLXRO9 RO9 高效過濾器 (3件裝) Smart",
     "brand": "Momax",
     "category": "其他",
@@ -2152,7 +2152,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "BR20",
     "name": "1BR20D Pinpop2 X 可充電迷你全球定位器 (黑)",
     "brand": "Momax",
     "category": "定位器 / FindMy",
@@ -2164,7 +2164,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "BR201",
     "name": "7BR20W",
     "brand": "Momax",
     "category": "定位器 / FindMy",
@@ -2176,7 +2176,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "BR202",
     "name": "8BR20M Pinpop2 X 可充電迷你全球定位器 (橙)",
     "brand": "Momax",
     "category": "定位器 / FindMy",
@@ -2188,7 +2188,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "BR203",
     "name": "9BR20P Pinpop2 X 可充電迷你全球定位器 (粉紅)",
     "brand": "Momax",
     "category": "定位器 / FindMy",
@@ -4396,7 +4396,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJBDSW1",
     "name": "SJBDSW1G 替換錶帶 綠色 Smart",
     "brand": "Momax",
     "category": "Wearable",
@@ -4408,7 +4408,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJBDSW2L2",
     "name": "SJBDSW2L2 替換錶帶 (沙漠金) Smart",
     "brand": "Momax",
     "category": "Wearable",
@@ -4420,7 +4420,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJBDSW3",
     "name": "SJBDSW3L 替換錶帶 (米色) Smart",
     "brand": "Momax",
     "category": "Wearable",
@@ -4432,7 +4432,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJCDHSG3",
     "name": "SJCDHSG3SW 1-Sense 智能戒指充電盒 Shaver",
     "brand": "Momax",
     "category": "Wearable",
@@ -4444,7 +4444,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJZMSG1SV1",
     "name": "SJZMSG1SV1 1-Sense智能戒指尺寸模板 Smart",
     "brand": "Momax",
     "category": "Wearable",
@@ -4456,7 +4456,7 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "",
+    "id": "SJZMSG3SV1",
     "name": "SJZMSG3SV1 1-SENSE 智能戒指尺碼套件 (#6 - #13)",
     "brand": "Momax",
     "category": "Wearable",
