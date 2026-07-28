@@ -454,9 +454,11 @@ nav .inner { max-width: 1200px; margin: 0 auto; padding: 0 16px; display: flex; 
 
   // Init
   document.getElementById('totalCount').textContent = P.length;
+  console.log('✅ Loaded', P.length, 'products');
   renderBrands();
   renderCats();
   render();
+  console.log('✅ Rendered', document.getElementById('list').children.length, 'items');
 
   // Status bar (preserved from original)
   (function(){
