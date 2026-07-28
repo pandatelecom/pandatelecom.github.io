@@ -1,6 +1,6 @@
 // Panda Telecom - Unified Product Catalog
-// 854 products across 54 brands
-// Generated: 2026-07-25
+// 851 products across 54 brands
+// Generated: 2026-07-26
 
 var ALL_PRODUCTS = [
   {
@@ -3232,18 +3232,6 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "IP117D",
-    "name": "Q.Mag X1 10000mAh 超薄磁吸流動電源 (黑)",
-    "brand": "Momax",
-    "category": "流動電源",
-    "srp": 369.0,
-    "msrp": 200.0,
-    "res": 200.0,
-    "image": "https://raw.githubusercontent.com/pandatelecom/pandatelecom.github.io/main/products-img/IP117D.webp",
-    "desc": "",
-    "features": []
-  },
-  {
     "id": "IP136Q2L",
     "name": "Q.Mag X1 Qi2 超薄磁吸流動電源 10000mAh - Gen 2 (鈦)",
     "brand": "Momax",
@@ -3952,18 +3940,6 @@ var ALL_PRODUCTS = [
     "features": []
   },
   {
-    "id": "KH19U",
-    "name": "Hoop 磁環支架 (黑) Foldable",
-    "brand": "Momax",
-    "category": "支架 / 座",
-    "srp": 99.0,
-    "msrp": 49.0,
-    "res": 49.0,
-    "image": "products-img/KH19U.svg",
-    "desc": "",
-    "features": []
-  },
-  {
     "id": "TP11W",
     "name": "1-Folio Flow Find My 主動式電容觸控筆 (白)",
     "brand": "Momax",
@@ -4392,18 +4368,6 @@ var ALL_PRODUCTS = [
     "msrp": 279.0,
     "res": 180.0,
     "image": "products-img/SW1SD.svg",
-    "desc": "",
-    "features": []
-  },
-  {
-    "id": "SW2SD",
-    "name": "1-Wear 智能手錶 (黑) Smart",
-    "brand": "Momax",
-    "category": "Wearable",
-    "srp": 499.0,
-    "msrp": 449.0,
-    "res": 275.0,
-    "image": "products-img/SW2SD.svg",
     "desc": "",
     "features": []
   },
