@@ -3,479 +3,172 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Panda Telecom 熊貓電訊 — 產品目錄</title>
-<meta name="description" content="Momax、ARGO、SMARTCOBY、Sincos 等品牌手機配件、充電器、線材。紅磡黃埔實體店，即場購買。"/>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐼</text></svg>"/>
+<title>Panda Telecom — 產品目錄</title>
 <style>
-:root {
-  --primary: #111; --accent: #22c55e; --brand-pink: #e91e63;
-  --text: #1a1a1a; --muted: #888; --bg: #f5f5f5;
-  --card-bg: #fff; --border: #e8e8e8;
-  --radius: 14px; --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang HK", sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #e5e5e5; --muted: #999; --bg: #1a1a1a;
-    --card-bg: #242424; --border: #333;
-  }
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: var(--font); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
-
-/* Status bar */
-.status-bar { background: var(--primary); color: #fff; text-align: center; font-size: 12px; padding: 6px 16px; font-weight: 500; }
-.status-bar.open { background: #15803d; }
-.status-bar.closed { background: #92400e; }
-
-/* Sticky nav */
-nav {
-  background: var(--card-bg); border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px);
-}
-nav .inner { max-width: 1200px; margin: 0 auto; padding: 0 16px; display: flex; align-items: center; height: 56px; }
-.nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; text-decoration: none; color: var(--text); }
-.logo-mark { width: 32px; height: 32px; background: var(--primary); color: #fff; border-radius: 8px; display: grid; place-items: center; font-size: 9px; font-weight: 800; }
-.nav-actions { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-.nav-home { padding: 6px 12px; border-radius: 8px; background: var(--border); color: var(--muted); text-decoration: none; font-size: 12px; }
-.nav-cart { position: relative; font-size: 20px; text-decoration: none; }
-.nav-cart .dot { position: absolute; top: -4px; right: -4px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
-
-/* Banner */
-.banner {
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-  border-radius: 16px; padding: 28px 24px; margin: 12px 0 16px; color: #fff;
-}
-.banner h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
-.banner p { font-size: 13px; opacity: .85; }
-
-/* Stats bar */
-.stats-bar { display: flex; gap: 14px; padding: 6px 0 10px; font-size: 12px; color: var(--muted); align-items: center; }
-.stats-bar strong { color: var(--text); font-weight: 600; }
-
-/* Search */
-.search-wrap { margin: 4px 0 10px; }
-.search-input {
-  width: 100%; padding: 12px 16px; padding-left: 38px;
-  border-radius: 12px; border: 1.5px solid var(--border); font-size: 14px;
-  font-family: var(--font); outline: none; background: var(--card-bg); color: var(--text);
-  transition: border .2s;
-}
-.search-input:focus { border-color: var(--accent); }
-.search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 16px; color: var(--muted); pointer-events: none; }
-.search-wrap-inner { position: relative; }
-
-/* Scrollable brand tabs */
-.brand-scroll {
-  display: flex; gap: 6px; margin: 8px 0 12px;
-  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  padding-bottom: 4px;
-}
-.brand-scroll::-webkit-scrollbar { display: none; }
-.brand-chip {
-  padding: 7px 15px; border-radius: 20px; background: var(--card-bg);
-  border: 1.5px solid var(--border); font-size: 13px; color: var(--muted);
-  cursor: pointer; white-space: nowrap; font-weight: 500; flex-shrink: 0;
-  transition: all .15s; user-select: none;
-}
-.brand-chip:hover { border-color: #aaa; }
-.brand-chip.on { background: var(--primary); color: #fff; border-color: var(--primary); }
-.brand-chip .count { font-size: 11px; opacity: .7; margin-left: 2px; }
-
-/* Scrollable category pills */
-.cat-scroll {
-  display: flex; gap: 5px; margin: 4px 0 12px;
-  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  padding-bottom: 2px;
-}
-.cat-scroll::-webkit-scrollbar { display: none; }
-.cat-chip {
-  padding: 5px 12px; border-radius: 14px; background: var(--card-bg);
-  border: 1px solid var(--border); font-size: 11px; color: var(--muted);
-  cursor: pointer; white-space: nowrap; flex-shrink: 0;
-  transition: all .15s; user-select: none;
-}
-.cat-chip:hover { border-color: #aaa; }
-.cat-chip.on { background: var(--primary); color: #fff; border-color: var(--primary); }
-
-/* Product grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px; margin-bottom: 100px;
-}
-@media (min-width: 640px) { .grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 960px) { .grid { grid-template-columns: repeat(4, 1fr); gap: 14px; } }
-
-.card {
-  background: var(--card-bg); border-radius: var(--radius);
-  overflow: hidden; border: 1px solid var(--border);
-  transition: transform .2s, box-shadow .2s; cursor: pointer;
-  display: flex; flex-direction: column;
-}
-.card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,.1); }
-
-.card-img {
-  height: 200px; position: relative; overflow: hidden; background: #f0f0f0;
-  display: flex; align-items: center; justify-content: center;
-}
-@media (prefers-color-scheme: dark) { .card-img { background: #1e1e1e; } }
-.card-img img { max-width: 90%; max-height: 90%; object-fit: contain; }
-.card-img .svg-placeholder { max-width: 100%; max-height: 100%; object-fit: contain; }
-
-/* Badges on image */
-.card-badges { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; justify-content: space-between; pointer-events: none; }
-.badge { padding: 3px 8px; border-radius: 10px; font-size: 10px; font-weight: 600; color: #fff; }
-.badge-brand {  }
-.badge-cat { background: rgba(0,0,0,.55); }
-
-.card-body { padding: 10px 12px 12px; flex: 1; display: flex; flex-direction: column; }
-.card-name { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 6px; }
-.card-price-row { display: flex; align-items: baseline; gap: 6px; margin-top: auto; }
-.card-price { font-size: 17px; color: var(--accent); font-weight: 700; }
-.card-srp { font-size: 12px; color: #bbb; text-decoration: line-through; }
-.card-wa {
-  display: flex; align-items: center; justify-content: center; gap: 5px;
-  margin-top: 8px; padding: 8px; width: 100%;
-  background: var(--accent); color: #fff; border-radius: 8px;
-  font-size: 12px; font-weight: 600; text-decoration: none;
-  transition: background .2s;
-}
-.card-wa:hover { background: #16a34a; }
-
-/* Empty state */
-.empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
-.empty-icon { font-size: 56px; margin-bottom: 12px; }
-.empty-state p { font-size: 15px; }
-
-/* Modal */
-.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
-.modal-overlay.show { display: flex; }
-.modal { background: var(--card-bg); border-radius: 16px; max-width: 480px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
-.modal-close { position: sticky; top: 0; float: right; z-index: 2; width: 36px; height: 36px; border-radius: 50%; background: rgba(128,128,128,.1); border: none; font-size: 18px; cursor: pointer; margin: 12px 12px 0 0; display: grid; place-items: center; color: var(--muted); }
-.modal-close:hover { background: rgba(128,128,128,.2); }
-.modal-img-wrapper { background: #f0f0f0; display: flex; align-items: center; justify-content: center; min-height: 240px; }
-@media (prefers-color-scheme: dark) { .modal-img-wrapper { background: #1e1e1e; } }
-.modal-img { max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto; }
-.modal-body { padding: 20px 24px 24px; }
-.modal-badge { display: inline-block; padding: 3px 10px; border-radius: 10px; font-size: 11px; font-weight: 600; color: #fff; margin-bottom: 8px; }
-.modal-name { font-size: 18px; font-weight: 700; margin: 4px 0 12px; line-height: 1.4; }
-.modal-price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 14px; }
-.modal-price { font-size: 26px; color: var(--accent); font-weight: 700; }
-.modal-srp { font-size: 16px; color: #bbb; text-decoration: line-through; }
-.modal-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
-.modal-features { margin-bottom: 16px; }
-.modal-features li { font-size: 13px; color: var(--muted); padding: 4px 0; line-height: 1.5; list-style: none; }
-.modal-features li::before { content: '✓ '; color: var(--accent); font-weight: 700; }
-.modal-wa-btn {
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-  width: 100%; padding: 14px; background: var(--accent); color: #fff;
-  border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 15px;
-  transition: background .2s;
-}
-.modal-wa-btn:hover { background: #16a34a; }
-
-/* Footer bar */
-.footer-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--card-bg); border-top: 1px solid var(--border); padding: 10px 16px; display: flex; gap: 10px; z-index: 100; }
-.footer-bar .btn { flex: 1; padding: 12px; border-radius: 10px; text-align: center; text-decoration: none; color: #fff; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 6px; }
-.btn-call { background: var(--primary); }
-.btn-wa { background: var(--accent); }
-.site-footer { text-align: center; font-size: 11px; color: #bbb; padding: 16px 0 80px; }
-
-/* Main wrapper */
-.main { max-width: 1200px; margin: 0 auto; padding: 12px 14px; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang HK",sans-serif;background:#f5f5f5;color:#1a1a1a}
+.top{background:#111;color:#fff;text-align:center;padding:8px;font-size:13px;font-weight:500}
+.top.open{background:#15803d}
+.top.closed{background:#92400e}
+nav{background:#fff;border-bottom:1px solid #e8e8e8;position:sticky;top:0;z-index:100}
+nav .inner{max-width:1200px;margin:0 auto;padding:0 16px;display:flex;align-items:center;height:52px;gap:12px}
+.logo{font-weight:700;font-size:15px;white-space:nowrap;text-decoration:none;color:#111}
+.logo .mark{display:inline-block;width:28px;height:28px;background:#111;color:#fff;border-radius:6px;text-align:center;line-height:28px;font-size:9px;margin-right:6px}
+.search{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #e0e0e0;font-size:14px;outline:none;min-width:0;background:#f8f8f8}
+.search:focus{border-color:#22c55e;background:#fff}
+.bar{padding:10px 16px;font-size:13px;color:#888;max-width:1200px;margin:0 auto;display:flex;gap:12px}
+.tabs{display:flex;gap:6px;padding:0 16px 12px;overflow-x:auto;scrollbar-width:none;max-width:1200px;margin:0 auto}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;padding:6px 14px;border-radius:16px;border:1.5px solid #e0e0e0;background:#fff;font-size:12px;cursor:pointer;transition:.15s;white-space:nowrap;font-weight:500}
+.tab:hover{border-color:#bbb}
+.tab.on{background:#22c55e;color:#fff;border-color:#22c55e}
+.cats{display:flex;gap:5px;padding:0 16px 8px;overflow-x:auto;scrollbar-width:none;max-width:1200px;margin:0 auto}
+.cats::-webkit-scrollbar{display:none}
+.cat{flex-shrink:0;padding:4px 10px;border-radius:12px;border:1px solid #e0e0e0;background:#fff;font-size:11px;color:#888;cursor:pointer;white-space:nowrap}
+.cat.on{background:#111;color:#fff;border-color:#111}
+.main{max-width:1200px;margin:8px auto;padding:0 12px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(4,1fr);gap:12px}}
+.card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #e8e8e8;cursor:pointer;transition:.15s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.card-thumb{height:180px;background:#f0f0f0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card-thumb img{max-width:90%;max-height:90%;object-fit:contain}
+.card-thumb .brand-tag{position:absolute;top:6px;left:6px;background:rgba(0,0,0,.7);color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600}
+.card-body{padding:10px 12px;flex:1;display:flex;flex-direction:column}
+.card-name{font-size:12px;font-weight:600;line-height:1.4;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-price{font-size:17px;color:#22c55e;font-weight:700;margin-top:auto}
+.card-srp{font-size:11px;color:#bbb;text-decoration:line-through;margin-left:4px}
+.card-wa{display:block;text-align:center;background:#25D366;color:#fff;padding:6px;font-size:12px;text-decoration:none;margin-top:6px;border-radius:0 0 12px 12px;font-weight:600}
+.card-wa:hover{background:#1fa855}
+.empty{text-align:center;padding:60px 20px;color:#888}
+.foot{text-align:center;padding:20px;color:#aaa;font-size:11px}
 </style>
 </head>
 <body>
-
-<div class="status-bar" id="statusBar">🕐 檢查營業狀態中…</div>
-
-<nav>
-  <div class="inner">
-    <a href="./" class="nav-brand">
-      <div class="logo-mark">熊貓</div>
-      <span>Panda Telecom</span>
-    </a>
-    <div class="nav-actions">
-      <a class="nav-home" href="./">主頁</a>
-      <a class="nav-cart" href="https://wa.me/85268557181?text=我想查詢產品" target="_blank" rel="noopener" title="WhatsApp 查詢">💬<span class="dot"></span></a>
-    </div>
-  </div>
-</nav>
-
-<div class="main">
-
-<div class="banner">
-  <h1>📦 產品目錄</h1>
-  <p id="bannerSub">50+ 品牌 · 850+ 產品 · WhatsApp 查詢庫存及報價</p>
-</div>
-
-<div class="stats-bar">
-  <span>共 <strong id="totalCount">0</strong> 件產品</span>
-  <span>｜ 顯示 <strong id="shownCount">0</strong> 件</span>
-</div>
-
-<div class="search-wrap"><div class="search-wrap-inner">
-  <span class="search-icon">🔍</span>
-  <input class="search-input" id="search" placeholder="搜尋產品名、品牌或型號..." autocomplete="off"/>
-</div></div>
-
-<div class="brand-scroll" id="brandTabs"></div>
-<div class="cat-scroll" id="cats"></div>
-
-<div id="list"></div>
-
-<div class="site-footer">© 2026 Panda Telecom 熊貓電訊 · 紅磡黃埔108商場54號舖</div>
-
-</div>
-
-<!-- Modal -->
-<div class="modal-overlay" id="modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-img-wrapper"><img class="modal-img" id="modalImg" src="" alt=""/></div>
-    <div class="modal-body">
-      <div class="modal-badge" id="modalBadge"></div>
-      <div class="modal-name" id="modalName"></div>
-      <div class="modal-price-row">
-        <span class="modal-price" id="modalPrice"></span>
-        <span class="modal-srp" id="modalSrp"></span>
-      </div>
-      <div class="modal-desc" id="modalDesc"></div>
-      <ul class="modal-features" id="modalFeatures"></ul>
-      <a class="modal-wa-btn" id="modalWa" href="#" target="_blank" rel="noopener">💬 WhatsApp 查詢庫存及報價</a>
-    </div>
-  </div>
-</div>
-
-<div class="footer-bar">
-  <a class="btn btn-call" href="tel:+85268557181">📞 致電 6855 7181</a>
-  <a class="btn btn-wa" href="https://wa.me/85268557181?text=我想查詢產品" target="_blank" rel="noopener">💬 WhatsApp 詢價</a>
-</div>
+<div class="top" id="topBar">🕐 檢查中…</div>
+<nav><div class="inner">
+  <a class="logo" href="/"><span class="mark">PT</span>Panda Telecom</a>
+  <input class="search" id="search" placeholder="搜尋產品…" autocomplete="off"/>
+</div></nav>
+<div class="bar">共 <b id="total">0</b> 件｜顯示 <b id="shown">0</b> 件</div>
+<div class="tabs" id="tabs"></div>
+<div class="cats" id="cats"></div>
+<div class="main" id="list"></div>
+<div class="foot">WhatsApp 查詢：<a href="https://wa.me/85268557181" style="color:#25D366">6855 7181</a></div>
 
 <script src="products-all.js"></script>
 <script>
 (function(){
-  var P = ALL_PRODUCTS || [];
+var P = window.ALL_PRODUCTS || [];
+var brands = {};
+P.forEach(function(p){
+  var b = p.brand;
+  if(!brands[b]) brands[b] = [];
+  brands[b].push(p);
+});
+var brandList = Object.keys(brands).sort();
+var curBrand = '', curCat = '';
 
-  // Brand colors map
-  var brandColors = {
-    'Momax': '#e91e63', 'ARGO': '#2196F3', 'Sincos': '#FF9800',
-    'SMARTCOBY': '#00BCD4', 'Ismartdigi': '#4CAF50', '10Denki': '#9C27B0',
-    'Rhythm': '#00BCD4', 'Heal Force': '#009688', 'MOTOROLA': '#3F51B5',
-    'Lonzuer': '#FF5722', 'CREATIVE': '#607D8B', 'YOHOME': '#795548',
-    'IPEAK': '#8BC34A'
-  };
-  function getBrandColor(brand) { return brandColors[brand] || '#666'; }
-
-  // Category emoji mapping
-  var catEmoji = {
-    '充電器': '🔌', '旅行充電器': '🌍', '行動電源': '🔋', '流動電源': '🔋',
-    '充電線': '🔗', '耳機': '🎧', '耳機 / 音響': '🎧', '喇叭': '🔊',
-    '車充': '🚗', '車載支架': '📱', '風扇': '🌀', '風扇 / 冷風': '🌀',
-    '家居': '🏠', '家電': '🏠', '卡通精品': '⭐', '配件': '🔧',
-    '其他': '🔧', 'Wearable': '⌚', '智能手錶': '⌚', '智能家居': '🏠',
-    '定位器 / FindMy': '📍', '觸控筆': '✏️', '支架 / 座': '📐',
-    '醫療健康': '❤️', '按摩 / 健康': '💆', '按摩器': '💆', '個人護理': '🧴',
-    '智能翻譯設備': '🌐', '空氣淨化': '🌬️', '工具': '🛠️',
-    '水壺/保溫': '🫖', '相機': '📷'
-  };
-
-  // Build brand index
-  var brands = {};
-  P.forEach(function(p){
-    var b = p.brand;
-    if (!brands[b]) brands[b] = { products: [], cats: new Set() };
-    brands[b].products.push(p);
-    brands[b].cats.add(p.category);
+function render() {
+  var q = (document.getElementById('search').value||'').toLowerCase().trim();
+  var src = curBrand ? brands[curBrand] : P;
+  if(curCat) src = src.filter(function(p){return p.category===curCat;});
+  if(q) src = src.filter(function(p){
+    return (p.name||'').toLowerCase().indexOf(q)!==-1 ||
+           (p.brand||'').toLowerCase().indexOf(q)!==-1 ||
+           (p.id||'').toLowerCase().indexOf(q)!==-1;
   });
-  var brandNames = Object.keys(brands).sort();
+  document.getElementById('shown').textContent = src.length;
+  var el = document.getElementById('list');
+  if(!src.length){ el.innerHTML='<div class="empty">😕 冇搵到相關產品</div>'; return; }
+  var h = '<div class="grid">';
+  src.forEach(function(p){
+    var img = p.image || '';
+    var imgTag = img ? '<img src="'+img+'" alt="'+p.name+'" loading="lazy" onerror="this.style.display=\'none\'"/>'+(!img.match(/http|\.(png|jpe?g|webp)$/i)?'<img src="'+img+'" style="max-width:100%;max-height:100%" />':'') : '';
+    if(!img && img.match(/\.svg$/i)) imgTag = '<img src="'+img+'" style="max-width:100%;max-height:100%" />';
+    h += '<div class="card" onclick="(function(){var x=P.find(function(a){return a.id===\''+(p.id||'').replace(/'/g,'\\\'')+'\';});if(!x)return;alert(x.brand+\' \'+x.name+\'\\n\\nPrice: $\'+(x.msrp||x.srp)+\'\\n\\nWhatsApp: 6855 7181\');})()">';
+    h += '<div class="card-thumb">';
+    if(p.brand) h += '<span class="brand-tag">'+p.brand+'</span>';
+    h += imgTag;
+    h += '</div>';
+    h += '<div class="card-body">';
+    h += '<div class="card-name">'+p.name+'</div>';
+    h += '<div class="card-price">$'+(p.msrp||p.srp)+(p.srp&&p.msrp&&p.msrp<p.srp?'<span class="card-srp">$'+p.srp+'</span>':'')+'</div>';
+    h += '<a class="card-wa" href="https://wa.me/85268557181?text='+encodeURIComponent('我想查詢 '+p.brand+' '+p.name)+'" target="_blank" onclick="event.stopPropagation()">💬 WhatsApp 查詢</a>';
+    h += '</div></div>';
+  });
+  h += '</div>';
+  el.innerHTML = h;
+}
 
-  var currentBrand = '', currentCat = '', currentQuery = '';
+// Tabs
+var tabsEl = document.getElementById('tabs');
+var allTab = document.createElement('span');
+allTab.className = 'tab on';
+allTab.textContent = '全部 ('+P.length+')';
+allTab.onclick = function(){curBrand='';curCat='';render();updateTabs();};
+tabsEl.appendChild(allTab);
+brandList.forEach(function(b){
+  var t = document.createElement('span');
+  t.className = 'tab';
+  t.textContent = b + ' (' + brands[b].length + ')';
+  t.onclick = function(){curBrand=b;curCat='';render();updateTabs();renderCats();};
+  tabsEl.appendChild(t);
+});
 
-  // Render brand tabs
-  function renderBrands(){
-    var el = document.getElementById('brandTabs');
-    el.innerHTML = '';
-    var all = mkChip('全部', function(){ setBrand(''); }, !currentBrand);
-    all.querySelector('span').innerHTML += ' <span class="count">'+P.length+'</span>';
-    el.appendChild(all);
-
-    brandNames.forEach(function(b){
-      var chip = mkChip(b + ' <span class="count">'+brands[b].products.length+'</span>', function(){ setBrand(b); }, currentBrand === b);
-      el.appendChild(chip);
-    });
-  }
-
-  function mkChip(label, onclick, isOn){
-    var span = document.createElement('span');
-    span.className = 'brand-chip' + (isOn ? ' on' : '');
-    span.innerHTML = label;
-    span.onclick = onclick;
-    return span;
-  }
-
-  function setBrand(b){
-    currentBrand = b; currentCat = '';
-    renderBrands(); renderCats(); render();
-  }
-
-  // Category pills
-  function renderCats(){
-    var cats = new Set();
-    var src = currentBrand ? brands[currentBrand].products : P;
-    src.forEach(function(p){ cats.add(p.category); });
-    var catsArr = Array.from(cats).sort();
-    var el = document.getElementById('cats');
-    el.innerHTML = '';
-
-    var allCat = document.createElement('span');
-    allCat.className = 'cat-chip' + (currentCat ? '' : ' on');
-    allCat.textContent = '全部分類';
-    allCat.onclick = function(){ currentCat = ''; renderCats(); render(); };
-    el.appendChild(allCat);
-
-    catsArr.forEach(function(c){
-      var chip = document.createElement('span');
-      chip.className = 'cat-chip' + (currentCat === c ? ' on' : '');
-      chip.textContent = (catEmoji[c] || '') + ' ' + c;
-      chip.onclick = function(){ currentCat = c; renderCats(); render(); };
-      el.appendChild(chip);
-    });
-  }
-
-  // Render products
-  function render(){
-    var q = (document.getElementById('search').value || '').toLowerCase().trim();
-    var src = currentBrand ? brands[currentBrand].products : P;
-    if (currentCat) src = src.filter(function(p){ return p.category === currentCat; });
-    if (q) src = src.filter(function(p){
-      return p.name.toLowerCase().indexOf(q) !== -1 ||
-             (p.id||'').toLowerCase().indexOf(q) !== -1 ||
-             (p.brand||'').toLowerCase().indexOf(q) !== -1;
-    });
-
-    document.getElementById('shownCount').textContent = src.length;
-
-    if (!src.length) {
-      document.getElementById('list').innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div><p>冇搵到相關產品</p><p style="font-size:13px;margin-top:4px">試下改搜尋關鍵字或轉換品牌</p></div>';
-      return;
+function updateTabs() {
+  var all = tabsEl.querySelectorAll('.tab');
+  all.forEach(function(t){t.classList.remove('on');});
+  if(!curBrand) all[0].classList.add('on');
+  else {
+    for(var i=1;i<all.length;i++){
+      if(all[i].textContent.indexOf(curBrand+' (')===0){all[i].classList.add('on');break;}
     }
-
-    var out = '<div class="grid">';
-    src.forEach(function(p){
-      var color = getBrandColor(p.brand);
-      var hasImg = p.image && p.image.indexOf('http') === 0;
-      var hasLocalImg = p.image && !hasImg && (
-        p.image.indexOf('.png') !== -1 || p.image.indexOf('.jpg') !== -1 ||
-        p.image.indexOf('.jpeg') !== -1 || p.image.indexOf('.webp') !== -1
-      );
-      var imgSrc = p.image || '';
-      var showImg = hasImg || hasLocalImg;
-      var showSrp = p.msrp && p.srp && p.msrp < p.srp;
-
-      out += '<div class="card" onclick="openModal(\''+(p.id||'').replace(/'/g,"\\'")+'\')">';
-      out += '<div class="card-img">';
-      // Badges
-      out += '<div class="card-badges">';
-      out += '<span class="badge badge-brand" style="background:'+color+'">'+p.brand+'</span>';
-      if (p.category) out += '<span class="badge badge-cat">'+(catEmoji[p.category]||'')+' '+p.category+'</span>';
-      out += '</div>';
-      // Image or SVG placeholder
-      if (showImg) {
-        out += '<img src="'+imgSrc+'" alt="'+p.name+'" loading="lazy" onerror="this.style.display=\'none\'"/>';
-      } else {
-        out += '<img src="'+imgSrc+'" class="svg-placeholder" alt="" />';
-      }
-      out += '</div>';
-      out += '<div class="card-body">';
-      out += '<div class="card-name">'+p.name+'</div>';
-      out += '<div class="card-price-row">';
-      out += '<span class="card-price">$'+(p.msrp || p.srp)+'</span>';
-      if (showSrp) out += '<span class="card-srp">$'+p.srp+'</span>';
-      out += '</div>';
-      out += '<a class="card-wa" href="https://wa.me/85268557181?text='+encodeURIComponent('我想查詢 '+p.brand+' '+p.name)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">💬 查詢</a>';
-      out += '</div></div>';
-    });
-    out += '</div>';
-    document.getElementById('list').innerHTML = out;
   }
+}
 
-  // Modal
-  window.openModal = function(id){
-    var p = P.find(function(x){ return x.id === id; });
-    if (!p) return;
-
-    var color = getBrandColor(p.brand);
-    var imgSrc = p.image || '';
-    var showSrp = p.msrp && p.srp && p.msrp < p.srp;
-
-    document.getElementById('modalImg').src = imgSrc;
-    document.getElementById('modalImg').style.display = imgSrc ? '' : 'none';
-    document.getElementById('modalBadge').textContent = p.brand || '';
-    document.getElementById('modalBadge').style.background = color;
-    document.getElementById('modalName').textContent = p.name;
-    document.getElementById('modalPrice').textContent = '$'+(p.msrp || p.srp);
-    document.getElementById('modalSrp').textContent = showSrp ? '$'+p.srp : '';
-    document.getElementById('modalSrp').style.display = showSrp ? '' : 'none';
-    document.getElementById('modalDesc').textContent = p.desc || '';
-    document.getElementById('modalDesc').style.display = p.desc ? '' : 'none';
-
-    var featEl = document.getElementById('modalFeatures');
-    featEl.innerHTML = '';
-    if (p.features && p.features.length) {
-      p.features.forEach(function(f){
-        var li = document.createElement('li');
-        li.textContent = f;
-        featEl.appendChild(li);
-      });
-    }
-
-    document.getElementById('modalWa').href = 'https://wa.me/85268557181?text='+encodeURIComponent('我想查詢 '+p.brand+' '+p.name+' ('+p.id+')');
-    document.getElementById('modal').classList.add('show');
-  };
-
-  window.closeModal = function(){
-    document.getElementById('modal').classList.remove('show');
-  };
-
-  document.getElementById('modal').addEventListener('click', function(e){
-    if (e.target === this) closeModal();
+// Category pills
+function renderCats() {
+  var catsEl = document.getElementById('cats');
+  catsEl.innerHTML = '';
+  var src = curBrand ? brands[curBrand] : P;
+  var cats = {}; src.forEach(function(p){cats[p.category]=1;});
+  var catList = Object.keys(cats).sort();
+  
+  var allC = document.createElement('span');
+  allC.className = 'cat' + (curCat?'':' on');
+  allC.textContent = '全部分類';
+  allC.onclick = function(){curCat='';render();renderCats();};
+  catsEl.appendChild(allC);
+  
+  catList.forEach(function(c){
+    var chip = document.createElement('span');
+    chip.className = 'cat' + (curCat===c?' on':'');
+    chip.textContent = c;
+    chip.onclick = function(){curCat = curCat===c ? '' : c;render();renderCats();};
+    catsEl.appendChild(chip);
   });
-  document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape') closeModal();
-  });
+}
 
-  // Search
-  var searchEl = document.getElementById('search'), timer;
-  searchEl.addEventListener('input', function(){
-    clearTimeout(timer);
-    timer = setTimeout(render, 150);
-  });
+// Search
+document.getElementById('search').addEventListener('input', function(){
+  clearTimeout(this._t); this._t = setTimeout(render, 200);
+});
 
-  // Init
-  document.getElementById('totalCount').textContent = P.length;
-  console.log('✅ Loaded', P.length, 'products');
-  renderBrands();
-  renderCats();
-  render();
-  console.log('✅ Rendered', document.getElementById('list').children.length, 'items');
+// Status
+(function(){
+  var n = new Date(), d = n.getDay(), h = n.getHours(), m = n.getMinutes();
+  var open = d>=1 && d<=6 && h*60+m>=720 && h*60+m<1200;
+  var bar = document.getElementById('topBar');
+  bar.textContent = open ? '🟢 營業中 — WhatsApp：6855 7181' : '🔴 休息中 — 週一至六 12:00-20:00';
+  bar.className = 'top ' + (open?'open':'closed');
+})();
 
-  // Status bar (preserved from original)
-  (function(){
-    var isHoliday = false;
-    var now = new Date();
-    var day = now.getDay(), hour = now.getHours(), minute = now.getMinutes();
-    var mins = hour * 60 + minute;
-    var open = !isHoliday && day >= 1 && day <= 6 && mins >= 720 && mins < 1200;
-    var bar = document.getElementById('statusBar');
-    if (open) {
-      bar.textContent = '🟢 營業中 — WhatsApp 查詢：6855 7181';
-      bar.className = 'status-bar open';
-    } else {
-      bar.textContent = '🔴 休息中 — 營業時間：週一至六 12:00-20:00';
-      bar.className = 'status-bar closed';
-    }
-  })();
+// Init
+document.getElementById('total').textContent = P.length;
+renderCats();
+render();
 })();
 </script>
 </body>
