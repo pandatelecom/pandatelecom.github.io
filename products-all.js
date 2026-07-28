@@ -1,5 +1,5 @@
 // Panda Telecom
-// 851 products, 54 brands
+// 849 products, 54 brands
 // Generated: 2026-07-26
 
 var ALL_PRODUCTS = [
@@ -5076,22 +5076,6 @@ var ALL_PRODUCTS = [
     ]
   },
   {
-    "id": "ssb5-solid-state",
-    "name": "SSB5 固態電池行動電源",
-    "brand": "ARGO",
-    "category": "行動電源",
-    "srp": 99,
-    "msrp": 99,
-    "res": 0,
-    "image": "products-img/ssb5-solid-state.svg",
-    "desc": "SSB5固態電池行動電源，採用固態電池技術，安全高效，效能大幅提升。",
-    "features": [
-      "固態電池技術，杜絕電解液洩漏與過熱風險",
-      "經1,000次充放電循環性能零衰退",
-      "安全可靠"
-    ]
-  },
-  {
     "id": "argo-tfc10-5in1",
     "name": "ARGO 5in1 Power Bank TFC10",
     "brand": "ARGO",
@@ -5689,20 +5673,6 @@ var ALL_PRODUCTS = [
       "全屏/分屏防觸碰",
       "藍牙實時電池顯示",
       "金屬感應環開關"
-    ]
-  },
-  {
-    "id": "argo-gd80",
-    "name": "ARGO GD80",
-    "brand": "ARGO",
-    "category": "配件",
-    "srp": 99,
-    "msrp": 99,
-    "res": 0,
-    "image": "products-img/argo-gd80.svg",
-    "desc": "ARGO GD80充電配件，Sigma產品線中的標準配件產品。",
-    "features": [
-      "ARGO品牌配件"
     ]
   },
   {
